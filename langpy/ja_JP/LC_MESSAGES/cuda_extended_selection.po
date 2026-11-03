@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_extended_selection\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid " - Error:{}: "
+msgstr " - エラー:{}: "
+
+msgid "Extended selection: Failed to load config, using defaults"
+msgstr "拡張選択: 設定の読み込みに失敗したため、デフォルト値を使用します"
+
+msgid "Extended selection: Missing config file. Creating a default one."
+msgstr "拡張選択: 設定ファイルが見つかりません。デフォルトファイルを作成します。"

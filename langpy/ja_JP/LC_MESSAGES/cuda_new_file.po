@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_new_file\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:28+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "New file from \"{}\", lexer \"{}\""
+msgstr "\"{}\" から新しいファイルを作成しました (Lexer \"{}\")"
+
+msgid "No files in data/newdoc"
+msgstr "data/newdoc 内にファイルがありません"
+
+msgid "Templates"
+msgstr "テンプレート"
+
+msgid "Templates: {}"
+msgstr "テンプレート: {}"

@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:25+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Enter username on gist.github.com"
+msgstr "gist.github.com のユーザー名を入力"
+
+msgid "GitHub Gist: empty response"
+msgstr "GitHub Gist: 応答が空です"
+
+msgid "GitHub Gist: no gists found for username \"{}\"!"
+msgstr "GitHub Gist: ユーザー名 \"{}\" の Gist が見つかりません!"
+
+msgid "GitHub Gist: {}"
+msgstr "GitHub Gist: {}"
+
+msgid "List of gists"
+msgstr "Gist 一覧"

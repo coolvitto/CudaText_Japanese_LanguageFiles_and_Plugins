@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_intext_bookmarks\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&Bookmark signs:"
+msgstr "ブックマーク記号(&B):"
+
+msgid "&Comment sign:"
+msgstr "コメント記号(&C):"
+
+msgid "&Wrap for next/prev"
+msgstr "次/前へ移動時にループする(&W)"
+
+msgid "(none)"
+msgstr "(なし)"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot add in-text bookmark: no comments defined for lexer {}."
+msgstr ""
+"インテキストブックマークを追加できません: Lexer {} に行コメントが定義されてい"
+"ません。"
+
+msgid "Compac&t list"
+msgstr "コンパクトリスト(&T)"
+
+msgid ""
+"Default comment sign.\rIt is used when lexer has no line comment or file has "
+"no lexer."
+msgstr ""
+"デフォルトのコメント記号です。\rLexer に行コメントがない場合、またはファイル"
+"に Lexer が設定されていない場合に使用されます。"
+
+msgid "Enter message for in-text bookmark. Empty is good."
+msgstr "インテキストブックマークのメッセージを入力してください (空欄可)。"
+
+msgid "In-text bookmarks (all tabs): {}"
+msgstr "インテキストブックマーク (全タブ): {}"
+
+msgid "Intext bookmarks"
+msgstr "インテキストブックマーク"
+
+msgid "Need Bookmark sign"
+msgstr "ブックマーク記号が必要です"
+
+msgid "Need Comment sign"
+msgstr "コメント記号が必要です"
+
+msgid "Need to update application"
+msgstr "アプリケーションのアップデートが必要です"
+
+msgid "No bookmark for jump"
+msgstr "ジャンプ先のブックマークがありません"
+
+msgid "No in-text bookmark into document with Lexer {}"
+msgstr "Lexer {} のドキュメント内にインテキストブックマークはありません"
+
+msgid "No in-text bookmarks"
+msgstr "インテキストブックマークはありません"
+
+msgid "No in-text bookmarks in tabs"
+msgstr "タブ内にインテキストブックマークはありません"
+
+msgid "No more bookmarks"
+msgstr "これ以上ブックマークはありません"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Space delimeted list.\rThe first word will be inserted by command."
+msgstr ""
+"スペース区切りのリストです。\rコマンドによって最初の単語が挿入されます。"
+
+msgid "Tab in-text bookmarks: {}"
+msgstr "タブ内インテキストブックマーク: {}"

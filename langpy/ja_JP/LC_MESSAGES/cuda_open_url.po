@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_open_url\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:28+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cannot find URL under caret"
+msgstr "キャレット位置に URL が見つかりません"
+
+msgid "Error running: \"{}\""
+msgstr "実行エラー: \"{}\""
+
+msgid "Open URL"
+msgstr "URL を開く"
+
+msgid "Open in Chrome"
+msgstr "Chrome で開く"
+
+msgid "Open in Chrome, private mode"
+msgstr "Chrome (シークレット モード) で開く"
+
+msgid "Open in Firefox"
+msgstr "Firefox で開く"
+
+msgid "Open in Firefox, private mode"
+msgstr "Firefox (プライベートブラウジング) で開く"
+
+msgid "Open in IE"
+msgstr "Internet Explorer で開く"
+
+msgid "Open in IE, private mode"
+msgstr "Internet Explorer (InPrivate) で開く"
+
+msgid "Open in Opera"
+msgstr "Opera で開く"
+
+msgid "Open in Opera, private mode"
+msgstr "Opera (プライベートウィンドウ) で開く"
+
+msgid "Open in default browser"
+msgstr "既定のブラウザで開く"
+
+msgid "Running: \"{}\""
+msgstr "実行中: \"{}\""

@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_column_marks\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:21+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"Additional margins (space separated).\n"
+"Prefix with \"!\" to save permamently."
+msgstr ""
+"追加のマージン (スペース区切り)。\n"
+"恒久的に保存するには先頭に \"!\" を付けてください。"
+
+msgid "Cannot jump to mark"
+msgstr "マークにジャンプできません"
+
+msgid ""
+"Fixed margin value.\n"
+"Prefix with \"!\" to save permamently."
+msgstr ""
+"固定マージン値。\n"
+"恒久的に保存するには先頭に \"!\" を付けてください。"
+
+msgid "Jumped to column {}"
+msgstr "列 {} にジャンプしました"
+
+msgid "Need single caret"
+msgstr "単一のキャレットが必要です"
+
+msgid "Not valid list of integers: "
+msgstr "有効な整数リストではありません: "
+
+msgid "Wrong integer value: "
+msgstr "不正な整数値です: "

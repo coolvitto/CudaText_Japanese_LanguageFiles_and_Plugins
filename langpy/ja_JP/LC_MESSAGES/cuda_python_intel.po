@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_python_intel\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cannot find doc-string"
+msgstr "docstring が見つかりません"
+
+msgid "Cannot find usages"
+msgstr "使用箇所が見つかりません"
+
+msgid "Cannot refactor, Jedi gave an error. :("
+msgstr "リファクタリングできません。Jedi がエラーを返しました。:("
+
+msgid "ERROR: Interpreter is not selected. Cannot use Python IntelliSense."
+msgstr ""
+"エラー: インタープリターが選択されていません。Python IntelliSense を使用"
+"できません。"
+
+msgid "Executables"
+msgstr "実行可能ファイル"
+
+msgid "Extract function:"
+msgstr "関数の抽出:"
+
+msgid "Extract variable:"
+msgstr "変数の抽出:"
+
+msgid "Go to file: "
+msgstr "ファイルへ移動: "
+
+msgid "Incorrect environment! Python interpreter is not activated"
+msgstr "環境が不正です! Python インタープリターが有効化されていません"
+
+msgid "Other..."
+msgstr "その他..."
+
+msgid "Rename to:"
+msgstr "変更後の名前:"
+
+msgid "Select Python interpreter"
+msgstr "Python インタープリターを選択"
+
+msgid "Usages"
+msgstr "使用箇所"

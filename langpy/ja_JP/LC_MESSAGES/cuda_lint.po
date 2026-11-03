@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_lint\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid " or {}"
+msgstr " または {}"
+
+msgid ", linter will not run using built in python"
+msgstr "、組み込み Python を使用した Linter の実行は行われません"
+
+msgid ", linter will not work with python 3 code"
+msgstr "、Linter は Python 3 のコードでは動作しません"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Colored e&rror bookmarks"
+msgstr "エラーのカラーブックマーク(&R)"
+
+msgid "Colored info boo&kmarks"
+msgstr "情報のカラーブックマーク(&K)"
+
+msgid "Colored warn &bookmarks"
+msgstr "警告のカラーブックマーク(&B)"
+
+msgid "CudaLint cannot import cuda_project_man"
+msgstr "CudaLint は cuda_project_man をインポートできません"
+
+msgid "CudaLint disabled"
+msgstr "CudaLint は無効です"
+
+msgid "CudaLint enabled"
+msgstr "CudaLint は有効です"
+
+msgid "CudaLint options"
+msgstr "CudaLint のオプション"
+
+msgid "CudaText should be restarted, to allow CudaLint use new event-options"
+msgstr ""
+"CudaLint で新しいイベントオプションを適用するには、CudaText を再起動する必要"
+"があります"
+
+msgid "Dash"
+msgstr "破線"
+
+msgid "Dotted"
+msgstr "点線"
+
+msgid "ERROR: not yet implemented."
+msgstr "エラー: まだ実装されていません。"
+
+msgid "ERROR: unknown exception in {}: {}"
+msgstr "エラー: {} 内で不明な例外が発生しました: {}"
+
+msgid "ERROR: {} cannot locate \"{}\""
+msgstr "エラー: {} は \"{}\" を特定できません"
+
+msgid "ERROR: {} disabled, error compiling syntax: {}"
+msgstr "エラー: {} は無効化されました。構文のコンパイルエラー: {}"
+
+msgid "ERROR: {} disabled, error compiling {}: {}"
+msgstr "エラー: {} は無効化されました。{} のコンパイルエラー: {}"
+
+msgid "ERROR: {} disabled, not fully implemented"
+msgstr "エラー: {} は完全には実装されていないため無効化されています"
+
+msgid "Lint &after text changed, and pause"
+msgstr "テキスト変更の一時停止後に Lint 実行(&A)"
+
+msgid "Lint on &opening file"
+msgstr "ファイルを開く際に Lint 実行(&O)"
+
+msgid "Lint on &saving file"
+msgstr "ファイルを保存する際に Lint 実行(&S)"
+
+msgid "Linter \"%s\" found no errors"
+msgstr "Linter \"%s\" はエラーを検出報告しませんでした"
+
+msgid "Linter \"{}\" found {} error(s)"
+msgstr "Linter \"{}\" が {} 個のエラーを検出しました"
+
+msgid "Linters for %s"
+msgstr "%s 用 Linter"
+
+msgid "No linters for lexer \"%s\""
+msgstr "Lexer \"%s\" 用の Linter はありません"
+
+msgid "None"
+msgstr "なし"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Project's required linter not found: %s"
+msgstr "プロジェクトに必要な Linter が見つかりません: %s"
+
+msgid "Rounded"
+msgstr "丸みのある下線"
+
+msgid "Solid"
+msgstr "実線"
+
+msgid "Solid 2px"
+msgstr "実線 2px"
+
+msgid "Underline (all kinds: error/warn/info)"
+msgstr "下線 (全種類: エラー/警告/情報)"
+
+msgid "Underline style"
+msgstr "下線のスタイル"
+
+msgid "WARNING: "
+msgstr "警告: "
+
+msgid "WARNING: {} deactivated, no available version of python{} satisfies {}"
+msgstr ""
+"警告: {} は無効化されました。{} を満たす利用可能な Python{} のバージョンがあ"
+"りません"
+
+msgid "Wave"
+msgstr "波線"
+
+msgid "shell timed out after {} seconds, executing {}"
+msgstr "{} の実行中、{} 秒後にシェルがタイムアウトしました"
+
+msgid "{}: subclasses must override the PythonLinter.check method"
+msgstr ""
+"{}: サブクラスは PythonLinter.check メソッドをオーバーライドする必要がありま"
+"す"
+
+msgid "{}import of {} module in {} failed"
+msgstr "{} 内での {} モジュールのインポート ({} 経由) に失敗しました"

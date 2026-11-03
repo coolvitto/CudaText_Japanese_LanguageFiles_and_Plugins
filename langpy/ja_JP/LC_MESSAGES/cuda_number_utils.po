@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_number_utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:28+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "%d carets to process. Not valid numbers will be skipped."
+msgstr "処理対象のキャレットが %d 個あります。無効な数値はスキップされます。"
+
+msgid "&Digits:"
+msgstr "桁数(&D):"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Prefix:"
+msgstr "接頭辞(&P):"
+
+msgid "&Repeat counter:"
+msgstr "繰り返し回数(&R):"
+
+msgid "&Suffix:"
+msgstr "接尾辞(&S):"
+
+msgid "&Use only prefix+suffix"
+msgstr "接頭辞と接尾辞のみ使用(&U)"
+
+msgid "Base: d=dec, x=hex, o=octal, r=romans"
+msgstr "基数: d=10進数, x=16進数, o=8進数, r=ローマ数字"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot handle multi-carets"
+msgstr "マルチキャレットは処理できません"
+
+msgid "Carets Numbering"
+msgstr "キャレット位置への連番挿入"
+
+msgid "Convert"
+msgstr "変換"
+
+msgid "Convert numbers in selections to chosen base"
+msgstr "選択範囲内の数字を指定した進数に変換します"
+
+msgid "Decimal\tBinary\tOctal\tHexadecimal\tHTML color"
+msgstr "10進数\t2進数\t8進数\t16進数\tHTML カラー"
+
+msgid "Decimal\tHex\tOctal\tRomans"
+msgstr "10進数\t16進数\t8進数\tローマ数字"
+
+msgid "Digits:"
+msgstr "桁数:"
+
+msgid "If checked, selections will be kept after conversion."
+msgstr "有効にすると、変換後も選択範囲を維持します。"
+
+msgid "Incorrect base value entered"
+msgstr "不正な進数値が入力されました"
+
+msgid "Incorrect number entered: "
+msgstr "不正な数値が入力されました: "
+
+msgid "Increment (can be <0):"
+msgstr "増分 (負の値も可):"
+
+msgid "Insert &after leading spaces"
+msgstr "先頭スペースの後ろに挿入(&A)"
+
+msgid "Insert Numbers"
+msgstr "連番の挿入"
+
+msgid "Inserted %d numbers"
+msgstr "%d 個の数字を挿入しました"
+
+msgid "Keep selections after conversion"
+msgstr "変換後に選択範囲を維持"
+
+msgid "Make text selection(s) first."
+msgstr "最初にテキストを選択してください。"
+
+msgid "Multi-line is not allowed."
+msgstr "複数行の選択は許可されていません。"
+
+msgid "Number &base:"
+msgstr "進数(&B):"
+
+msgid "Number Base Converter"
+msgstr "進数変換"
+
+msgid "Numbers inserted"
+msgstr "数字が挿入されました"
+
+msgid "Place caret under number"
+msgstr "キャレットを数値の位置に置いてください"
+
+msgid "Place several carets first"
+msgstr "最初に複数のキャレットを配置してください"
+
+msgid "Romanize: Cannot work with selection"
+msgstr "ローマ数字化: 選択範囲を処理できません"
+
+msgid "Romanize: Need a number"
+msgstr "ローマ数字化: 数値が必要です"
+
+msgid "Romanize: incorrect number \"%s\""
+msgstr "ローマ数字化: 不正な数値 \"%s\""
+
+msgid "Romanize: {} -> {}"
+msgstr "ローマ数字化: {} -> {}"
+
+msgid "Select with click or using Up-Down keys."
+msgstr "クリックするか上下キーで選択してください。"
+
+msgid "Selected lines will be changed"
+msgstr "選択された行が変更されます"
+
+msgid "Skip &empty lines"
+msgstr "空行をスキップ(&E)"
+
+msgid "Specified count of lines will be inserted"
+msgstr "指定された行数が挿入されます"
+
+msgid "Start &num:"
+msgstr "開始番号(&N):"
+
+msgid "Starting number:"
+msgstr "開始番号:"
+
+msgid "Starts the conversion process."
+msgstr "変換処理を開始します。"
+
+msgid "Text after numbers:"
+msgstr "数字の後ろのテキスト:"
+
+msgid "Text before numbers:"
+msgstr "数字の前のテキスト:"
+
+msgid "only text"
+msgstr "テキストのみ"
+
+msgid "repeat %d"
+msgstr "繰り返し %d"
+
+msgid "selection"
+msgstr "選択範囲"

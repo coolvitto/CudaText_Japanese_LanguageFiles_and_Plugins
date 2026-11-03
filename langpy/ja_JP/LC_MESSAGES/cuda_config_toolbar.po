@@ -1,0 +1,178 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_config_toolbar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-04 00:53+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+
+#: __init__.py:31
+msgid "Hidden"
+msgstr "非表示"
+
+#: __init__.py:32
+msgid "Visible"
+msgstr "表示"
+
+#: __init__.py:33
+msgid "(separator)"
+msgstr "(区切り線)"
+
+#: __init__.py:34
+msgid "(dropdown)"
+msgstr "(ドロップダウン)"
+
+#: __init__.py:251
+msgid "Changed option in user.json, restart app to see effect"
+msgstr "user.json のオプションを変更しました。反映するにはアプリを再起動してください"
+
+#: __init__.py:199
+msgid "Loading toolbar config (%dms)"
+msgstr "ツールバーの設定を読み込み中 (%dms)"
+
+#: __init__.py:267
+msgid "Hide standard buttons. Will be applied after app restart."
+msgstr "標準ボタンを非表示にします。アプリの再起動後に反映されます。"
+
+#: __init__.py:249
+msgid ""
+"Error writing option to user.json\n"
+"Got value \"{}\""
+msgstr ""
+"user.json へのオプションの書き込みでエラーが発生しました\n"
+"値: \"{}\""
+
+#: dlg.py:351
+msgid "Button command"
+msgstr "ボタンのコマンド"
+
+#: dlg.py:367
+msgid "Command line parameter(s):"
+msgstr "コマンドラインのパラメータ:"
+
+#: dlg.py:337
+msgid "Button must have non-empty caption and/or icon"
+msgstr "ボタンにはキャプションまたはアイコン (または両方) が必要です"
+
+#: dlg.py:395
+msgid "PNG files"
+msgstr "PNG ファイル"
+
+#: dlg.py:213
+msgid "Configure toolbar"
+msgstr "ツールバーの設定"
+
+#: dlg.py:229
+msgid "Add item..."
+msgstr "項目を追加..."
+
+#: dlg.py:238
+msgid "Add sub-menu..."
+msgstr "サブメニューを追加..."
+
+#: dlg.py:247
+msgid "Add separator"
+msgstr "区切り線を追加"
+
+#: dlg.py:256
+msgid "Edit item..."
+msgstr "項目を編集..."
+
+#: dlg.py:265
+msgid "Edit sub-menu..."
+msgstr "サブメニューを編集..."
+
+#: dlg.py:274
+msgid "Delete item"
+msgstr "項目を削除"
+
+#: dlg.py:283
+msgid "Move up"
+msgstr "上へ移動"
+
+#: dlg.py:292
+msgid "Move down"
+msgstr "下へ移動"
+
+#: dlg.py:301 dlg.py:551 dlg_choose_icon.py:170
+msgid "OK"
+msgstr "OK"
+
+#: dlg.py:310 dlg.py:561
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: dlg.py:413
+msgid "Button properties"
+msgstr "ボタンのプロパティ"
+
+#: dlg.py:420
+msgid "Caption:"
+msgstr "キャプション:"
+
+#: dlg.py:435
+msgid "Tooltip:"
+msgstr "ツールチップ:"
+
+#: dlg.py:450
+msgid "Command:"
+msgstr "コマンド:"
+
+#: dlg.py:468
+msgid "Choose command..."
+msgstr "コマンドを選択..."
+
+#: dlg.py:477
+msgid "Enter command line..."
+msgstr "コマンドラインを入力..."
+
+#: dlg.py:487
+msgid "Icon:"
+msgstr "アイコン:"
+
+#: dlg.py:499
+msgid "{op} - path to \"settings\" dir"
+msgstr "{op} - \"settings\" フォルダーのパス"
+
+#: dlg.py:510
+msgid "Choose from icon set..."
+msgstr "アイコンセットから選択..."
+
+#: dlg.py:519
+msgid "Choose from file..."
+msgstr "ファイルから選択..."
+
+#: dlg.py:528
+msgid "To enable more icon sets, install \"toolbarxicons\" add-ons"
+msgstr "アイコンセットを増やすには、\"toolbarxicons\" アドオンをインストールしてください"
+
+#: dlg.py:536
+msgid ""
+"Visible for lexers:\n"
+"(comma-separated)"
+msgstr ""
+"レキサを指定して表示:\n"
+"(カンマ区切り)"
+
+#: dlg_choose_icon.py:53 dlg_choose_icon.py:54
+msgid " (additional)"
+msgstr " (追加)"
+
+#: dlg_choose_icon.py:57
+msgid "Choose icon set"
+msgstr "アイコンセットを選択"
+
+#: dlg_choose_icon.py:143
+msgid "Choose icon"
+msgstr "アイコンを選択"
+
+#: dlg_choose_icon.py:71
+msgid "Filter: "
+msgstr "フィルター: "

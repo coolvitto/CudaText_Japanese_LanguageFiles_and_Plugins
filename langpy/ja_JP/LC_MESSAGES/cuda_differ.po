@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_differ\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:22+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid " ERROR:"
+msgstr " エラー:"
+
+msgid " WARNING:"
+msgstr " 警告:"
+
+msgid "Auto diff refresh after changes"
+msgstr "変更後に差分を自動更新する"
+
+msgid "Back to separate tabs"
+msgstr "個別のタブに戻す"
+
+msgid "Browse..."
+msgstr "参照..."
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Color of added lines"
+msgstr "追加された行の色"
+
+msgid "Color of changed lines"
+msgstr "変更された行の色"
+
+msgid "Color of deleted lines"
+msgstr "削除された行の色"
+
+msgid "Color of inter-line gap background"
+msgstr "行間ギャップの背景色"
+
+msgid "Compare file with tab"
+msgstr "ファイルとタブを比較"
+
+msgid "Compare with focused tab"
+msgstr "フォーカスされているタブと比較"
+
+msgid "Compare with tab"
+msgstr "タブと比較"
+
+msgid "Compare with..."
+msgstr "比較..."
+
+msgid "Diff file with tab"
+msgstr "ファイルとタブの差分を表示"
+
+msgid "Differ Options"
+msgstr "Differ オプション"
+
+msgid "Differ: Choose files..."
+msgstr "Differ: ファイルの選択..."
+
+msgid "First file:"
+msgstr "最初のファイル:"
+
+msgid "First file: (Please set correct path)"
+msgstr "最初のファイル: (正しいパスを設定してください)"
+
+msgid ""
+"First you must save file:\n"
+"{}\n"
+msgstr ""
+"まずファイルを保存する必要があります:\n"
+"{}\n"
+
+msgid "Keep carets in both editors visible on current screen area"
+msgstr "両方のエディタのキャレットを現在の画面領域内に常に表示する"
+
+msgid "Measure of the sequences’ similarity, in percents"
+msgstr "シーケンスの類似度 (パーセント)"
+
+msgid "No differences were found"
+msgstr "差分は見つかりませんでした"
+
+msgid "Number of lines of context displayed when diffing files"
+msgstr "ファイル差分表示時に表示するコンテキスト行数"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Perform detailed comparision"
+msgstr "詳細な比較を実行する"
+
+msgid "Second file:"
+msgstr "2番目のファイル:"
+
+msgid "Second file: (Please set correct path)"
+msgstr "2番目のファイル: (正しいパスを設定してください)"
+
+msgid ""
+"The file:\n"
+"{}\n"
+"is empty."
+msgstr ""
+"ファイル:\n"
+"{}\n"
+"は空です。"
+
+msgid ""
+"The files are identical:\n"
+"{0}\n"
+"{1}"
+msgstr ""
+"ファイルは同一です:\n"
+"{0}\n"
+"{1}"
+
+msgid "Use synchronized scrolling (vertical/horizontal) in two compared files"
+msgstr "比較する 2つのファイルで同期スクロール (垂直/水平) を使用する"
+
+msgid "{} of {} difference"
+msgstr "{} / {} 個の差分"

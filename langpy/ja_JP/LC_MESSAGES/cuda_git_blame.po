@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_git_blame\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:25+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Git Blame: Multiple carets not supported"
+msgstr "Git Blame: マルチキャレットはサポートされていません"
+
+msgid "Git Blame: Multiple lines not supported"
+msgstr "Git Blame: 複数行の選択はサポートされていません"
+
+msgid "Git Blame: Not a valid file"
+msgstr "Git Blame: 有効なファイルではありません"
+
+msgid "View file content in history"
+msgstr "履歴のファイル内容を表示"

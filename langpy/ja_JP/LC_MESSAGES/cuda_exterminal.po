@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_exterminal\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Close terminal"
+msgstr "ターミナルを閉じる"
+
+msgid "Color indexes should be drawn in bold text of the same color."
+msgstr "カラーインデックスは同色の太字テキストで描画する必要があります。"
+
+msgid "Console"
+msgstr "コンソール"
+
+msgid "ExTerminal"
+msgstr "ExTerminal"
+
+msgid "ExTerminal does not support Windows older than 10"
+msgstr "ExTerminal は Windows 10 より古いバージョンをサポートしていません"
+
+msgid "More than {} terminals is not supported yet."
+msgstr "{} 個を超えるターミナルはまだサポートされていません。"
+
+msgid "New terminal"
+msgstr "新しいターミナル"
+
+msgid "Text was copied to clipboard!"
+msgstr "テキストをクリップボードにコピーしました!"
+
+msgid "Unrecognized sequence:"
+msgstr "未認識のシーケンス:"

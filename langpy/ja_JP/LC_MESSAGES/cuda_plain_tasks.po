@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_plain_tasks\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:28+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "1day"
+msgstr "1日"
+
+msgid "@cancelled"
+msgstr "@cancelled"
+
+msgid "@created"
+msgstr "@created"
+
+msgid "@critical"
+msgstr "@critical"
+
+msgid "@done"
+msgstr "@done"
+
+msgid "@high"
+msgstr "@high"
+
+msgid "@lasted"
+msgstr "@lasted"
+
+msgid "@low"
+msgstr "@low"
+
+msgid "@project({})"
+msgstr "@project({})"
+
+msgid "@started"
+msgstr "@started"
+
+msgid "@today"
+msgstr "@today"
+
+msgid "@toggle"
+msgstr "@toggle"
+
+msgid "@wasted"
+msgstr "@wasted"
+
+msgid "Caption which is inserted above archived tasks"
+msgstr "アーカイブされたタスクの上に挿入される見出し"
+
+msgid "Character of cancelled task, one of:"
+msgstr "キャンセルされたタスクを示す文字 (いずれか 1つ):"
+
+msgid "Character of completed task, one of:"
+msgstr "完了したタスクを示す文字 (いずれか 1つ):"
+
+msgid "Character of opened task, one of:"
+msgstr "未完了のタスクを示す文字 (いずれか 1つ):"
+
+msgid ""
+"Format of date/time. Possible macro characters are:  %a: First three "
+"characters of the weekday, e.g. Wed.  %A: Full name of the weekday, e.g. "
+"Wednesday.  %B: Full name of the month, e.g. September.  %w: Weekday as a "
+"number, from 0 to 6, with Sunday being 0.  %m: Month as a number, from 01 to "
+"12.  %p: AM/PM for time.  %y: Year in two-digit format, that is, without the "
+"century. For example, '19' instead of '2019'.  %Y: Year in four-digit "
+"format. For example '2019'.  %f: Microsecond from 000000 to 999999.  %Z: "
+"Timezone.  %z: UTC offset.  %j: Number of the day in the year, from 001 to "
+"366.  %W: Week number of the year, from 00 to 53, with Monday being counted "
+"as the first day of the week.  %U: Week number of the year, from 00 to 53, "
+"with Sunday counted as the first day of each week.  %c: Local date and time "
+"version.  %x: Local version of date.  %X: Local version of time."
+msgstr ""
+"日時フォーマット。使用可能なマクロ文字:  %a: 曜日の先頭 3 文字 (例: Wed)。  "
+"%A: 曜日のフルネーム (例: Wednesday)。  %B: 月のフルネーム (例: "
+"September)。  %w: 曜日を表す数値 (0～6、0 は日曜日)。  %m: 月を表す数値 (01～"
+"12)。  %p: 午前/午後 (AM/PM)。  %y: 世紀なしの 2 桁の西暦 (例: '2019' ではな"
+"く '19')。  %Y: 4 桁の西暦 (例: '2019')。  %f: マイクロ秒 (000000～"
+"999999)。  %Z: タイムゾーン。  %z: UTC オフセット。  %j: 年間の通算日 (001～"
+"366)。  %W: 年間の通算週 (00～53、月曜日を週の始まりとする)。  %U: 年間の通算"
+"週 (00～53、日曜日を週の始まりとする)。  %c: ロケールに応じた日付と時刻の表"
+"記。  %x: ロケールに応じた日付表記。  %X: ロケールに応じた時刻表記。"
+
+msgid "Plain Tasks options"
+msgstr "Plain Tasks のオプション"
+
+msgid ""
+"Plugin \"Plain Tasks\" could not find its required lexer ToDo. Please "
+"install this lexer from \"Plugins / Addon Manager / Install\" and restart "
+"CudaText."
+msgstr ""
+"プラグイン \"Plain Tasks\" に必要な Lexer \"ToDo\" が見つかりませんでした。"
+"「プラグイン / アドオンマネージャー / インストール」からこの Lexer をインス"
+"トールし、CudaText を再起動してください。"
+
+msgid "When creating new task, add tag @created"
+msgstr "新しいタスクを作成する際、@created タグを追加する"
+
+msgid "When task is changed between Done/Cancelled, add tag @done/@canceled"
+msgstr ""
+"タスクの状態を「完了/キャンセル」に変更する際、@done/@canceled タグを追加する"
+
+msgid "When task is changed between Done/Cancelled, add timestamp"
+msgstr ""
+"タスクの状態を「完了/キャンセル」に変更する際、タイムスタンプを追加する"
+
+msgid "{} ERROR: {}"
+msgstr "{} エラー: {}"
+
+msgid "{} WARNING: {}"
+msgstr "{} 警告: {}"
+
+msgid "{}days"
+msgstr "{} 日"

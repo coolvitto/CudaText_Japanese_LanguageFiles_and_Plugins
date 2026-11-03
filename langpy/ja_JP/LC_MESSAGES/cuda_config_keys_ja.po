@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_config_keys_ja\n"
+"PO-Revision-Date: 2026-11-03 00:02+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"\n"
+"• In Snip.\n"
+"{}"
+msgstr ""
+"\n"
+"\n"
+"• スニペットの検索 :\n"
+"{}"
+
+msgid "&?"
+msgstr "&?"
+
+msgid "&All"
+msgstr "すべて(&A)"
+
+msgid "&Close"
+msgstr "閉じる(&C)"
+
+msgid "&Filter"
+msgstr "フィルター(&F)"
+
+msgid "&OR"
+msgstr "または(&O)"
+
+msgid "&Save"
+msgstr "保存(&S)"
+
+msgid "Add snip for \"{}\""
+msgstr "\"{}\" にスニペットを追加"
+
+msgid "Adjust vertical alignments"
+msgstr "垂直方向の配置を調整"
+
+msgid "All commands"
+msgstr "すべてのコマンド"
+
+msgid "All keys"
+msgstr "すべてのホットキー"
+
+msgid "All keys with full command names"
+msgstr "すべてのホットキー (完全なコマンド名)"
+
+msgid "All keys, compact view"
+msgstr "すべてのホットキー (コンパクト表示)"
+
+msgid "All series-keys"
+msgstr "すべての連続ホットキー"
+
+msgid ""
+"Apply the fittings to controls of all dialogs.\rCtrl+Click  - Show data to "
+"mail report."
+msgstr ""
+"すべてのダイアログのコントロールにフィッティングを適用します。\rCtrl+クリッ"
+"ク - メールレポート用データを表示します。"
+
+msgid "Button"
+msgstr "ボタン"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Command"
+msgstr "コマンド"
+
+msgid "Command 1"
+msgstr "コマンド 1"
+
+msgid "Command 2"
+msgstr "コマンド 2"
+
+msgid "Commands"
+msgstr "コマンド"
+
+msgid "Compact keys"
+msgstr "ホットキー (コンパクト)"
+
+msgid "Configure Hotkeys ({})"
+msgstr "ホットキーの設定 ({})"
+
+msgid "Conflicts"
+msgstr "競合"
+
+msgid "Copy &name"
+msgstr "名前をコピー(&N)"
+
+msgid "Copy command name to clipboard"
+msgstr "コマンド名をクリップボードにコピー"
+
+msgid ""
+"Do you want to remove snip(s) \n"
+"    {}\n"
+"for command \"{}\"?"
+msgstr ""
+"コマンド \"{}\" のスニペット\n"
+"    {}\n"
+"を削除しますか?"
+
+msgid "Hel&p"
+msgstr "ヘルプ(&P)"
+
+msgid "Help for \"Config Hotkeys\""
+msgstr "「ホットキーの設定」のヘルプ"
+
+msgid ""
+"Hotkey \"{}\" is already assigned \n"
+"to command \"{}\".\n"
+"\n"
+"Do you want to reassign the hotkey \n"
+"to selected command \"{}\"?"
+msgstr ""
+"ホットキー \"{}\" はすでに\n"
+"コマンド \"{}\" に割り当てられています。\n"
+"\n"
+"選択したコマンド \"{}\" に\n"
+"ホットキーを割り当て直しますか?"
+
+msgid "Hotkey-1"
+msgstr "ホットキー-1"
+
+msgid "Hotkey-2"
+msgstr "ホットキー-2"
+
+msgid "In &Command:"
+msgstr "コマンド名で検索(&C):"
+
+msgid "In &Hotkeys:"
+msgstr "ホットキーで検索(&H):"
+
+msgid "In &Snip(s):"
+msgstr "スニペットで検索(&S):"
+
+msgid "Key"
+msgstr "キー"
+
+msgid "Keys"
+msgstr "キー"
+
+msgid "Need update CudaText"
+msgstr "CudaText のアップデートが必要です"
+
+msgid "No conflicts"
+msgstr "競合はありません"
+
+msgid "O&R"
+msgstr "または(&R)"
+
+msgid "Open code &#"
+msgstr "コード &# を開く"
+
+msgid "Open source of plugin code"
+msgstr "プラグインのソースコードを開く"
+
+msgid "Opened browser with file "
+msgstr "ブラウザでファイルを開きました "
+
+msgid "Plugin needs newer app version"
+msgstr "プラグインにはより新しい本体バージョンが必要です"
+
+msgid "Plugin: "
+msgstr "プラグイン : "
+
+msgid "Plugins"
+msgstr "プラグイン"
+
+msgid "R&emove Snip(s)"
+msgstr "スニペットを削除(&E)"
+
+msgid "Remove Hotkey-1 &!"
+msgstr "ホットキー-1 を削除(&!)"
+
+msgid "Remove Hotkey-2 &@"
+msgstr "ホットキー-2 を削除(&@)"
+
+msgid "Report"
+msgstr "レポート"
+
+msgid "Report to HT&ML"
+msgstr "HTML レポートを出力(&M)"
+
+msgid "Report to new &Tab"
+msgstr "新しいタブにレポートを出力(&T)"
+
+msgid "Send the report to the address"
+msgstr "レポートを指定のアドレスに送信"
+
+msgid ""
+"Set hotkey for command (if no one).\n"
+"Extend to series hotkeys (if command already has hotkeys)."
+msgstr ""
+"コマンドにホットキーを設定します (未設定の場合)。\n"
+"すでにホットキーが割り振られている場合は連続ホットキーに拡張します。"
+
+msgid "Set/A&dd Snip"
+msgstr "スニペットの設定/追加(&D)"
+
+msgid "Set/Add Hotkey-&1"
+msgstr "ホットキー-1 の設定/追加(&1)"
+
+msgid "Set/Add Hotkey-&2"
+msgstr "ホットキー-2 の設定/追加(&2)"
+
+msgid ""
+"Show compact report of hotkeys in new tab.\n"
+"The report is usefull to find free hotkeys."
+msgstr ""
+"新しいタブにホットキーのコンパクトなレポートを表示します。\n"
+"空いているホットキーを探すのに便利です。"
+
+msgid ""
+"Shows HTML page with report of all hotkeys in editor.\n"
+"The report is usefull to analyze hotkeys in a whole."
+msgstr ""
+"エディタ内のすべてのホットキーのレポートを HTML ページで表示します。\n"
+"全体の割り当て状況を確認するのに便利です。"
+
+msgid "Snip for \"{}\""
+msgstr "\"{}\" のスニペット"
+
+msgid ""
+"Snippet \"{}\" is already assigned\n"
+"to command \"{}\".\n"
+"\n"
+"Do you want to reassign the snippet\n"
+"to command \"{}\"?"
+msgstr ""
+"スニペット \"{}\" はすでに\n"
+"コマンド \"{}\" に割り当てられています。\n"
+"\n"
+"コマンド \"{}\" に\n"
+"スニペットを割り当て直しますか?"
+
+msgid "Snips"
+msgstr "スニペット"
+
+msgid ""
+"Sort data by click on table header\n"
+"3-stage loop of sorting:\n"
+" · in alphabetical order,\n"
+" · in reverse alphabetical order,\n"
+" · in natural order (as at start)"
+msgstr ""
+"テーブルヘッダーをクリックしてデータを並べ替えます\n"
+"3段階の並べ替え順:\n"
+" · アルファベット昇順\n"
+" · アルファベット降順\n"
+" · 初期表示順 (元に戻す)"
+
+msgid ""
+"Suitable command hotkeys will contain all specified words.\n"
+"Tips:\n"
+" · Use \"_\" for key-name boundary.\n"
+"   \"_f\" selects \"F1\" and \"Ctrl+F\" but not \"Left\"."
+msgstr ""
+"一致するコマンドのホットキーには、指定したすべての単語が含まれます。\n"
+"ヒント:\n"
+" · キー名の境界には \"_\" を使用します。\n"
+"   例: \"_f\" は \"F1\" や \"Ctrl+F\" に一致しますが、\"Left\" には一致しませ"
+"ん。"
+
+msgid ""
+"Suitable command names will contain all specified words.\n"
+"Tips:\n"
+" · Use \"_\" for word boundary.\n"
+"   \"_up\" selects \"upper\" but not \"group\"."
+msgstr ""
+"一致するコマンド名には、指定したすべての単語が含まれます。\n"
+"ヒント:\n"
+" · 単語の境界には \"_\" を使用します。\n"
+"   例: \"_up\" は \"upper\" に一致しますが、\"group\" には一致しません。"
+
+msgid ""
+"Suitable command snips will match specified string.\n"
+"Usage:\n"
+" · Type \"/\" and snip string and push Tab-key.\n"
+"Tips:\n"
+" · Use ? for any character and * for any fragment."
+msgstr ""
+"一致するコマンドスニペットは指定した文字列に適合します。\n"
+"使い方:\n"
+" · \"/\" に続けてスニペット文字列を入力し、Tab キーを押します。\n"
+"ヒント:\n"
+" · 任意の1文字には ?、任意の文字列には * を使用できます。"
+
+msgid "or post it on"
+msgstr "または以下に投稿"
+
+msgid ""
+"• In Command.\n"
+"{}\n"
+"\n"
+"• In Hotkeys.\n"
+"{}{}\n"
+"\n"
+"• Set/Add.\n"
+"{}\n"
+"\n"
+"• HTML-report.\n"
+"{}\n"
+"\n"
+"• Tab-report.\n"
+"{}\n"
+"\n"
+"• Sorting.\n"
+"{}"
+msgstr ""
+"• コマンド名で検索 :\n"
+"{}\n"
+"\n"
+"• ホットキーで検索 :\n"
+"{}{}\n"
+"\n"
+"• 設定/追加 :\n"
+"{}\n"
+"\n"
+"• HTML レポート :\n"
+"{}\n"
+"\n"
+"• タブ レポート :\n"
+"{}\n"
+"\n"
+"• 並べ替え :\n"
+"{}"

@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_sort\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&End (-1: don't cut end)"
+msgstr "終了位置(&E) (-1: 終了位置を切断しない)"
+
+msgid "&Ignore case"
+msgstr "大文字/小文字を無視(&I)"
+
+msgid "&Numeric (treat groups of digits as numbers)"
+msgstr "数値として整列(&N) (数字のグループを数値として認識)"
+
+msgid "&Sort descending (reverse)"
+msgstr "降順で並べ替え(&S) (逆順)"
+
+msgid ", all text"
+msgstr "、テキスト全体"
+
+msgid ", ignore case"
+msgstr "、大文字/小文字を無視"
+
+msgid ", numeric"
+msgstr "、数値として整列"
+
+msgid ", offsets "
+msgstr "、オフセット "
+
+msgid ", reverse"
+msgstr "、降順"
+
+msgid "Be&gin (-1: don't cut begin)"
+msgstr "開始位置(&G) (-1: 開始位置を切断しない)"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot extract any lines"
+msgstr "行を抽出できません"
+
+msgid "Changed %d line(s)"
+msgstr "%d 行変更しました"
+
+msgid "Custom sort"
+msgstr "カスタム並べ替え"
+
+msgid "Custom sort options saved"
+msgstr "カスタム並べ替えのオプションを保存しました"
+
+msgid "Delete &blank lines"
+msgstr "空行を削除(&B)"
+
+msgid "Delete d&uplicate lines"
+msgstr "重複行を削除(&U)"
+
+msgid ""
+"Document has too many lines. Plugin Sort will not work. Current value of "
+"option [sort] max_lines in \"settings/plugins.ini\" is %d."
+msgstr ""
+"ドキュメントの行数が多すぎるため、Sort プラグインは動作しません。"
+"\"settings/plugins.ini\" 内のオプション [sort] max_lines の現在値は %d で"
+"す。"
+
+msgid "Extract lines: "
+msgstr "行を抽出: "
+
+msgid "Incorrect offsets: {}..{}"
+msgstr "不正なオフセット: {}..{}"
+
+msgid ""
+"Instead of Sort plugin, you can always use CudaText built-in commands:\n"
+"\"(without undo) sort ...\"."
+msgstr ""
+"Sort プラグインの代わりに、CudaText の組み込みコマンドを利用することもで"
+"きます:\n"
+"\"(without undo) sort ...\"."
+
+msgid "Lines operation: "
+msgstr "行操作: "
+
+msgid "Needed multiline selection"
+msgstr "複数行を選択する必要があります"
+
+msgid "No e-mails in text"
+msgstr "テキスト内にメールアドレスが見つかりません"
+
+msgid "No lines were changed"
+msgstr "変更された行はありません"
+
+msgid "Save only"
+msgstr "保存のみ"
+
+msgid "Separator of prefix, to skip prefix (optional):"
+msgstr "接頭辞の区切り文字 (接頭辞をスキップ用、オプション):"
+
+msgid "Separator of values after prefix:"
+msgstr "接頭辞以降の値の区切り文字:"
+
+msgid "Separators cannot be the same"
+msgstr "区切り文字に同じ文字を指定することはできません"
+
+msgid "Separators must have length=1"
+msgstr "区切り文字は 1文字で指定してください"
+
+msgid "Sort"
+msgstr "並べ替え"
+
+msgid "Sort only by substring, offsets are 0-based:"
+msgstr "部分文字列でのみ並べ替え (オフセットは 0 起算):"
+
+msgid "Sort: separator chars"
+msgstr "並べ替え: 区切り文字"
+
+msgid "Sorted"
+msgstr "並べ替え完了"
+
+msgid "Sorted ini lines"
+msgstr "INI の行を並べ替えしました"
+
+msgid "Sorted text as email list"
+msgstr "メールアドレスのリストとしてテキストを並べ替えしました"
+
+msgid "Unknown operation: "
+msgstr "不明な操作: "

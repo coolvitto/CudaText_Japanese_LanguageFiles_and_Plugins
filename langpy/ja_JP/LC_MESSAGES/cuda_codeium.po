@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_codeium\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:21+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"\n"
+"To update your server binary, delete old one and change version in config."
+msgstr ""
+"\n"
+"\n"
+"サーバーのバイナリを更新するには、古いファイルを削除し、設定内のバージョン"
+"を変更してください。"
+
+msgid "Can't get Codeium update info."
+msgstr "Codeium の更新情報を取得できません。"
+
+msgid "Codeium chat"
+msgstr "Codeium チャット"
+
+msgid "Codeium lang server downloaded!"
+msgstr "Codeium 言語サーバーがダウンロードされました!"
+
+msgid "Ctrl+Enter to send."
+msgstr "Ctrl+Enter で送信。"
+
+msgid "ERROR: Can't get completions: server is not started."
+msgstr "エラー: 補完を取得できません。サーバーが起動していません。"
+
+msgid ""
+"ERROR: {}: Can't register user. Maybe token has expired. Try getting new "
+"token."
+msgstr ""
+"エラー: {}: ユーザーを登録できません。トークンの期限が切れている可能性があ"
+"ります。新しいトークンを取得してください。"
+
+msgid "Enter your question below."
+msgstr "以下に質問を入力してください。"
+
+msgid ""
+"Executable: {}\n"
+"Timestamp: {}\n"
+"Port: {}\n"
+"\n"
+msgstr ""
+"実行ファイル: {}\n"
+"タイムスタンプ: {}\n"
+"ポート: {}\n"
+"\n"
+
+msgid "Gathering Codeium server info.."
+msgstr "Codeium サーバー情報を収集しています.."
+
+msgid ""
+"New version:\t\t{}\n"
+"Timestamp: {}"
+msgstr ""
+"新バージョン:\t\t{}\n"
+"タイムスタンプ: {}"
+
+msgid "Send"
+msgstr "送信"
+
+msgid "Version in config:\t{}\n"
+msgstr "設定内のバージョン:\t{}\n"
+
+msgid "Your token: "
+msgstr "トークン: "
+
+msgid "{}: Downloading server..."
+msgstr "{}: サーバーをダウンロード中..."
+
+msgid "{}: Got {} {}"
+msgstr "{}: {} {} を取得しました"
+
+msgid "{}: Log in on startup disabled"
+msgstr "{}: 起動時のログインが無効化されています"
+
+msgid "{}: Log in on startup enabled"
+msgstr "{}: 起動時のログインが有効化されています"
+
+msgid "{}: Logged in"
+msgstr "{}: ログインしました"
+
+msgid "{}: Shutting down"
+msgstr "{}: シャットダウン中"
+
+msgid "{}: Starting..."
+msgstr "{}: 起動中..."
+
+msgid "{}: User canceled request."
+msgstr "{}: ユーザーによってリクエストがキャンセルされました。"
+
+msgid "{}: answer recieved"
+msgstr "{}: 回答を受信しました"
+
+msgid "{}: no answer :("
+msgstr "{}: 回答がありません :("
+
+msgid "{}: waiting for bot.."
+msgstr "{}: ボットの応答を待っています.."

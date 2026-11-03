@@ -1,0 +1,388 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_options_editor\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:28+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\r \rOther tips.\r • Use ENTER to filter table and to change or reset value."
+"\r • Use double click on any cell in columns\r     \"{c_usr}\"\r     "
+"\"{c_lxr}\"\r     \"{c_fil}\"\r   to change \"{in_lxr}\" flag and to put "
+"focus on the value field.\r • Use double click on any cell in column\r     "
+"\"{c_def}\"\r   to put focus on \"{reset}\".\r • Clicking \"{reset}\" will "
+"ask for confirmation, for user/lexer options.\r   Hold Ctrl key to skip this "
+"confirmation.\r • Click on a column header sorts data in the column.\r     "
+"Alt+# (# is 1..8) sorts the N column (not on macOS).\r     Alt+9 resets "
+"sorting (not on macOS).\r     Click with Ctrl allows to sort by several "
+"columns.\r     Clicking with Ctrl on already sorted column does 2-state loop "
+"(down, up).\r     Clicking with Ctrl on already sorted column with maximal "
+"sorting index, \r     does 3-state loop (down, up, off).\r • Use option "
+"\"{lifl}\" to see instant update of the list after\r   each changing in the "
+"filter field\r   (otherwise you need to press Enter after changing).\r   "
+"With this option, no history of the filter is kept\r   (filter combobox has "
+"empty dropdown list).\r • If current list line is scrolled out of view, \r   "
+"you can still see the option name - in the tooltip\r   of \"User\" (Lexer/"
+"File) label near the value field.\r • Tooltip shows file name (or tag name), "
+"when cursor hovers the checkbox \"{tofi}\".\r • Some plugins store their "
+"settings into user.json.\r   So after a while, user.json contains options "
+"not present in default.json.\r   To see all these keys, use option \"{full}"
+"\".\r • Values in table column \"!\"\r     !   option is set in "
+"\"user.json\",\r     !!  option is set in \"lexer NNN.json\",\r     !!! "
+"option is set for current file,\r     L   default value is from "
+"\"settings_default/lexer NNN.json\",\r     +   not CudaText standard option."
+msgstr ""
+"\r \rその他のヒント。\r • [Enter] キーを使用して、テーブルのフィルタリング、"
+"値の変更またはリセットを行います。\r • 次の列のいずれかのセルをダブルクリック"
+"します。\r     \"{c_usr}\"\r     \"{c_lxr}\"\r     \"{c_fil}\"\r   これで "
+"\"{in_lxr}\" フラグが変更され、値フィールドにフォーカスが移動します。\r • 次"
+"の列のセルをダブルクリックします。\r     \"{c_def}\"\r   これで \"{reset}\" "
+"にフォーカスが移動します。\r • \"{reset}\" をクリックすると、ユーザー/Lexer "
+"オプションの確認メッセージが表示されます。\r   Ctrl キーを押しながらクリック"
+"すると、この確認をスキップできます。\r • 列ヘッダーをクリックすると、その列の"
+"データが並べ替えされます。\r     Alt+# (# は 1～8) で N 番目の列を並べ替えし"
+"ます (macOS を除く)。\r     Alt+9 で並べ替えをリセットします (macOS を除く)。"
+"\r     Ctrl を押しながらクリックすると、複数の列で並べ替えできます。\r     "
+"Ctrl を押しながらすでに並べ替えされている列をクリックすると、2 状態のループ "
+"(降順、昇順) になります。\r     Ctrl を押しながら最大並べ替えインデックスの列"
+"をクリックすると、\r     3 状態のループ (降順、昇順、オフ) になります。\r • "
+"オプション \"{lifl}\" を使用すると、フィルターフィールドの変更後に\r   リスト"
+"が即時更新されます\r   (それ以外の場合は、変更後に Enter を押す必要がありま"
+"す)。\r   このオプションを使用している場合、フィルターの履歴は保持されません"
+"\r   (フィルターのコンボボックスのドロップダウンリストは空になります)。\r • "
+"現在のリスト行が画面外にスクロールアウトした場合でも、\r   値フィールドの近く"
+"にある「ユーザー」(Lexer/ファイル) ラベルのツールチップで\r   オプション名を"
+"確認できます。\r • チェックボックス \"{tofi}\" にキャレットを合わせると、ツー"
+"ルチップにファイル名 (またはタグ名) が表示されます。\r • 一部のプラグインは設"
+"定を user.json に保存するため、\r   しばらくすると user.json に default.json "
+"に存在しないオプションが含まれるようになります。\r   これらすべてのキーを確認"
+"するには、オプション \"{full}\" を使用してください。\r • テーブル列「!」の値:"
+"\r     !   「user.json」に設定されているオプション\r     !!  「lexer "
+"NNN.json」に設定されているオプション\r     !!! 現在のファイルに設定されている"
+"オプション\r     L   デフォルト値の由来: \"settings_default/lexer "
+"NNN.json\"\r     +   CudaText の標準オプションではない。"
+
+msgid "   [Alt+O - all changes]"
+msgstr "   [Alt+O - すべての変更]"
+
+msgid "#{}"
+msgstr "#{}"
+
+msgid "&..."
+msgstr "&..."
+
+msgid "&Copy option name"
+msgstr "オプション名をコピー(&C)"
+
+msgid "&Filter"
+msgstr "フィルター(&F)"
+
+msgid "&Forget layout"
+msgstr "レイアウトを破棄(&F)"
+
+msgid "&GoTo"
+msgstr "移動(&G)"
+
+msgid "&Help..."
+msgstr "ヘルプ(&H)..."
+
+msgid "&Layout"
+msgstr "レイアウト(&L)"
+
+msgid "&Save"
+msgstr "保存(&S)"
+
+msgid "&Save current layout..."
+msgstr "現在のレイアウトを保存(&S)..."
+
+msgid "&Table"
+msgstr "テーブル(&T)"
+
+msgid "&Undo changes"
+msgstr "変更を元に戻す(&U)"
+
+msgid "+&Section…"
+msgstr "+セクション(&S)…"
+
+msgid ">Defa&ult:"
+msgstr ">デフォルト(&U):"
+
+msgid ">Fil&e:"
+msgstr ">ファイル(&E):"
+
+msgid ">L&exer:"
+msgstr ">Lexer(&E):"
+
+msgid ">Us&er:"
+msgstr ">ユーザー(&E):"
+
+msgid "About \"{fltr}\"\r "
+msgstr "\"{fltr}\" について\r "
+
+msgid "Add LEXER {!r} option {!r}"
+msgstr "LEXER {!r} オプション {!r} を追加"
+
+msgid "Add USER option {!r}"
+msgstr "ユーザーオプション {!r} を追加"
+
+msgid "Adjust vertical alignments"
+msgstr "垂直方向の配置を調整"
+
+msgid "Adjust vertical alignments..."
+msgstr "垂直方向の配置を調整..."
+
+msgid "Appl&y changes now"
+msgstr "今すぐ変更を適用(&Y)"
+
+msgid "Apply changes on exit"
+msgstr "終了時に変更を適用"
+
+msgid ""
+"Apply the fittings to controls of all dialogs.\rCtrl+Click  - Show data to "
+"mail report."
+msgstr ""
+"すべてのダイアログのコントロールに設定を適用します。\rCtrl+クリック - メール"
+"報告用のデータを表示します。"
+
+msgid "Auto-set FILE option to overridden value {!r}"
+msgstr "ファイルオプションを上書きされた値 {!r} に自動設定"
+
+msgid "Auto-update FILE options"
+msgstr "ファイルオプションを自動更新"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Chec&k"
+msgstr "チェック(&K)"
+
+msgid "Choose option to find in config file"
+msgstr "設定ファイルで検索するオプションを選択"
+
+msgid "Choose section to append in \"{}\".\rHold Ctrl to add several sections."
+msgstr ""
+"「{}」に追加するセクションを選択してください。\rCtrl キーを押しながら選択する"
+"と、複数のセクションを追加できます。"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid ""
+"Close dialog and open user/lexer settings file\rto edit the current option."
+"\rSee also menu command\r   {}"
+msgstr ""
+"ダイアログを閉じ、ユーザー/Lexer の設定ファイルを開いて\r現在のオプションを編"
+"集します。\r次のメニューコマンドも参照してください:\r   {}"
+
+msgid "Create HTML &report"
+msgstr "HTML レポートを作成(&R)"
+
+msgid "CudaText options"
+msgstr "CudaText オプション"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "Default value: \"{}\". Old value: \"{}\""
+msgstr "デフォルト値: \"{}\"。古い値: \"{}\""
+
+msgid "E&dit"
+msgstr "編集(&D)"
+
+msgid "Edit JSON option ({})"
+msgstr "JSON オプション ({}) を編集"
+
+msgid "Edit JSON value"
+msgstr "JSON 値を編集"
+
+msgid "Empty string is allowed"
+msgstr "空の文字列を許可"
+
+msgid "F&ile"
+msgstr "ファイル(&I)"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "File \"{}\""
+msgstr "ファイル \"{}\""
+
+msgid "For:"
+msgstr "対象:"
+
+msgid "Forget layout \"{}\"..."
+msgstr "レイアウト \"{}\" を破棄..."
+
+msgid "Go to \"{}\" in default config file"
+msgstr "デフォルト設定ファイルの \"{}\" へ移動"
+
+msgid "Go to \"{}\" in user/lexer config file"
+msgstr "ユーザー/Lexer 設定ファイルの \"{}\" へ移動"
+
+msgid "Incorrect value. It's needed in format: {}"
+msgstr "値が不正です。次の形式が必要です: {}"
+
+msgid "Instant filtering"
+msgstr "即時フィルタリング"
+
+msgid "Le&xer"
+msgstr "Lexer(&X)"
+
+msgid "Lexer"
+msgstr "Lexer"
+
+msgid "M&ore"
+msgstr "その他(&O)"
+
+msgid "Name \"{}\" already used. Overwrite?"
+msgstr "名前 \"{}\" はすでに使用されています。上書きしますか?"
+
+msgid "Name to save current sizes of the dialog and controls"
+msgstr "ダイアログとコントロールの現在のサイズを保存する名前"
+
+msgid "Need update CudaText"
+msgstr "CudaText のアップデートが必要です"
+
+msgid "No default for option \"{}\""
+msgstr "オプション \"{}\" のデフォルト値はありません"
+
+msgid ""
+"No folder \"{}\" from\n"
+"{}"
+msgstr ""
+"フォルダー \"{}\" が見つかりません (参照元:\n"
+"{})"
+
+msgid "No lexer \"{}\" value for option \"{}\""
+msgstr "オプション \"{}\" に対する Lexer \"{}\" の値はありません"
+
+msgid "No need changes"
+msgstr "変更の必要はありません"
+
+msgid "No user value for option \"{}\""
+msgstr "オプション \"{}\" に対するユーザー値はありません"
+
+msgid "Number of all options"
+msgstr "すべてのオプションの数"
+
+msgid "Number of shown options"
+msgstr "表示されているオプションの数"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Opened browser with file "
+msgstr "ブラウザでファイルを開きました "
+
+msgid "Option"
+msgstr "オプション"
+
+msgid "Remove LEXER {!r} option"
+msgstr "LEXER {!r} オプションを削除"
+
+msgid "Remove USER option"
+msgstr "ユーザーオプションを削除"
+
+msgid "Remove layout \"{}\"?"
+msgstr "レイアウト \"{}\" を削除しますか?"
+
+msgid ""
+"Remove {} option\n"
+"   {} = {!r}\n"
+"?"
+msgstr ""
+"{} オプション\n"
+"   {} = {!r}\n"
+"を削除しますか?"
+
+msgid "Report"
+msgstr "レポート"
+
+msgid "Rese&t"
+msgstr "リセット(&T)"
+
+msgid "Reset sorting"
+msgstr "並べ替えをリセット"
+
+msgid "Restore layout \"{}\""
+msgstr "レイアウト \"{}\" を復元"
+
+msgid "Section"
+msgstr "セクション"
+
+msgid "Send the report to the address"
+msgstr "レポートを指定のアドレスに送信"
+
+msgid "Set &default"
+msgstr "デフォルトを設定(&D)"
+
+msgid "Set FILE option to overridden value {!r}"
+msgstr "ファイルオプションを上書きされた値 {!r} に設定"
+
+msgid "Set FILE option to {!r}"
+msgstr "ファイルオプションを {!r} に設定"
+
+msgid "Set LEXER {!r} option to {!r}"
+msgstr "LEXER {!r} オプションを {!r} に設定"
+
+msgid "Set USER option to {!r}"
+msgstr "ユーザーオプションを {!r} に設定"
+
+msgid "Set default columns &widths"
+msgstr "デフォルトの列幅を設定(&W)"
+
+msgid "Show &all keys in user/lexer configs"
+msgstr "ユーザー/Lexer 設定のすべてのキーを表示(&A)"
+
+msgid "Show rep&ort of changes..."
+msgstr "変更レポートを表示(&O)..."
+
+msgid "Sort by column \"{}\""
+msgstr "列 \"{}\" で並べ替え"
+
+msgid ""
+"Suitable options will contain all specified words.\r Tips and tricks:\r • "
+"Add \"#\" to search the words also in comments.\r • Add \"@sec\" to show "
+"options from section with \"sec\" in name.\r   Several sections are allowed."
+"\r   Click item in menu \"Section...\" with Ctrl to add it.\r • To show only "
+"overridden options:\r   - Add \"!\"   to show only User+Lexer+File.\r   - "
+"Add \"!!\"  to show only Lexer+File\r   - Add \"!!!\" to show only File.\r • "
+"Use \"<\" or \">\" for word boundary.\r     Example: \r       size> "
+"<tab\r     selects \"tab_size\" but not \"ui_tab_size\" or \"tab_size_x\".\r "
+"• Alt+L - Clear filter"
+msgstr ""
+"条件に一致するオプションには、指定されたすべての単語が含まれます。\r ヒントと"
+"コツ:\r • コメント内からも単語を検索するには「#」を追加します。\r • 名前に"
+"「sec」を含むセクションのオプションを表示するには「@sec」を追加します。\r   "
+"複数のセクションを指定できます。\r   メニュー「セクション...」の項目を Ctrl "
+"キーを押しながらクリックすると追加できます。\r • 上書きされたオプションのみを"
+"表示する場合:\r   - 「!」を追加すると、ユーザー+Lexer+ファイルのみを表示しま"
+"す。\r   - 「!!」を追加すると、Lexer+ファイルのみを表示します。\r   - 「!!!」"
+"を追加すると、ファイルのみを表示します。\r • 単語境界には「<」または「>」を使"
+"用します。\r     例:\r       size> <tab\r     これは \"ui_tab_size\" や "
+"\"tab_size_x\" ではなく \"tab_size\" を選択します。\r • Alt+L - フィルターを"
+"クリア"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "_no_"
+msgstr "_いいえ_"
+
+msgid "f&alse"
+msgstr "偽(&A)"
+
+msgid "or post it on"
+msgstr "または以下に投稿"
+
+msgid "t&rue"
+msgstr "真(&R)"
+
+msgid "Сhange log"
+msgstr "変更履歴"

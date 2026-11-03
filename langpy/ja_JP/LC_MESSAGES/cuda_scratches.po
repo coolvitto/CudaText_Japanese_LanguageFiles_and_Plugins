@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_scratches\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cannot create folder 'data/scratches', OS error: {0}"
+msgstr "フォルダー 'data/scratches' を作成できません。OS エラー: {0}"
+
+msgid "Cannot delete: "
+msgstr "削除できません: "
+
+msgid "Do you really want to remove scratch?"
+msgstr "本当にこのスクラッチ(下書き)を削除しますか?"
+
+msgid "List of scratches"
+msgstr "スクラッチ(下書き)一覧"
+
+msgid "New scratch"
+msgstr "新規スクラッチ(下書き)"
+
+msgid "No scratches found"
+msgstr "スクラッチ(下書き)が見つかりません"
+
+msgid "OS error: {0}"
+msgstr "OS エラー: {0}"
+
+msgid "PLAIN TEXT"
+msgstr "プレーンテキスト"
+
+msgid "Remove scratch"
+msgstr "スクラッチ(下書き)を削除"
+
+msgid "Removed scratch: "
+msgstr "スクラッチ(下書き)を削除しました: "

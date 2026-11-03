@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_macros\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:27+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&..."
+msgstr "&..."
+
+msgid "&Cancel playback [ESC]"
+msgstr "再生をキャンセル [Esc](&C)"
+
+msgid "&Delete..."
+msgstr "削除(&D)..."
+
+msgid "&Export"
+msgstr "エクスポート(&E)"
+
+msgid "&Export..."
+msgstr "エクスポート(&E)..."
+
+msgid "&Import"
+msgstr "インポート(&I)"
+
+msgid "&Import..."
+msgstr "インポート(&I)..."
+
+msgid "&Macros"
+msgstr "マクロ(&M)"
+
+msgid "&Macros..."
+msgstr "マクロ(&M)..."
+
+msgid "&Playback last recorded macro"
+msgstr "最後に記録したマクロを再生(&P)"
+
+msgid "&Run!"
+msgstr "実行(&R)!"
+
+msgid "&Start record"
+msgstr "記録開始(&S)"
+
+msgid "&Start/stop recording"
+msgstr "記録の開始/停止(&S)"
+
+msgid "&Stop record"
+msgstr "記録停止(&S)"
+
+msgid "&Times"
+msgstr "回数(&T)"
+
+msgid "&Wait"
+msgstr "待機時間(&W)"
+
+msgid "Ad&just..."
+msgstr "調整(&J)..."
+
+msgid "Canc&el record"
+msgstr "記録をキャンセル(&E)"
+
+msgid "Cancel playback macro: {}"
+msgstr "マクロの再生をキャンセル: {}"
+
+msgid "Check &all"
+msgstr "すべて選択(&A)"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Continue &without control"
+msgstr "確認なしで続行(&W)"
+
+msgid "CudaText macros|*.cuda-macros"
+msgstr "CudaText マクロ|*.cuda-macros"
+
+msgid "CudaText macros|*.cuda-macros|All file|*.*"
+msgstr "CudaText マクロ|*.cuda-macros|すべてのファイル|*.*"
+
+msgid "Custom dialog Macros"
+msgstr "マクロダイアログのカスタマイズ"
+
+msgid ""
+"Delete macro\n"
+"    {}"
+msgstr ""
+"マクロを削除\n"
+"    {}"
+
+msgid "Export &to"
+msgstr "エクスポート先(&T)"
+
+msgid "Export macros"
+msgstr "マクロのエクスポート"
+
+msgid "Height of macro list (min 450)"
+msgstr "マクロリストの高さ (最小 450)"
+
+msgid "Hot&keys..."
+msgstr "ホットキー(&K)..."
+
+msgid "Import &from"
+msgstr "インポート元(&F)"
+
+msgid "Import macros"
+msgstr "マクロのインポート"
+
+msgid "Import macros:"
+msgstr "マクロのインポート:"
+
+msgid "Last macro recording was empty"
+msgstr "最後のマクロ記録は空でした"
+
+msgid "Macro \"{}\" playback time is too long"
+msgstr "マクロ \"{}\" の再生時間が長すぎます"
+
+msgid ""
+"Macro name.\n"
+"Tricks: \"!NM\" overwrites NM, \"=NM\" shows NM in dialog.\n"
+"\"Cancel\" button still allows to run the \"last recorded macro\"."
+msgstr ""
+"マクロ名。\n"
+"裏技: \"!NM\" で NM を上書き、\"=NM\" でダイアログに NM を表示します。\n"
+"「キャンセル」ボタンを押しても「最後に記録したマクロ」は実行可能です。"
+
+msgid "Macro playback"
+msgstr "マクロ再生"
+
+msgid "Macros"
+msgstr "マクロ"
+
+msgid ""
+"Macros from\n"
+"  \"{}\"\n"
+"are recorded in CudaText with version\n"
+"  \"{}\"\n"
+"Your CudaText has older version\n"
+"  \"{}\"\n"
+"\n"
+"No guarantee of correct working!\n"
+"\n"
+"Continue import?"
+msgstr ""
+"\"{}\"\n"
+"からのマクロは CudaText バージョン\n"
+"  \"{}\"\n"
+"で記録されたものです。\n"
+"お使いの CudaText のバージョンは古いものです:\n"
+"  \"{}\"\n"
+"\n"
+"正常に動作しない可能性があります!\n"
+"\n"
+"インポートを続行しますか?"
+
+msgid "Max run times (min 100)"
+msgstr "最大実行回数 (最小 100)"
+
+msgid "Need update CudaText"
+msgstr "CudaText のアップデートが必要です"
+
+msgid "New name for: {}"
+msgstr "{} の新しい名前:"
+
+msgid "No macro was recorded yet"
+msgstr "まだマクロが記録されていません"
+
+msgid "No macros for export"
+msgstr "エクスポートするマクロがありません"
+
+msgid ""
+"No macros in file\n"
+"  {}\n"
+"\n"
+"Choose another file?"
+msgstr ""
+"ファイル内にマクロがありません:\n"
+"  {}\n"
+"\n"
+"別のファイルを選択しますか?"
+
+msgid "No macros: {}"
+msgstr "マクロなし: {}"
+
+msgid "Playback macro"
+msgstr "マクロを再生"
+
+msgid "Re&name..."
+msgstr "名前の変更(&N)..."
+
+msgid "Repeated values in cudatext_cmd.py"
+msgstr "cudatext_cmd.py 内で重複している値があります"
+
+msgid "Select macro"
+msgstr "マクロを選択"
+
+msgid ""
+"Select other name.\n"
+"Macro names now are:\n"
+"\n"
+msgstr ""
+"別の名前を選択してください。\n"
+"現在のマクロ名一覧:\n"
+"\n"
+
+msgid ""
+"Select other name.\n"
+"Macros names now:\n"
+"\n"
+msgstr ""
+"別の名前を選択してください。\n"
+"現在のマクロ名一覧:\n"
+"\n"
+
+msgid "Select some names"
+msgstr "名前を選択してください"
+
+msgid "Select stop condition"
+msgstr "停止条件を選択"
+
+msgid "Show actions"
+msgstr "アクションを表示"
+
+msgid "Skip duplicates:"
+msgstr "重複をスキップ:"
+
+msgid "U&ncheck all"
+msgstr "選択をすべて解除(&N)"
+
+msgid "Until c&aret on last line"
+msgstr "キャレットが最終行に来るまで(&A)"
+
+msgid "Wait &another {} sec"
+msgstr "さらに {} 秒待機(&A)"
+
+msgid "While text c&hanges"
+msgstr "テキストが変更される間(&H)"
+
+msgid "Width of action list (min 200, <=0-hide)"
+msgstr "アクションリストの幅 (最小 200、<=0 で非表示)"
+
+msgid "Width of buttons (min 150)"
+msgstr "ボタンの幅 (最小 150)"
+
+msgid "Width of macro list (min 200)"
+msgstr "マクロリストの幅 (最小 200)"
+
+msgid "sec"
+msgstr "秒"

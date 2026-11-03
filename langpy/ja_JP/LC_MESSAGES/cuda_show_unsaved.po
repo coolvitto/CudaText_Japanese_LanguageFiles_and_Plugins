@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_show_unsaved\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "File is not changed"
+msgstr "ファイルは変更されていません"
+
+msgid "Install {} lexer if you want to see colors."
+msgstr "カラー表示を行うには Lexer {} をインストールしてください。"
+
+msgid "Save as..."
+msgstr "名前を付けて保存..."
+
+msgid "Saved: "
+msgstr "保存完了: "
+
+msgid "Unsaved changes"
+msgstr "未保存の変更内容"

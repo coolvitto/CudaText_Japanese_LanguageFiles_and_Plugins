@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_terminal_plus\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"Console process was terminated.\n"
+msgstr ""
+"\n"
+"コンソールプロセスが終了しました。\n"
+
+msgid "Add terminal for current document (will be ^free for Untitled)"
+msgstr "現在の日付用のターミナルを追加 (無題の場合は ^free となります)"
+
+msgid "Break"
+msgstr "中断"
+
+msgid "By character"
+msgstr "文字単位"
+
+msgid "By word"
+msgstr "単語単位"
+
+msgid "Change icon"
+msgstr "アイコンを変更"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Close all terminals..."
+msgstr "すべてのターミナルを閉じる..."
+
+msgid "Close all terminals?"
+msgstr "すべてのターミナルを閉じますか?"
+
+msgid "CudaText Terminal"
+msgstr "CudaText ターミナル"
+
+msgid "Custom column..."
+msgstr "カスタム列..."
+
+msgid "Custom column: "
+msgstr "カスタム列: "
+
+msgid "Custom column{}..."
+msgstr "カスタム列{}..."
+
+msgid "Document has no teminals: "
+msgstr "ドキュメントにターミナルがありません: "
+
+msgid "Enter command here"
+msgstr "ここにコマンドを入力"
+
+msgid "Execute last command?"
+msgstr "最後のコマンドを実行しますか?"
+
+msgid "Executed: "
+msgstr "実行完了: "
+
+msgid "Hotkeys: Break or Ctrl+C"
+msgstr "ホットキー: Break または Ctrl+C"
+
+msgid "Last command terminal is no longer present"
+msgstr "最後のコマンドを実行したターミナルは既に存在しません"
+
+msgid "No wrap"
+msgstr "折り返しなし"
+
+msgid "Rename Terminal"
+msgstr "ターミナルの名前を変更"
+
+msgid "Rename..."
+msgstr "名前の変更..."
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Terminal opened in floating window"
+msgstr "フローティングウィンドウでターミナルを開きました"
+
+msgid "Terminal wrap"
+msgstr "ターミナルの折り返し"
+
+msgid "Wrap margin position:"
+msgstr "折り返しマージン位置:"

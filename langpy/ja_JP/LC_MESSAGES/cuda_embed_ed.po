@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_embed_ed\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Choose lexer for: {}"
+msgstr "Lexer を選択: {}"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Linked file was not found: {}"
+msgstr "リンクされたファイルが見つかりません: {}"
+
+msgid "NOTE: failed to compile pattern in group \"{}\": {}"
+msgstr "注意: グループ \"{}\" 内のパターンのコンパイルに失敗しました: {}"
+
+msgid "NOTE: invalid \"lexers\" in group: {}. Should be a list"
+msgstr ""
+"注意: グループ内の \"lexers\" が不正です: {}。リスト形式である必要がありま"
+"す"
+
+msgid "NOTE: invalid patterns in group: {}. Should be a list"
+msgstr ""
+"注意: グループ内のパターンが不正です: {}。リスト形式である必要があります"
+
+msgid "NOTE: pattern ({}) in group \"{}\" is missing a named group \"path\":"
+msgstr ""
+"注意: グループ \"{}\" 内のパターン ({}) に名前付きグループ \"path\" があり"
+"ません:"
+
+msgid "No embedded file-path was found"
+msgstr "埋め込まれたファイルパスが見つかりませんでした"
+
+msgid "Opened '{}' in embedded editor, encoding '{}'"
+msgstr "埋め込みエディタで '{}' を開きました (エンコーディング: '{}')"
+
+msgid "Save"
+msgstr "保存"
+
+msgid ""
+"Text is modified:\n"
+"{}\n"
+"\n"
+"Save it first?"
+msgstr ""
+"テキストが変更されています:\n"
+"{}\n"
+"\n"
+"先に保存しますか?"
+
+msgid "To new tab"
+msgstr "新しいタブへ"

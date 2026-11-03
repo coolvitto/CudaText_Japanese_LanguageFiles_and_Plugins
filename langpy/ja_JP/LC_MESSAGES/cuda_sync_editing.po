@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_sync_editing\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cannot find file: "
+msgstr "ファイルが見つかりません: "
+
+msgid "Do you want to cancel Sync Editing mode?"
+msgstr "同期編集モードをキャンセルしますか?"
+
+msgid "Open plugin's readme.txt to read about configuring?"
+msgstr "設定方法について記載されたプラグインの readme.txt を開きますか?"
+
+msgid ""
+"Sync Editing: Cancel? Click somewhere else to cancel, or on ID to continue."
+msgstr ""
+"同期編集: キャンセルしますか?他の場所をクリックするとキャンセル、識別子をク"
+"リックすると続行します。"
+
+msgid "Sync Editing: Cancelled"
+msgstr "同期編集: キャンセルされました"
+
+msgid "Sync Editing: Cannot find IDs in selection"
+msgstr "同期編集: 選択範囲内に識別子が見つかりません"
+
+msgid "Sync Editing: Click on ID to edit it, or somewhere else to cancel"
+msgstr ""
+"同期編集: 識別子をクリックして編集するか、他の場所をクリックしてキャンセルし"
+"てください"
+
+msgid "Sync Editing: Make selection first"
+msgstr "同期編集: 最初に範囲を選択してください"
+
+msgid "Sync Editing: Need several IDs in selection"
+msgstr "同期編集: 選択範囲内に複数の識別子が必要です"
+
+msgid "Sync Editing: Need single caret"
+msgstr "同期編集: 単一キャレットが必要です"
+
+msgid "Sync Editing: Not a word! Click another, or click somewhere else again"
+msgstr ""
+"同期編集: 単語ではありません! 別の単語をクリックするか、もう一度他の場所をク"
+"リックしてください"

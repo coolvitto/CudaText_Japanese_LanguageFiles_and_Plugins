@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_insert_pics\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "\"%s\", %dx%d, line %d"
+msgstr "\"%s\", %dx%d, %d 行"
+
+msgid "Added \"{}\", {}x{}, line {}"
+msgstr "\"{}\", {}x{}, {} 行を追加しました"
+
+msgid "Cannot detect picture sizes"
+msgstr "画像サイズを検出できません"
+
+msgid "Cannot load \"%s\""
+msgstr "\"%s\" を読み込めません"
+
+msgid "Cannot save clipboard to a file: "
+msgstr "クリップボードの内容をファイルに保存できません: "
+
+msgid "Clipboard doesn't contain picture"
+msgstr "クリップボードに画像が含まれていません"
+
+msgid "Loaded %d pics"
+msgstr "%d 個の画像を読み込みました"
+
+msgid "Needed named file"
+msgstr "名前のついたファイルが必要です"
+
+msgid "Picture width is %d. Resize to width:"
+msgstr "画像の幅は %d です。変更後の幅:"
+
+msgid "Pictures"
+msgstr "画像"
+
+msgid "Removed %d pics"
+msgstr "%d 個の画像を削除しました"

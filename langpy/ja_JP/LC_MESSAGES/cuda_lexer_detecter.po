@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_lexer_detecter\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cancel, don't suggest anymore for *.%s"
+msgstr "キャンセル (*.%s については今後提案しない)"
+
+msgid "Could not download/install lexer \"%s\" from add-ons"
+msgstr "アドオンから Lexer \"%s\" をダウンロード/インストールできませんでした"
+
+msgid "Download lexer: "
+msgstr "Lexer をダウンロード: "
+
+msgid "Installed lexer \"%s\", version \"%s\""
+msgstr "Lexer \"%s\" (バージョン \"%s\") をインストールしました"
+
+msgid "Lexer(s) for \"%s\""
+msgstr "\"%s\" 用の Lexer"

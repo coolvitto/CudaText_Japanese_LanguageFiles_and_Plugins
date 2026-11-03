@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_emmet_lite\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Cannot expand Emmet abbreviation: "
+msgstr "Emmet 展開を実行できません: "
+
+msgid "Cannot find Emmet abbreviation"
+msgstr "Emmet の略称が見つかりません"
+
+msgid "Emmet abbreviation:"
+msgstr "Emmet の略称:"
+
+msgid "Expanding: %s (profile %s)"
+msgstr "展開中: %s (プロファイル %s)"
+
+msgid "Opened browser"
+msgstr "ブラウザで開きました"
+
+msgid "Profiles"
+msgstr "プロファイル"
+
+msgid "Text not selected"
+msgstr "テキストが選択されていません"

@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_fmt\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:24+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "(None)"
+msgstr "(なし)"
+
+msgid "Already minified"
+msgstr "既に縮小化されています"
+
+msgid "Cannot copy global config file \"%s\" to local folder"
+msgstr "グローバル設定ファイル \"%s\" をローカルフォルダーにコピーできません"
+
+msgid "Cannot format selection(s)"
+msgstr "選択範囲をフォーマットできません"
+
+msgid "Cannot format text"
+msgstr "テキストをフォーマットできません"
+
+msgid "Cannot handle None-lexer"
+msgstr "Lexer なしの状態は処理できません"
+
+msgid "Cannot handle multi-carets yet"
+msgstr "マルチキャレットはまだサポートしていません"
+
+msgid "Cannot handle none-carets"
+msgstr "キャレットがない状態は処理できません"
+
+msgid "Cannot handle untitled tab"
+msgstr "無題のタブは処理できません"
+
+msgid "Cannot open local config file for untitled tab"
+msgstr "無題のタブのローカル設定ファイルを開けません"
+
+msgid "Cannot open local config for untitled tab"
+msgstr "無題のタブのローカル設定を開けません"
+
+msgid "Column selection is not supported"
+msgstr "列選択はサポートされていません"
+
+msgid "File name does not contain \".\" char"
+msgstr "ファイル名に \".\" (ドット) が含まれていません"
+
+msgid "Formatted entire text"
+msgstr "テキスト全体をフォーマットしました"
+
+msgid "Formatted selection"
+msgstr "選択範囲をフォーマットしました"
+
+msgid "Formatted {} selections"
+msgstr "{} 個の選択範囲をフォーマットしました"
+
+msgid "Formatters"
+msgstr "フォーマッター"
+
+msgid "Formatters cross-lexer labels"
+msgstr "クロス Lexer フォーマッターのラベル"
+
+msgid "Formatters for %s"
+msgstr "%s 用フォーマッター"
+
+msgid "Formatters label \"on_save\""
+msgstr "フォーマッターの \"on_save\" ラベル"
+
+msgid "Formatters per-lexer labels"
+msgstr "Lexer 毎のフォーマッターラベル"
+
+msgid "Formatters: "
+msgstr "フォーマッター: "
+
+msgid "Global config file \"%s\" not found"
+msgstr "グローバル設定ファイル \"%s\" が見つかりません"
+
+msgid "Label for \"%s\""
+msgstr "\"%s\" 用のラベル"
+
+msgid ""
+"Local config file \"%s\" not found.\n"
+"Do you want to create it?"
+msgstr ""
+"ローカル設定ファイル \"%s\" が見つかりません。\n"
+"作成しますか?"
+
+msgid "Minified to \"%s\""
+msgstr "\"%s\" に縮小化しました"
+
+msgid "No configurable formatters"
+msgstr "設定可能なフォーマッターはありません"
+
+msgid "No cross-lexer formatter with label \"{}\""
+msgstr "ラベル \"{}\" のクロス Lexer フォーマッターはありません"
+
+msgid "No formatter for \"{}\" with label \"{}\""
+msgstr "\"{}\" 用のフォーマッターはありません(ラベル \"{}\" で)"
+
+msgid "No formatters for \"%s\""
+msgstr "\"%s\" 用のフォーマッターはありません"
+
+msgid "No lexer active"
+msgstr "アクティブな Lexer がありません"
+
+msgid "No minifier for \"%s\""
+msgstr "\"%s\" 用の Minifier はありません"
+
+msgid "Selection overlaps sub-lexer block: \"{}\"/\"{}\""
+msgstr "選択範囲がサブ Lexer ブロックに重複しています: \"{}\"/\"{}\""
+
+msgid "Text is already formatted"
+msgstr "テキストは既にフォーマットされています"

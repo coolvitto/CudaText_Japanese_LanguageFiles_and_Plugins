@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_runner\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "\"target\" option is not supported"
+msgstr "\"target\" オプションはサポートされていません"
+
+msgid "-- Canceled"
+msgstr "-- キャンセルされました"
+
+msgid "-- Command: ${shell_cmd:${cmd}}"
+msgstr "-- コマンド: ${shell_cmd:${cmd}}"
+
+msgid "-- Done (${duration}s), return code: ${return_code}"
+msgstr "-- 完了 (${duration} 秒), 終了コード: ${return_code}"
+
+msgid "-- Working dir: ${working_dir}"
+msgstr "-- 作業ディレクトリ: ${working_dir}"
+
+msgid "-- [${start_time}] Building: ${build_name}: ${file_name}"
+msgstr "-- [${start_time}] ビルド中: ${build_name}: ${file_name}"
+
+msgid "Build"
+msgstr "ビルド"
+
+msgid "Build with..."
+msgstr "形式を指定してビルド..."
+
+msgid "Choose build-system for lexer: "
+msgstr "Lexer のビルドシステムを選択: "
+
+msgid "Choose extention for association"
+msgstr "関連付ける拡張子を選択"
+
+msgid "Fail running: {}"
+msgstr "実行失敗: {}"
+
+msgid "Failed to load build-system \"{}\": {}: {}"
+msgstr "ビルドシステム \"{}\" の読み込みに失敗しました: {}: {}"
+
+msgid "Failed to run command \"{}\" in build-system \"{}\""
+msgstr "ビルドシステム \"{}\" でコマンド \"{}\" の実行に失敗しました"
+
+msgid "Failed to save document: {}; Cancelling build"
+msgstr "ドキュメントの保存に失敗しました: {}; ビルドをキャンセルします"
+
+msgid "Json Error"
+msgstr "JSON エラー"
+
+msgid "No build-system(s) found for file "
+msgstr "ファイルに対応するビルドシステムが見つかりません "
+
+msgid "No build-system(s) found for lexer "
+msgstr "Lexer に対応するビルドシステムが見つかりません "
+
+msgid "No builds done yet"
+msgstr "まだビルドが実行されていません"
+
+msgid "No command \"{}\" in build-system \"{}\""
+msgstr "ビルドシステム \"{}\" 内にコマンド \"{}\" がありません"
+
+msgid "No newer build log present: {}/{}"
+msgstr "これより新しいビルドログはありません: {}/{}"
+
+msgid "No older build log present: {}/{}"
+msgstr "これより古いビルドログはありません: {}/{}"
+
+msgid "No such build-system: "
+msgstr "該当するビルドシステムがありません: "
+
+msgid "No such command: "
+msgstr "該当するコマンドがありません: "
+
+msgid "Note: build-system is expecting a Project to be opened"
+msgstr "注意: ビルドシステムはプロジェクトが開かれていることを前提としています"
+
+msgid "Running: \"{}\""
+msgstr "実行中: \"{}\""
+
+msgid "Save document to disk before building"
+msgstr "ビルドする前にドキュメントをディスクに保存してください"
+
+msgid "Showing build log: {}/{}"
+msgstr "ビルドログを表示中: {}/{}"

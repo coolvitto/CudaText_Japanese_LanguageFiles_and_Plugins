@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_hilite_occurrences\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:25+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "(partial)"
+msgstr "(部分一致)"
+
+msgid ""
+"Average length of line. If document has lot of longer lines, it will "
+"fallback to highlight only visible matches."
+msgstr ""
+"平均行長。ドキュメントに長い行が多く含まれる場合は、可視範囲の該当箇所のみを"
+"ハイライト表示する処理にフォールバックします。"
+
+msgid "Element of syntax-theme, which color is used for other found matches"
+msgstr "他に見つかった該当箇所に使用する構文テーマの要素色"
+
+msgid "Element of syntax-theme, which color is used for word under caret"
+msgstr "キャレット下の単語に使用する構文テーマの要素色"
+
+msgid "Has higher priority than option 'lexers_allowed'."
+msgstr "'lexers_allowed' オプションよりも優先されます。"
+
+msgid "Highlight Occurrences options"
+msgstr "該当箇所のハイライト - オプション"
+
+msgid ""
+"If not empty, then plugin is active only for mentioned lexers. Comma-"
+"separated list."
+msgstr ""
+"空でない場合、プラグインは指定された Lexer でのみ有効になります (コンマ区切"
+"りリスト)。"
+
+msgid ""
+"If not empty, then plugin is disabled for mentioned lexers. Comma-separated "
+"list."
+msgstr ""
+"空でない場合、プラグインは指定された Lexer で無効になります (コンマ区切りリ"
+"スト)。"
+
+msgid "Mark occurrences of selected text ignores 'min_len' option"
+msgstr ""
+"選択テキストの該当箇所をマークする際、'min_len' オプションを無視します"
+
+msgid "Matches highlighted:"
+msgstr "ハイライト表示された該当箇所:"
+
+msgid "Matches selected: {}"
+msgstr "選択された該当箇所: {}"
+
+msgid "Maximal count of selected lines, which plugin can handle"
+msgstr "プラグインが処理できる選択行の最大数"
+
+msgid ""
+"Maximal length of lines, which will be handled by plugin (plugin will skip "
+"longer lines)"
+msgstr "プラグインが処理する行の最大長 (これより長い行はスキップされます)"
+
+msgid "Maximal number of lines in document, when plugin is still active"
+msgstr "プラグインがアクティブに動作するドキュメントの最大行数"
+
+msgid "Maximal time in milliseconds, to count chars in the document"
+msgstr "ドキュメント内の文字数をカウントする最大時間 (ミリ秒)"
+
+msgid "Minimal length of fragment to handle"
+msgstr "処理対象とするフラグメントの最小長"
+
+msgid "None-lexer must be written as '-'."
+msgstr "'None-lexer' (Lexer なし) は '-' と記述する必要があります。"
+
+msgid "Plugin handles current selection (on selection changing)"
+msgstr "現在の選択範囲を処理 (選択変更時)"
+
+msgid "Plugin handles selection only when it is whole word"
+msgstr "単語全体が選択されている場合のみ処理"
+
+msgid "Plugin handles word under caret (on caret moving)"
+msgstr "キャレット下の単語を処理 (キャレット移動時)"
+
+msgid "Search for selection finds whole words only"
+msgstr "選択テキストの検索で単語全体のみにマッチ"
+
+msgid "Search for selection is case-sensitive"
+msgstr "選択テキストの検索で大文字/小文字を区別"
+
+msgid "Search for word under caret finds whole words only"
+msgstr "キャレット下の単語の検索で単語全体のみにマッチ"
+
+msgid "Search for word under caret is case-sensitive"
+msgstr "キャレット下の単語の検索で大文字/小文字を区別"
+
+msgid "Use also whitespace in selection, otherwise trim it"
+msgstr "選択範囲内の空白文字も含める (オフの場合はトリム)"
+
+msgid ""
+"When text is over max_lines - fallback to highlighting only in visible text"
+msgstr ""
+"テキストが max_lines を超える場合、表示されているテキストのみのハイライトに"
+"フォールバックします"

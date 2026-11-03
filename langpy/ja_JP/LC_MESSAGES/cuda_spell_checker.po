@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_spell_checker\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&Add"
+msgstr "追加(&A)"
+
+msgid "&Change"
+msgstr "変更(&C)"
+
+msgid "&Ignore"
+msgstr "無視(&I)"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "C&ustom text:"
+msgstr "カスタムテキスト(&U):"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot go to next/prev"
+msgstr "次/前に移動できません"
+
+msgid "Caret not on word-char"
+msgstr "キャレット位置が単語構成文字上にありません"
+
+msgid "Configure events"
+msgstr "イベントの設定"
+
+msgid "Go to misspelled: {}:{}"
+msgstr "スペルミスへ移動: {}:{}"
+
+msgid "Handle event \"on_change_slow\" (editing of file + pause)"
+msgstr "イベント \"on_change_slow\" を処理 (ファイル編集後の一定時間停止時)"
+
+msgid "Handle event \"on_open\" (opening of a file)"
+msgstr "イベント \"on_open\" を処理 (ファイルを開いた時)"
+
+msgid "Misspelled word"
+msgstr "スペルミスのある単語"
+
+msgid "No suggestions found"
+msgstr "修正候補が見つかりません"
+
+msgid "Not found:"
+msgstr "見つかりません:"
+
+msgid "Not text-word under caret"
+msgstr "キャレット位置に単語がありません"
+
+msgid "Select dictionary"
+msgstr "辞書の選択"
+
+msgid "Settings will take effect after CudaText restart."
+msgstr "設定は CudaText の再起動後に有効になります。"
+
+msgid ""
+"So you need to re-configure these options each time you update Spell Checker "
+"plugin."
+msgstr ""
+"そのため、Spell Checker プラグインを更新するたびにこれらのオプションを再設定"
+"する必要があります。"
+
+msgid "Spell check: {}, {}, {} mistake(s), {} replace(s)"
+msgstr "スペルチェック: {}、{}、スペルミス {} 件、置換 {} 件"
+
+msgid "Spell-checking stopped"
+msgstr "スペルチェックを停止しました"
+
+msgid "Spell-checking: %2d%%"
+msgstr "スペルチェック中: %2d%%"
+
+msgid "Spelling"
+msgstr "スペルチェック"
+
+msgid "Stop the spell-checking?"
+msgstr "スペルチェックを停止しますか?"
+
+msgid "Su&ggestions:"
+msgstr "候補(&G):"
+
+msgid ""
+"To not slow down CudaText when events are off, plugin saves these settings "
+"to install.inf file."
+msgstr ""
+"イベントが無効な際に CudaText の動作が重くなるのを防ぐため、プラグインはこれ"
+"らの設定を install.inf ファイルに保存します。"
+
+msgid "Word misspelled: \"%s\""
+msgstr "スペルミスのある単語: \"%s\""
+
+msgid "Word ok: \"%s\""
+msgstr "正しい単語: \"%s\""
+
+msgid "all text"
+msgstr "テキスト全体"
+
+msgid "selection only"
+msgstr "選択範囲のみ"

@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_cmd_history\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:21+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Commands history"
+msgstr "コマンド履歴"
+
+msgid "NOTE: Command history: command is missing - {!r}"
+msgstr "注意: コマンド履歴: コマンドが見つかりません - {!r}"
+
+msgid "Unnamed command: "
+msgstr "名前のないコマンド: "

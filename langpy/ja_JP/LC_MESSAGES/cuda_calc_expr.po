@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_calc_expr\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:21+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "[Calc Expression] "
+msgstr "[数式計算] "
+
+msgid "[Calc Expression] Calculated to: %s"
+msgstr "[数式計算] 計算結果: %s"
+
+msgid "[Calc Expression] Multi-carets not supported"
+msgstr "[数式計算] マルチキャレットはサポートされていません"
+
+msgid "[Calc Expression] Not a number result"
+msgstr "[数式計算] 数値以外の結果です"
+
+msgid "[Calc Expression] Replaced to: %s"
+msgstr "[数式計算] 置換後: %s"
+
+msgid "[Calc Expression] Result: %s"
+msgstr "[数式計算] 結果: %s"

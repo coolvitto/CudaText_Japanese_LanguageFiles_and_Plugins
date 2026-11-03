@@ -1,0 +1,373 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_addon_man\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:19+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"Errors occurred, see Python console"
+msgstr ""
+"\n"
+"エラーが発生しました。Python コンソールを確認してください"
+
+msgid "  Error running Git"
+msgstr "  Git の実行エラー"
+
+msgid "  Update failed: [{}] {}"
+msgstr "  更新失敗: [{}] {}"
+
+msgid "  cached:"
+msgstr "  キャッシュ済み:"
+
+msgid "  getting:"
+msgstr "  取得中:"
+
+msgid "&Default channels:"
+msgstr "デフォルトチャンネル(&D):"
+
+msgid "&Git repository URL:"
+msgstr "&Git リポジトリ URL:"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Proxy (HTTP or SOCKS5), e.g. http://proxy.myserver.com:2010"
+msgstr "プロキシ(&P) (HTTP または SOCKS5), 例: http://proxy.myserver.com:2010"
+
+msgid "&User channels:"
+msgstr "ユーザーチャンネル(&U):"
+
+msgid "(got {} of {} files)"
+msgstr "({} / {} ファイルを取得しました)"
+
+msgid ", with %d fail(s)"
+msgstr "(失敗: %d 件)"
+
+msgid ": view history"
+msgstr ": 変更履歴を表示"
+
+msgid ": view readme"
+msgstr ": Readme を表示"
+
+msgid ""
+"Add-on \"{}\" requires:\n"
+"\n"
+"{}\n"
+"\n"
+"Requirements will be auto-installed. Proceed?"
+msgstr ""
+"アドオン \"{}\" には以下が必要です:\n"
+"\n"
+"{}\n"
+"\n"
+"必要なコンポーネントは自動的にインストールされます。続行しますか?"
+
+msgid "Addon Manager"
+msgstr "アドオンマネージャー"
+
+msgid "Addon installed"
+msgstr "アドオンがインストールされました"
+
+msgid "Addons Manager options"
+msgstr "アドオンマネージャーの設定"
+
+msgid "Available=125"
+msgstr "利用可能=125"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot create dir: "
+msgstr "ディレクトリを作成できません: "
+
+msgid "Cannot download file"
+msgstr "ファイルをダウンロードできません"
+
+msgid "Cannot download file: "
+msgstr "ファイルをダウンロードできません: "
+
+msgid "Cannot download list"
+msgstr "リストをダウンロードできません"
+
+msgid "Cannot download zip file"
+msgstr "ZIP ファイルをダウンロードできません"
+
+msgid ""
+"Cannot download:\n"
+"{}\n"
+"{}\n"
+"\n"
+"Retry?"
+msgstr ""
+"ダウンロードできません:\n"
+"{}\n"
+"{}\n"
+"\n"
+"再試行しますか?"
+
+msgid "Cannot download: "
+msgstr "ダウンロードできません: "
+
+msgid "Cannot find app version: "
+msgstr "アプリのバージョンが見つかりません: "
+
+msgid "Cannot find download links"
+msgstr "ダウンロードリンクが見つかりません"
+
+msgid "Cannot find links: "
+msgstr "リンクが見つかりません: "
+
+msgid ""
+"Cannot install add-on due to mismatch:\n"
+" 1) install.inf \"module\":\n"
+"{}\n"
+" 2) repo name:\n"
+"{}"
+msgstr ""
+"不一致のためアドオンをインストールできません:\n"
+" 1) install.inf \"module\":\n"
+"{}\n"
+" 2) リポジトリ名:\n"
+"{}"
+
+msgid ""
+"Cannot parse JSON file:\n"
+"{}\n"
+"{}"
+msgstr ""
+"JSON ファイルを解析できません:\n"
+"{}\n"
+"{}"
+
+msgid "Cannot read GitHub list of branches for that repo"
+msgstr "このリポジトリの GitHub ブランチリストを読み込めません"
+
+msgid "Cannot remove folder:\n"
+msgstr "フォルダーを削除できません:\n"
+
+msgid "Category"
+msgstr "カテゴリ"
+
+msgid "Check for updates"
+msgstr "更新の確認"
+
+msgid "Clone repo"
+msgstr "リポジトリをクローン"
+
+msgid "Could not clone the repo"
+msgstr "リポジトリをクローンできませんでした"
+
+msgid ""
+"CudaText update is available.\n"
+"\n"
+"Local: {}\n"
+"Internet: {}"
+msgstr ""
+"CudaText のアップデートが利用可能です。\n"
+"\n"
+"ローカル: {}\n"
+"最新(オンライン): {}"
+
+msgid "Deselect all"
+msgstr "すべての選択を解除"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Download add-ons"
+msgstr "アドオンをダウンロード"
+
+msgid "Download as zip"
+msgstr "ZIP としてダウンロード"
+
+msgid "Download complete"
+msgstr "ダウンロード完了"
+
+msgid "Download stopped "
+msgstr "ダウンロードが停止しました "
+
+msgid "Downloading list..."
+msgstr "リストをダウンロード中..."
+
+msgid "Downloading..."
+msgstr "ダウンロード中..."
+
+msgid "Downloading: "
+msgstr "ダウンロード中: "
+
+msgid "Downloading: {}/{}"
+msgstr "ダウンロード中: {}/{}"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Error running Git"
+msgstr "Git の実行エラー"
+
+msgid "Error running Git command"
+msgstr "Git コマンドの実行エラー"
+
+msgid "Folder to save files:"
+msgstr "ファイルの保存先フォルダー:"
+
+msgid "Folder=180"
+msgstr "フォルダー=180"
+
+msgid "Found last version: "
+msgstr "最新バージョンが見つかりました: "
+
+msgid "Found links:"
+msgstr "見つかったリンク:"
+
+msgid "Git branches in repo"
+msgstr "リポジトリ内の Git ブランチ"
+
+msgid ""
+"GitHub repository branch \"%s\" doesn't contain valid \"install.inf\" file. "
+"Cannot proceed."
+msgstr ""
+"GitHub リポジトリのブランチ \"%s\" に有効な \"install.inf\" ファイルが含まれ"
+"ていません。処理を続行できません。"
+
+msgid ""
+"GitHub repository can be cloned (using \"git clone\") or can be downloaded "
+"as zip file.  If you clone, Addon Manager's Update dialog will update add-on "
+"using \"git pull\", which is recommended."
+msgstr ""
+"GitHub リポジトリは(\"git clone\" を使用して)クローンするか、ZIP ファイルとし"
+"てダウンロードできます。クローンした場合、アドオンマネージャーの更新ダイアロ"
+"グは \"git pull\" を使用してアドオンを更新するため、クローンを推奨します。"
+
+msgid "Got empty list of Git branches for that repo"
+msgstr "このリポジトリの Git ブランチリストが空でした"
+
+msgid "Install"
+msgstr "インストール"
+
+msgid "Install from Git"
+msgstr "Git からインストール"
+
+msgid "Install: show &confirmation and report"
+msgstr "インストール: 確認メッセージとレポートを表示する(&C)"
+
+msgid "Install: suggest &readme after"
+msgstr "インストール: 完了後に Readme の表示を提案する(&R)"
+
+msgid "Installation cancelled"
+msgstr "インストールがキャンセルされました"
+
+msgid ""
+"Latest CudaText is already here.\n"
+"\n"
+"Local: {}\n"
+"Internet: {}"
+msgstr ""
+"既に最新版の CudaText が使用されています。\n"
+"\n"
+"ローカル: {}\n"
+"最新(オンライン): {}"
+
+msgid "Local=125"
+msgstr "ローカル=125"
+
+msgid "Name=260"
+msgstr "名前=260"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Open changelog"
+msgstr "変更履歴を開く"
+
+msgid "Open download link"
+msgstr "ダウンロードリンクを開く"
+
+msgid "Open history"
+msgstr "history.txt を開く"
+
+msgid "Open readme"
+msgstr "readme.txt を開く"
+
+msgid "Opened browser: "
+msgstr "ブラウザを開きました: "
+
+msgid "Opened changelog link"
+msgstr "変更履歴のリンクを開きました"
+
+msgid "Opened download link"
+msgstr "ダウンロードリンクを開きました"
+
+msgid "Opened: "
+msgstr "開きました: "
+
+msgid "Plugin \"%s\" doesn't have \"homepage\" field in install.inf"
+msgstr ""
+"プラグイン \"%s\" の install.inf に \"homepage\" フィールドがありません"
+
+msgid "Plugin \"%s\" doesn't have history"
+msgstr "プラグイン \"%s\" には history.txt がありません"
+
+msgid "Plugin \"%s\" doesn't have readme"
+msgstr "プラグイン \"%s\" には readme.txt がありません"
+
+msgid "Read channels:"
+msgstr "読み込みチャンネル:"
+
+msgid "Readme"
+msgstr "Readme"
+
+msgid "Remove add-on"
+msgstr "アドオンを削除"
+
+msgid "Remove {}: {}"
+msgstr "削除中 {}: {}"
+
+msgid "Removed, restart program to see changes"
+msgstr "削除しました。変更を反映するにはプログラムを再起動してください"
+
+msgid ""
+"Repo was cloned.\n"
+"Restart CudaText to make this plugin visible."
+msgstr ""
+"リポジトリがクローンされました。\n"
+"このプラグインを有効にするには CudaText を再起動してください。"
+
+msgid "Running \"git pull\" in \"%s\""
+msgstr "\"%s\" で \"git pull\" を実行中"
+
+msgid "Select new"
+msgstr "新しいものを選択"
+
+msgid "Show download links"
+msgstr "ダウンロードリンクを表示"
+
+msgid "This repository is already cloned to your \"py\" folder, cannot proceed"
+msgstr ""
+"このリポジトリは既に \"py\" フォルダーにクローンされているため、処理を続行で"
+"きません"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Update add-ons"
+msgstr "アドオンを更新"
+
+msgid "Updating addons:"
+msgstr "アドオンの更新中:"
+
+msgid "Updating: [{}] {}"
+msgstr "更新中: [{}] {}"
+
+msgid "Verify HTTPS certificates"
+msgstr "HTTPS 証明書を検証する"
+
+msgid "Visit homepage"
+msgstr "ホームページを開く"

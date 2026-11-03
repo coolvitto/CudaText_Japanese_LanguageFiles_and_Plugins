@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_ftp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:25+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"Name taken: {}"
+msgstr ""
+"\n"
+"名前が既に使用されています: {}"
+
+msgid "&Cancel"
+msgstr "キャンセル(&C)"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "Ask password every time"
+msgstr "毎回パスワードを要求する"
+
+msgid "Authentication"
+msgstr "認証"
+
+msgid "Backup..."
+msgstr "バックアップ..."
+
+msgid "Backup: "
+msgstr "バックアップ: "
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot find server with label \"{}\""
+msgstr "ラベル \"{}\" のサーバーが見つかりません"
+
+msgid "Choose file..."
+msgstr "ファイルを選択..."
+
+msgid "Choose private key file"
+msgstr "秘密鍵ファイルを選択"
+
+msgid "Connect to server"
+msgstr "サーバーに接続"
+
+msgid "Connect to: "
+msgstr "接続先: "
+
+msgid "Copy link"
+msgstr "リンクをコピー"
+
+msgid "Copy path"
+msgstr "パスをコピー"
+
+msgid "Default anonymous login"
+msgstr "デフォルトの匿名ログイン"
+
+msgid "Directory name:"
+msgstr "ディレクトリ名:"
+
+msgid "Do you really want to remove directory?"
+msgstr "本当にディレクトリを削除しますか?"
+
+msgid "Do you really want to remove file?"
+msgstr "本当にファイルを削除しますか?"
+
+msgid "Do you really want to remove server?"
+msgstr "本当にサーバーを削除しますか?"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Downloading '{}': {} Kbytes"
+msgstr "'{}' をダウンロード中: {} KB"
+
+msgid "Edit server..."
+msgstr "サーバーを編集..."
+
+msgid "Enter private key passphrase:"
+msgstr "秘密鍵のパスフレーズを入力:"
+
+msgid "Error: file not found on server!"
+msgstr "エラー: サーバー上にファイルが見つかりません!"
+
+msgid "FTP Log"
+msgstr "FTP ログ"
+
+msgid "FTP new directory"
+msgstr "FTP 新規ディレクトリ"
+
+msgid "FTP new file"
+msgstr "FTP 新規ファイル"
+
+msgid "FTP server info"
+msgstr "FTP サーバー情報"
+
+msgid "File downloaded to: "
+msgstr "ファイルのダウンロード先: "
+
+msgid "File name:"
+msgstr "ファイル名:"
+
+msgid "Fill the Host field"
+msgstr "ホスト欄を入力してください"
+
+msgid "Fill the Username field"
+msgstr "ユーザー名欄を入力してください"
+
+msgid ""
+"First connection to this host.\n"
+"Accept host's certificate?\n"
+"\n"
+msgstr ""
+"このホストへの初回接続です。\n"
+"ホストの証明書を受け入れますか?\n"
+"\n"
+
+msgid "Get properties"
+msgstr "プロパティを取得"
+
+msgid "Go to dir..."
+msgstr "ディレクトリへ移動..."
+
+msgid "Go to directory"
+msgstr "ディレクトリへ移動"
+
+msgid "Go to file"
+msgstr "ファイルへ移動"
+
+msgid "Go to file..."
+msgstr "ファイルへ移動..."
+
+msgid "History"
+msgstr "履歴"
+
+msgid "History..."
+msgstr "履歴..."
+
+msgid ""
+"Host's certificate changed! Proceed?\n"
+"\n"
+msgstr ""
+"ホストの証明書が変更されました! 続行しますか?\n"
+"\n"
+
+msgid "Host: "
+msgstr "ホスト: "
+
+msgid "In OpenSSH format, not .ppk"
+msgstr ".ppk 形式ではなく OpenSSH 形式"
+
+msgid "Initial remote dir: "
+msgstr "リモートの初期ディレクトリ: "
+
+msgid "Label (for menu): "
+msgstr "ラベル (メニュー用): "
+
+msgid "Link copied to clipboard: "
+msgstr "リンクをクリップボードにコピーしました: "
+
+msgid "Misc"
+msgstr "その他"
+
+msgid "Modification: "
+msgstr "更新日時: "
+
+msgid "New dir..."
+msgstr "新規ディレクトリ..."
+
+msgid "New file..."
+msgstr "新規ファイル..."
+
+msgid "New server"
+msgstr "新規サーバー"
+
+msgid "New server..."
+msgstr "新規サーバー..."
+
+msgid "No history found"
+msgstr "履歴が見つかりません"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Password for {}:"
+msgstr "{} のパスワード:"
+
+msgid "Password: "
+msgstr "パスワード: "
+
+msgid "Path:"
+msgstr "パス:"
+
+msgid "Permissions: "
+msgstr "権限: "
+
+msgid "Please install 'Paramiko' library for SFTP support"
+msgstr "SFTP サポートには 'Paramiko' ライブラリをインストールしてください"
+
+msgid "Port: "
+msgstr "ポート: "
+
+msgid "Refresh"
+msgstr "更新"
+
+msgid "Remove"
+msgstr "削除"
+
+msgid "Remove server"
+msgstr "サーバーを削除"
+
+msgid "Remove..."
+msgstr "削除..."
+
+msgid "Removing ftp dir: "
+msgstr "FTP ディレクトリを削除中: "
+
+msgid "Removing ftp file: "
+msgstr "FTP ファイルを削除中: "
+
+msgid "Rename"
+msgstr "名前の変更"
+
+msgid "Rename server..."
+msgstr "サーバー名を変更..."
+
+msgid "Rename server: {}"
+msgstr "サーバー名を変更: {}"
+
+msgid "Rename..."
+msgstr "名前の変更..."
+
+msgid "Rename: "
+msgstr "名前の変更: "
+
+msgid "Server"
+msgstr "サーバー"
+
+msgid "Server Type: "
+msgstr "サーバーの種類: "
+
+msgid "Size: "
+msgstr "サイズ: "
+
+msgid "Timeout (seconds): "
+msgstr "タイムアウト (秒): "
+
+msgid "Upload here..."
+msgstr "ここにアップロード..."
+
+msgid "Use old LIST command"
+msgstr "旧式の LIST コマンドを使用"
+
+msgid "Username: "
+msgstr "ユーザー名: "
+
+msgid ""
+"You chose a private key in the PuTTYgen format,\n"
+"which is not supported.\n"
+"You need to convert it to the OpenSSH format first.\n"
+"PuTTYgen can accomplish that."
+msgstr ""
+"PuTTYgen 形式の秘密鍵が選択されていますが、\n"
+"この形式はサポートされていません。\n"
+"あらかじめ OpenSSH 形式に変換する必要があります。\n"
+"PuTTYgen を使用して変換できます。"
+
+msgid "or Private key: "
+msgstr "または秘密鍵: "
+
+msgid "today "
+msgstr "今日 "

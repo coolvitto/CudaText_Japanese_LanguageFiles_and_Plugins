@@ -1,0 +1,853 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_exttools\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"Delete with joined tool(s)\n"
+"   "
+msgstr ""
+"\n"
+"結合されたツールと一緒に削除\n"
+"   "
+
+msgid "&Add..."
+msgstr "追加(&A)..."
+
+msgid "&Assign tool"
+msgstr "ツールを割り当て(&A)"
+
+msgid "&Break link"
+msgstr "リンクを解除(&B)"
+
+msgid "&Browse..."
+msgstr "参照(&B)..."
+
+msgid "&Call"
+msgstr "呼び出し(&C)"
+
+msgid "&Capture output:"
+msgstr "出力をキャプチャ(&C):"
+
+msgid "&Close"
+msgstr "閉じる(&C)"
+
+msgid "&Comment:"
+msgstr "コメント(&C):"
+
+msgid "&Delete..."
+msgstr "削除(&D)..."
+
+msgid "&Down"
+msgstr "下へ(&D)"
+
+msgid "&Edit..."
+msgstr "編集(&E)..."
+
+msgid "&File name:"
+msgstr "ファイル名(&F):"
+
+msgid "&Initial folder:"
+msgstr "初期フォルダー(&I):"
+
+msgid "&Lexer  >>>  main tool"
+msgstr "lexer  >>>  メインツール(&L)"
+
+msgid "&Macro..."
+msgstr "マクロ(&M)..."
+
+msgid "&Name:"
+msgstr "名前(&N):"
+
+msgid "&Next tool result"
+msgstr "次のツールの結果(&N)"
+
+msgid "&Parameters:"
+msgstr "パラメータ(&P):"
+
+msgid "&Previous tool result"
+msgstr "前のツールの結果(&P)"
+
+msgid "&Regular expression:"
+msgstr "正規表現(&R):"
+
+msgid "&Save"
+msgstr "保存(&S)"
+
+msgid "&Save as preset..."
+msgstr "プリセットとして保存(&S)..."
+
+msgid "&Select..."
+msgstr "選択(&S)..."
+
+msgid "&Shell command"
+msgstr "シェルコマンド(&S)"
+
+msgid "&Test"
+msgstr "テスト(&T)"
+
+msgid "&Tools"
+msgstr "ツール(&T)"
+
+msgid "&Tools ({})"
+msgstr "ツール ({})(&T)"
+
+msgid "&URL:"
+msgstr "&URL:"
+
+msgid "&URLs ({})"
+msgstr "&URLs ({})"
+
+msgid "&Up"
+msgstr "上へ(&U)"
+
+msgid "&Vars"
+msgstr "変数(&V)"
+
+msgid "(Int, Default=4) Interpret output symbol TAB as \"N spaces\"."
+msgstr ""
+"(整数、デフォルト=4) 出力のタブ記号を「N 個のスペース」として解釈します。"
+
+msgid "A&dd..."
+msgstr "追加(&D)..."
+
+msgid "Ad&just..."
+msgstr "調整(&J)..."
+
+msgid "Add &dir..."
+msgstr "フォルダーを追加(&D)..."
+
+msgid "Add &file..."
+msgstr "ファイルを追加(&F)..."
+
+msgid "Add &var..."
+msgstr "変数を追加(&V)..."
+
+msgid "Adjust vertical alignments"
+msgstr "垂直方向の配置を調整"
+
+msgid "Advanced properties"
+msgstr "詳細プロパティ"
+
+msgid "Advanced:"
+msgstr "詳細:"
+
+msgid "All documents"
+msgstr "すべてのドキュメント"
+
+msgid "Append named group"
+msgstr "名前付きグループを追加"
+
+msgid ""
+"Apply the fittings to controls of all dialogs.\rCtrl+Click  - Show data to "
+"mail report."
+msgstr ""
+"すべてのダイアログのコントロールに設定を適用します。\rCtrl+クリック - メール"
+"報告用のデータを表示します。"
+
+msgid "B&rowse..."
+msgstr "参照(&R)..."
+
+msgid "Baltic languages"
+msgstr "バルト諸語"
+
+msgid "Bulgarian, Belarusian, Macedonian, Russian, Serbian"
+msgstr "ブルガリア語、ベラルーシ語、マケドニア語、ロシア語、セルビア語"
+
+msgid "Canadian"
+msgstr "カナダ"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cancel running tool \"{}\""
+msgstr "実行中のツール \"{}\" をキャンセル"
+
+msgid "Cannot open URL \"{}\" for untitled tab, because of macro \"{}\""
+msgstr "マクロ \"{}\" のため、無題のタブの URL \"{}\" を開けません"
+
+msgid "Cannot open: {}"
+msgstr "開けません: {}"
+
+msgid "Cannot run \"{}\" for untitled tab, because of macro \"{}\""
+msgstr "マクロ \"{}\" のため、無題のタブで \"{}\" を実行できません"
+
+msgid "Capture"
+msgstr "キャプチャ"
+
+msgid "Celtic languages"
+msgstr "ケルト諸語"
+
+msgid "Central and Eastern Europe"
+msgstr "中央および東ヨーロッパ"
+
+msgid "Change this dialog sizes\rCtrl+Click - Restore default values"
+msgstr "このダイアログのサイズを変更\rCtrl+クリック - デフォルト値を復元"
+
+msgid "Clo&ne"
+msgstr "複製(&N)"
+
+msgid "Clo&ne..."
+msgstr "複製(&N)..."
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Column:"
+msgstr "列:"
+
+msgid "Comment"
+msgstr "コメント"
+
+msgid "Comment: {}"
+msgstr "コメント: {}"
+
+msgid "Con&fig..."
+msgstr "設定(&F)..."
+
+msgid "Console"
+msgstr "コンソール"
+
+msgid "Copy to clipboard"
+msgstr "クリップボードにコピー"
+
+msgid "Copy to new document"
+msgstr "新しいドキュメントにコピー"
+
+msgid "Copy to new document, group 1"
+msgstr "新しいドキュメントにコピー (グループ 1)"
+
+msgid "Copy to new document, group 2"
+msgstr "新しいドキュメントにコピー (グループ 2)"
+
+msgid "Copy to new document, group 3"
+msgstr "新しいドキュメントにコピー (グループ 3)"
+
+msgid "Current document"
+msgstr "現在のドキュメント"
+
+msgid "Current value"
+msgstr "現在の値"
+
+msgid "Customization. Widths prefix \"C\"/\"R\" to align, \"-\" to hide."
+msgstr ""
+"カスタマイズ。配置にはプレフィックス \"C\"/\"R\"、非表示には \"-\" を幅に付加"
+"します。"
+
+msgid "Danish, Norwegian"
+msgstr "デンマーク語、ノルウェー語"
+
+msgid ""
+"Delete Macro?\n"
+"\n"
+msgstr ""
+"マクロを削除しますか?\n"
+"\n"
+
+msgid "Delete URL?\n"
+msgstr "URL を削除しますか?\n"
+
+msgid ""
+"Delete tool?\n"
+"\n"
+msgstr ""
+"ツールを削除しますか?\n"
+"\n"
+
+msgid "Do&wn"
+msgstr "下へ(&W)"
+
+msgid "Edit list of user's macros to use in tool properties"
+msgstr "ツールプロパティで使用するユーザーマクロのリストを編集"
+
+msgid "Edit user macro var"
+msgstr "ユーザーマクロ変数を編集"
+
+msgid "Encoding:"
+msgstr "エンコーディング:"
+
+msgid "Encodings"
+msgstr "エンコーディング"
+
+msgid "English"
+msgstr "英語"
+
+msgid "Esperanto, Maltese"
+msgstr "エスペラント語、マルタ語"
+
+msgid "Expanded mac&ros"
+msgstr "展開されたマクロ(&R)"
+
+msgid "Expression"
+msgstr "式"
+
+msgid "Fail running: {} {}"
+msgstr "実行失敗: {} {}"
+
+msgid "File | [Tools]"
+msgstr "ファイル | [ツール]"
+
+msgid "Filename (default - current file name)"
+msgstr "ファイル名 (デフォルト - 現在のファイル名)"
+
+msgid "Filename:"
+msgstr "ファイル名:"
+
+msgid "Folder"
+msgstr "フォルダー"
+
+msgid "For call by command \"Run main lexer tool\""
+msgstr "コマンド「メインの Lexer ツールを実行」からの呼び出し用"
+
+msgid "Greek"
+msgstr "ギリシャ語"
+
+msgid "Hebrew"
+msgstr "ヘブライ語"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "Hotke&y..."
+msgstr "ホットキー(&Y)..."
+
+msgid "Hotkey"
+msgstr "ホットキー"
+
+msgid "Hotkey:"
+msgstr "ホットキー:"
+
+msgid "Icelandic"
+msgstr "アイスランド語"
+
+msgid "Ignore"
+msgstr "無視"
+
+msgid ""
+"In tool properties \"File name\", \"Parameters\", \"Initial folder\"\n"
+"    the following macros are processed.\n"
+"• Application:\n"
+"   {AppDir}           - Up-folder of CudaText \"settings\" folder\n"
+"   {AppDrive}         - (Windows) Disk of CudaText executable, eg \"C:\"\n"
+"• Currently focused file:\n"
+"   {FileName}         - Full path\n"
+"   {FileDir}          - Folder path, without file name\n"
+"   {FileNameOnly}     - Name only, without folder path\n"
+"   {FileNameNoExt}    - Name without extension and path\n"
+"   {FileExt}          - Extension\n"
+"   {ContentAsTemp}    - Name of [temporary] file with current text\n"
+"   {SelectionAsTemp}  - Name of [temporary] file with selected text\n"
+"   {Lexer}            - Name of global lexer\n"
+"• Current file in group N (N is 1...6):\n"
+"   {FileName_gN}      - Full path\n"
+"   {FileDir_gN}       - Folder path, without file name\n"
+"   {FileNameOnly_gN}  - Name only, without folder path\n"
+"   {FileNameNoExt_gN} - Name without extension and path\n"
+"   {FileExt_gN}       - Extension\n"
+"   {ContentAsTemp_gN} - Name of [temporary] file with current text\n"
+"   {Lexer_gN}         - Name of global lexer\n"
+"• Currently focused editor (for top caret):\n"
+"   {CurrentLine}      - Text of caret's line\n"
+"   {CurrentLineNum}   - Index of caret's line\n"
+"   {CurrentLineNum0}  - Index of caret's line, 0-based\n"
+"   {CurrentColumnNum} - Index of caret's column\n"
+"   {CurrentColumnNum0}- Index of caret's column, 0-based\n"
+"   {LexerAtCaret}     - Name of lexer at caret position\n"
+"   {SelectedText}     - Text of selection\n"
+"   {CurrentWord}      - Word at caret position\n"
+"• Prompts:\n"
+"   {Interactive}      - Text will be asked at each running\n"
+"   {InteractiveFile}  - File name will be asked\n"
+"• Project:\n"
+"    {PRJNAME}         - If current project is loaded and has the PRJNAME "
+"var\n"
+"• OS environments:\n"
+"    {OS:ENVNAME}      - If OS has ENVNAME environment\n"
+"\n"
+"All macros can include suffix (function) to transform value.\n"
+"   {Lexer|fun}             - gets fun({Lexer})\n"
+"   {Lexer|fun:p1,p2}       - gets fun({Lexer},p1,p2)\n"
+"   {Lexer|f1st:p1,p2|f2nd} - gets f2nd(f1st({Lexer},p1,p2))\n"
+"Predefined functions are:\n"
+"   q - quote: \"AB=?\"    -> \"AB%3D%3F\"\n"
+"   u - upper: \"word\"    -> \"WORD\"\n"
+"   l - lower: \"WORD\"    -> \"word\"\n"
+"   t - title: \"we he\"   -> \"We He\"\n"
+"All functions from all std Python modules can be used, but not methods.\n"
+"   q is short form of urllib.parse.quote\n"
+msgstr ""
+"ツールのプロパティ「ファイル名」、「パラメータ」、「初期フォルダー」では、\n"
+"以下のマクロが処理されます。\n"
+"• アプリケーション:\n"
+"   {AppDir}           - CudaText の「settings」フォルダーの親フォルダー\n"
+"   {AppDrive}         - (Windows) CudaText 実行ファイルのディスク (例: \"C:"
+"\")\n"
+"• 現在フォーカスされているファイル:\n"
+"   {FileName}         - フルパス\n"
+"   {FileDir}          - フォルダーパス (ファイル名なし)\n"
+"   {FileNameOnly}     - ファイル名のみ (フォルダーパスなし)\n"
+"   {FileNameNoExt}    - 拡張子とパスを除いたファイル名\n"
+"   {FileExt}          - 拡張子\n"
+"   {ContentAsTemp}    - 現在のテキストを含む[一時]ファイル名\n"
+"   {SelectionAsTemp}  - 選択されたテキストを含む[一時]ファイル名\n"
+"   {Lexer}            - グローバルな Lexer (Lexer) 名\n"
+"• グループ N (1...6) 内の現在のファイル:\n"
+"   {FileName_gN}      - フルパス\n"
+"   {FileDir_gN}       - フォルダーパス (ファイル名なし)\n"
+"   {FileNameOnly_gN}  - ファイル名のみ (フォルダーパスなし)\n"
+"   {FileNameNoExt_gN} - 拡張子とパスを除いたファイル名\n"
+"   {FileExt_gN}       - 拡張子\n"
+"   {ContentAsTemp_gN} - 現在のテキストを含む[一時]ファイル名\n"
+"   {Lexer_gN}         - グローバルな Lexer 名\n"
+"• 現在フォーカスされているエディタ (先頭キャレット用):\n"
+"   {CurrentLine}      - キャレット行のテキスト\n"
+"   {CurrentLineNum}   - キャレット行のインデックス\n"
+"   {CurrentLineNum0}  - キャレット行のインデックス (0始まり)\n"
+"   {CurrentColumnNum} - キャレット列のインデックス\n"
+"   {CurrentColumnNum0}- キャレット列のインデックス (0始まり)\n"
+"   {LexerAtCaret}     - キャレット位置の Lexer 名\n"
+"   {SelectedText}     - 選択テキスト\n"
+"   {CurrentWord}      - キャレット位置の単語\n"
+"• プロンプト:\n"
+"   {Interactive}      - 実行時に毎回テキスト入力を求めます\n"
+"   {InteractiveFile}  - 実行時に毎回ファイル名入力を求めます\n"
+"• プロジェクト:\n"
+"    {PRJNAME}         - 現在のプロジェクトが読み込まれており、PRJNAME 変数を"
+"持つ場合\n"
+"• OS 環境変数:\n"
+"    {OS:ENVNAME}      - OS に ENVNAME 環境変数がある場合\n"
+"\n"
+"すべてのマクロにサフィックス (関数) を含めて値を変換できます。\n"
+"   {Lexer|fun}             - fun({Lexer}) を取得\n"
+"   {Lexer|fun:p1,p2}       - fun({Lexer},p1,p2) を取得\n"
+"   {Lexer|f1st:p1,p2|f2nd} - f2nd(f1st({Lexer},p1,p2)) を取得\n"
+"事前定義された関数:\n"
+"   q - クォート: \"AB=?\"  -> \"AB%3D%3F\"\n"
+"   u - 大文字: \"word\"    -> \"WORD\"\n"
+"   l - 小文字: \"WORD\"    -> \"word\"\n"
+"   t - タイトル: \"we he\" -> \"We He\"\n"
+"Python 標準モジュールのすべての関数を使用できます (メソッドは不可)。\n"
+"   q は urllib.parse.quote の短縮形です\n"
+
+msgid "Jo&in..."
+msgstr "結合(&I)..."
+
+msgid "Join several tools to single tool"
+msgstr "複数のツールを 1つのツールに結合"
+
+msgid "Kazakh"
+msgstr "カザフ語"
+
+msgid "Le&xers..."
+msgstr "Lexer(&X)..."
+
+msgid "Lexers"
+msgstr "Lexers"
+
+msgid "Lexers:"
+msgstr "Lexers:"
+
+msgid "Line:"
+msgstr "行:"
+
+msgid "List height  (min 200)"
+msgstr "リストの高さ (最小 200)"
+
+msgid "Load &preset..."
+msgstr "プリセットを読み込み(&P)..."
+
+msgid "Main for:"
+msgstr "メイン対象:"
+
+msgid "Main tool for lexer \"{}\" is not configured yet"
+msgstr "Lexer \"{}\" のメインツールがまだ設定されていません"
+
+msgid "Main tool for lexers"
+msgstr "Lexers のメインツール"
+
+msgid "Move current tool to lower position"
+msgstr "現在のツールを下の位置へ移動"
+
+msgid "Move current tool to upper position"
+msgstr "現在のツール上の位置へ移動"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Name for preset ({})"
+msgstr "プリセットの名前 ({})"
+
+msgid "Name: {}"
+msgstr "名前: {}"
+
+msgid "Need update CudaText"
+msgstr "CudaText のアップデートが必要です"
+
+msgid "No URL: {}"
+msgstr "URL がありません: {}"
+
+msgid "No any results for navigation"
+msgstr "ナビゲーションの結果がありません"
+
+msgid "No more results for navigation"
+msgstr "これ以上ナビゲーション結果はありません"
+
+msgid "No tool to parse the output line"
+msgstr "出力行を解析するツールがありません"
+
+msgid "No tool: {}"
+msgstr "ツールがありません: {}"
+
+msgid "Nordic languages"
+msgstr "北欧諸語"
+
+msgid "Nothing"
+msgstr "なし"
+
+msgid "Number of column (0-based, default - 0)"
+msgstr "列番号 (0始まり、デフォルト - 0)"
+
+msgid "Number of column (default - 1)"
+msgstr "列番号 (デフォルト - 1)"
+
+msgid "Number of line (0-based, default - 0)"
+msgstr "行番号 (0始まり、デフォルト - 0)"
+
+msgid "Number of line (default - 1)"
+msgstr "行番号 (デフォルト - 1)"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Opened \"{}\": {}"
+msgstr "開きました \"{}\": {}"
+
+msgid "Output panel"
+msgstr "出力パネル"
+
+msgid "Output panel, append"
+msgstr "出力パネル (追加)"
+
+msgid "Param for call {}"
+msgstr "呼び出しパラメータ {}"
+
+msgid "Params"
+msgstr "パラメータ"
+
+msgid "Pattern variables"
+msgstr "パターン変数"
+
+msgid "Pattern:"
+msgstr "パターン:"
+
+msgid "Portuguese"
+msgstr "ポルトガル語"
+
+msgid "Pro&ject macros..."
+msgstr "プロジェクトマクロ(&J)..."
+
+msgid "Pro&ject..."
+msgstr "プロジェクト(&J)..."
+
+msgid "R&un main lexer tool"
+msgstr "メインの Lexer ツールを実行(&U)"
+
+msgid "Ready patterns"
+msgstr "準備済みパターン"
+
+msgid "RegEx is incorrect: "
+msgstr "正規表現が正しくありません: "
+
+msgid "Replace selection"
+msgstr "選択範囲を置換"
+
+msgid "Report"
+msgstr "レポート"
+
+msgid "Resul&ts"
+msgstr "結果(&T)"
+
+msgid ""
+"Run the tool via OS shell interpreter (e.g. Bash on Unix, Cmd on Windows)"
+msgstr ""
+"OS のシェルインタープリター経由でツールを実行 (例: Unix では Bash、Windows で"
+"は Cmd)"
+
+msgid "Run: \"{}\""
+msgstr "実行: \"{}\""
+
+msgid "Run: {} {}"
+msgstr "実行: {} {}"
+
+msgid "Russian"
+msgstr "ロシア語"
+
+msgid "S&elect..."
+msgstr "選択(&E)..."
+
+msgid "Sa&ve before:"
+msgstr "保存前の処理(&V):"
+
+msgid "Saving"
+msgstr "保存中"
+
+msgid "Se&ries:"
+msgstr "シリーズ(&R):"
+
+msgid "Se&t..."
+msgstr "設定(&T)..."
+
+msgid "Select lexers"
+msgstr "Lexers を選択"
+
+msgid "Select tools for join"
+msgstr "結合するツールを選択"
+
+msgid "Send the report to the address"
+msgstr "レポートを指定のアドレスに送信"
+
+msgid "Set \"Regular expression\""
+msgstr "「正規表現」を設定"
+
+msgid "Set &main for lexers..."
+msgstr "Lexers のメインを設定(&M)..."
+
+msgid "Set &main..."
+msgstr "メインを設定(&M)..."
+
+msgid "Set 8 for a tool likes \"tidy\""
+msgstr "\"tidy\" のようなツールには 8 を設定"
+
+msgid "Set File name"
+msgstr "ファイル名を設定"
+
+msgid "Set Name"
+msgstr "名前を設定"
+
+msgid "Set Value"
+msgstr "値を設定"
+
+msgid "Set..."
+msgstr "設定..."
+
+msgid "South-Eastern Europe"
+msgstr "南東ヨーロッパ"
+
+msgid "Test \"&Output line\":"
+msgstr "「出力行」をテスト(&O):"
+
+msgid "Testing results"
+msgstr "テスト結果"
+
+msgid "Tool \"{}\" could not find a line-number into output line"
+msgstr "ツール \"{}\" は出力行から行番号を見つけられませんでした"
+
+msgid "Tool \"{}\" has not Pattern property"
+msgstr "ツール \"{}\" には Pattern プロパティがありません"
+
+msgid "Tool \"{}\" is only for lexer(s): {}"
+msgstr "ツール \"{}\" は次の Lexer 専用です: {}"
+
+msgid "Tool \"{}\" output pattern"
+msgstr "ツール \"{}\" の出力パターン"
+
+msgid "Tool macros"
+msgstr "ツールマクロ"
+
+msgid "Tool properties"
+msgstr "ツールのプロパティ"
+
+msgid "Tools and URLs ({})"
+msgstr "ツールと URL ({})"
+
+msgid "Turkish"
+msgstr "トルコ語"
+
+msgid "U&p"
+msgstr "上へ(&P)"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL properties"
+msgstr "URL のプロパティ"
+
+msgid "Ukrainian"
+msgstr "ウクライナ語"
+
+msgid "Use the URL"
+msgstr "URL を使用"
+
+msgid "User macro &vars..."
+msgstr "ユーザーマクロ変数(&V)..."
+
+msgid "User macros"
+msgstr "ユーザーマクロ"
+
+msgid "Val&ue:"
+msgstr "値(&U):"
+
+msgid "Value: {}"
+msgstr "値: {}"
+
+msgid "Variables"
+msgstr "変数"
+
+msgid "Vie&w..."
+msgstr "表示(&W)..."
+
+msgid "West Europe"
+msgstr "西ヨーロッパ"
+
+msgid "Western Europe"
+msgstr "西ヨーロッパ"
+
+msgid "Width of Capture (min  50)"
+msgstr "キャプチャの幅 (最小 50)"
+
+msgid "Width of File    (min 150)"
+msgstr "ファイルの幅 (最小 150)"
+
+msgid "Width of Folder  (min 100)"
+msgstr "フォルダーの幅 (最小 100)"
+
+msgid "Width of Keys    (min  50)"
+msgstr "キーの幅 (最小 50)"
+
+msgid "Width of Lexers  (min  50)"
+msgstr "Lexers の幅 (最小 50)"
+
+msgid "Width of Name    (min 100)"
+msgstr "名前の幅 (最小 100)"
+
+msgid "Width of Params  (min 150)"
+msgstr "パラメータの幅 (最小 150)"
+
+msgid "Width of Saving  (min  30)"
+msgstr "保存の幅 (最小 30)"
+
+msgid "Width of Url     (min 500)"
+msgstr "URL の幅 (最小 500)"
+
+msgid "Win only: Encode operand according to the ANSI codepage (CP_ACP)"
+msgstr ""
+"Windows のみ: ANSI コードページ (CP_ACP) に従ってオペランドをエンコード"
+
+msgid "Win only: Windows UTF-8 (CP_UTF8)"
+msgstr "Windows のみ: Windows UTF-8 (CP_UTF8)"
+
+msgid "all languages"
+msgstr "すべての言語"
+
+msgid "or post it on"
+msgstr "または以下に投稿"
+
+msgid "{AppDir}\tUp-folder of CudaText \"settings\" folder"
+msgstr "{AppDir}\tCudaText の「settings」フォルダーの親フォルダー"
+
+msgid "{AppDrive}\t(Windows only) Disk of CudaText executable, eg \"C:\""
+msgstr ""
+"{AppDrive}\t(Windows のみ) CudaText 実行ファイルのディスク (例: \"C:\")"
+
+msgid "{ContentAsTemp}\tName of [temporary] file with current text"
+msgstr "{ContentAsTemp}\t現在のテキストを持つ[一時]ファイル名"
+
+msgid "{CurrentColumnNum0}\tNumber of current column (0-based)"
+msgstr "{CurrentColumnNum0}\t現在の列の番号 (0始まり)"
+
+msgid "{CurrentColumnNum}\tNumber of current column (1-based)"
+msgstr "{CurrentColumnNum}\t現在の列の番号 (1始まり)"
+
+msgid "{CurrentLineNum0}\tNumber of current line (0-based)"
+msgstr "{CurrentLineNum0}\t現在の行の番号 (0始まり)"
+
+msgid "{CurrentLineNum}\tNumber of current line (1-based)"
+msgstr "{CurrentLineNum}\t現在の行の番号 (1始まり)"
+
+msgid "{CurrentLine}\tText of current line"
+msgstr "{CurrentLine}\t現在の行のテキスト"
+
+msgid "{CurrentWord}\tText of word under first caret"
+msgstr "{CurrentWord}\t最初のキャレットの下にある単語のテキスト"
+
+msgid "{FileDir}\tFolder path, without file name, of current editor file"
+msgstr "{FileDir}\t現在のエディタファイルのファイル名を除いたフォルダーパス"
+
+msgid "{FileExt}\tExtension of current editor file"
+msgstr "{FileExt}\t現在のエディタファイルの拡張子"
+
+msgid ""
+"{FileNameNoExt}\tFile name without extension and path, of current editor file"
+msgstr ""
+"{FileNameNoExt}\t現在のエディタファイルの拡張子とパスを除いたファイル名"
+
+msgid ""
+"{FileNameOnly}\tFile name only, without folder path, of current editor file"
+msgstr ""
+"{FileNameOnly}\t現在のエディタファイルのフォルダーパスを除いたファイル名のみ"
+
+msgid "{FileName}\tFull path of current editor file"
+msgstr "{FileName}\t現在のエディタファイルのフルパス"
+
+msgid "{InteractiveFile}\tFile name, will be asked at each running"
+msgstr "{InteractiveFile}\tファイル名 (実行時に毎回尋ねられます)"
+
+msgid "{Interactive}\tText, will be asked at each running"
+msgstr "{Interactive}\tテキスト (実行時に毎回尋ねられます)"
+
+msgid "{LexerAtCaret}\tLexer at first caret"
+msgstr "{LexerAtCaret}\t最初のキャレットでの Lexer"
+
+msgid "{Lexer}\tFile's lexer"
+msgstr "{Lexer}\tファイルの Lexer"
+
+msgid "{SelectedText}\tCurrently selected text"
+msgstr "{SelectedText}\t現在選択されているテキスト"
+
+msgid "{SelectionAsTemp}\tName of [temporary] file with selected text"
+msgstr "{SelectionAsTemp}\t選択されたテキストを持つ[一時]ファイル名"
+
+msgid ""
+"{{ContentAsTemp_g{0}}}\tName of [temporary] file with current text in group "
+"{0}"
+msgstr ""
+"{{ContentAsTemp_g{0}}}\tグループ {0} の現在のテキストを含む[一時]ファイル名"
+
+msgid ""
+"{{FileDir_g{0}}}\tFolder path, without file name, of current file in group "
+"{0}"
+msgstr ""
+"{{FileDir_g{0}}}\tグループ {0} の現在のファイルのファイル名を除いたフォルダー"
+"パス"
+
+msgid "{{FileExt_g{0}}}\tExtension of current file in group {0}"
+msgstr "{{FileExt_g{0}}}\tグループ {0} の現在のファイルの拡張子"
+
+msgid ""
+"{{FileNameNoExt_g{0}}}\tFile name without extension and path of current file "
+"in group {0}"
+msgstr ""
+"{{FileNameNoExt_g{0}}}\tグループ {0} の現在のファイルの拡張子とパスを除いた"
+"ファイル名"
+
+msgid ""
+"{{FileNameOnly_g{0}}}\tFile name only, without folder path, of current file "
+"in group {0}"
+msgstr ""
+"{{FileNameOnly_g{0}}}\tグループ {0} の現在のファイルのフォルダーパスを除いた"
+"ファイル名のみ"
+
+msgid "{{FileName_g{0}}}\tFull path of current file in group {0}"
+msgstr "{{FileName_g{0}}}\tグループ {0} の現在のファイルのフルパス"
+
+msgid "{{Lexer_g{0}}}\tLexer of current file in group {0}"
+msgstr "{{Lexer_g{0}}}\tグループ {0} の現在のファイルの Lexer"

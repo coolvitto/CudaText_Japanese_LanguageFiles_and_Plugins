@@ -1,0 +1,1330 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_ext\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-04 00:53+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+
+#: cd_ext.py:34
+msgid "{} works only with normal selection"
+msgstr "{} は通常の選択範囲でのみ動作します"
+
+#: cd_ext.py:35 cd_ext_find_repl.py:1205 cd_ext_find_repl.py:1290
+#: cd_ext_find_repl.py:1356 cd_ext_find_repl.py:1389 cd_ext_find_repl.py:1479
+msgid "{} doesn't work with multi-carets"
+msgstr "{} はマルチキャレットでは動作しません"
+
+#: cd_ext.py:36
+msgid "{} doesn't work with selection"
+msgstr "{} は選択範囲があると動作しません"
+
+#: cd_ext.py:37
+msgid "Cannot find matching bracket for '{}'"
+msgstr "'{}' に対応する括弧が見つかりません"
+
+#: cd_ext.py:38
+msgid "Cannot open: {}"
+msgstr "開けません: {}"
+
+#: cd_ext.py:39 cd_ext_find_repl.py:1167 cd_ext_find_repl.py:1203
+msgid "Need to update CudaText"
+msgstr "CudaText の更新が必要です"
+
+#: cd_ext.py:800
+msgid "No fold-ranges to jump to"
+msgstr "移動先の折りたたみ範囲がありません"
+
+#: cd_ext.py:1601
+msgid "Duplication"
+msgstr "重複"
+
+#: cd_ext.py:1507
+msgid "Pasted trimmed text"
+msgstr "前後の空白を除去して貼り付けました"
+
+#: cd_ext.py:1535
+msgid "Text trimmed"
+msgstr "空白を除去しました"
+
+#: cd_ext.py:1542
+msgid "Enter string to fill selection"
+msgstr "選択範囲を埋める文字列を入力"
+
+#: cd_ext.py:1576
+msgid "Character hex code, optional 0x prefix:"
+msgstr "文字の16進コード (0x プレフィックスは省略可):"
+
+#: cd_ext.py:2196
+msgid "Save editors to a single file"
+msgstr "エディタの内容を1つのファイルに保存"
+
+#: cd_ext.py:2221
+msgid "saved.txt"
+msgstr "saved.txt"
+
+#: cd_ext.py:2276
+msgid "Remove lines containing text:"
+msgstr "指定の文字列を含む行を削除:"
+
+#: cd_ext.py:2281
+msgid "Remove lines containing RegEx:"
+msgstr "正規表現に一致する行を削除:"
+
+#: cd_ext.py:161
+msgid "No clip"
+msgstr "クリップボードが空です"
+
+#: cd_ext.py:221 cd_ext.py:330 cd_ext_find_repl.py:1779
+#: cd_ext_find_repl.py:1794
+msgid "Command doesn't work with multi-carets"
+msgstr "このコマンドはマルチキャレットでは動作しません"
+
+#: cd_ext.py:226
+msgid "Command works when no selection"
+msgstr "このコマンドは選択範囲がないときに動作します"
+
+#: cd_ext.py:690
+msgid "Not found lines by status"
+msgstr "該当する状態の行が見つかりません"
+
+#: cd_ext.py:768 cd_ext.py:777 cd_ext.py:788
+msgid "No staple to jump"
+msgstr "移動先のステープルがありません"
+
+#: cd_ext.py:864
+msgid "No bookmarks"
+msgstr "ブックマークがありません"
+
+#: cd_ext.py:1046
+msgid "Align paragraphs - options (default values)"
+msgstr "段落の整列 - オプション (既定値)"
+
+#: cd_ext.py:1048
+msgid "Indent of first line (0)"
+msgstr "1行目のインデント (0)"
+
+#: cd_ext.py:1049
+msgid "Indent of other lines (0)"
+msgstr "2行目以降のインデント (0)"
+
+#: cd_ext.py:1274
+msgid "Only for saved file"
+msgstr "保存済みのファイルでのみ使用できます"
+
+#: cd_ext.py:1359
+msgid "No text selected"
+msgstr "テキストが選択されていません"
+
+#: cd_ext.py:1419
+msgid "Empty clip"
+msgstr "クリップボードが空です"
+
+#: cd_ext.py:1420
+msgid "No text in clip"
+msgstr "クリップボードにテキストがありません"
+
+#: cd_ext.py:1432
+msgid "Command works only if no selection"
+msgstr "このコマンドは選択範囲がないときのみ動作します"
+
+#: cd_ext.py:1491
+msgid "Clipboard has no text"
+msgstr "クリップボードにテキストがありません"
+
+#: cd_ext.py:1518
+msgid "Need selection"
+msgstr "選択範囲が必要です"
+
+#: cd_ext.py:1530
+msgid "Text already trimmed"
+msgstr "すでに空白は除去されています"
+
+#: cd_ext.py:1559
+msgid "Need single-line selection(s)"
+msgstr "単一行の選択範囲が必要です"
+
+#: cd_ext.py:1596
+msgid "Character inserted: U+"
+msgstr "挿入した文字: U+"
+
+#: cd_ext.py:1963
+msgid "Save file first"
+msgstr "先にファイルを保存してください"
+
+#: cd_ext.py:1971
+msgid "No need to do anything"
+msgstr "何も行う必要はありません"
+
+#: cd_ext.py:1975
+msgid "Reopened in text editor"
+msgstr "テキストエディタで開き直しました"
+
+#: cd_ext.py:1983
+msgid "Warning: the command needs a named tab."
+msgstr "警告: このコマンドには名前のあるタブが必要です。"
+
+#: cd_ext.py:2028
+msgid "sorted by name"
+msgstr "名前順"
+
+#: cd_ext.py:2139
+msgid "No file to open."
+msgstr "開くファイルがありません。"
+
+#: cd_ext.py:2180 cd_ext.py:2187
+msgid "Cannot save"
+msgstr "保存できません"
+
+#: cd_ext.py:2228
+msgid "Saved: "
+msgstr "保存しました: "
+
+#: cd_ext.py:2254
+msgid "Removed characters: {}"
+msgstr "削除した文字数: {}"
+
+#: cd_ext.py:2294
+msgid "No tags were found"
+msgstr "タグが見つかりませんでした"
+
+#: cd_ext.py:148
+msgid "Copy {}"
+msgstr "{} をコピー"
+
+#: cd_ext.py:170
+msgid "Replace {} with clip"
+msgstr "{} をクリップボードの内容に置換"
+
+#: cd_ext.py:636 cd_ext.py:639 cd_ext.py:709 cd_ext.py:763 cd_ext.py:765
+#: cd_ext.py:803
+msgid "Command"
+msgstr "コマンド"
+
+#: cd_ext.py:699
+msgid "No line number in clipboard"
+msgstr "クリップボードに行番号がありません"
+
+#: cd_ext.py:701
+msgid "No line #{}"
+msgstr "行 #{} がありません"
+
+#: cd_ext.py:877
+msgid "Tab bookmarks: {}"
+msgstr "タブのブックマーク: {}"
+
+#: cd_ext.py:922
+msgid "No numbered bookmarks in tabs"
+msgstr "タブに番号付きブックマークがありません"
+
+#: cd_ext.py:922
+msgid "No bookmarks in tabs"
+msgstr "タブにブックマークがありません"
+
+#: cd_ext.py:944
+msgid "All tabs bookmarks: {}"
+msgstr "すべてのタブのブックマーク: {}"
+
+#: cd_ext.py:1047
+msgid "Paragraph right margin ({})"
+msgstr "段落の右マージン ({})"
+
+#: cd_ext.py:1278
+msgid "In output no errors or no current file: "
+msgstr "出力にエラーがないか、現在のファイルがありません: "
+
+#: cd_ext.py:1557
+msgid "Changed %d selection(s)"
+msgstr "%d 個の選択範囲を変更しました"
+
+#: cd_ext.py:1580 cd_ext.py:1591
+msgid "Not valid hex code: "
+msgstr "16進コードが正しくありません: "
+
+#: cd_ext.py:1888
+msgid "Entered the same filename"
+msgstr "同じファイル名が入力されました"
+
+#: cd_ext.py:1891
+msgid "Directory separator char is not allowed"
+msgstr "ディレクトリの区切り文字は使用できません"
+
+#: cd_ext.py:1978
+msgid "Reopened in hex viewer"
+msgstr "16進ビューアで開き直しました"
+
+#: cd_ext.py:2023
+msgid "sorted by time"
+msgstr "時刻順"
+
+#: cd_ext.py:2024
+msgid "sorted by path"
+msgstr "パス順"
+
+#: cd_ext.py:2025
+msgid "sorted by last closed"
+msgstr "最後に閉じた順"
+
+#: cd_ext.py:2120
+msgid "Open {} file(s) from {} folder(s)?{}"
+msgstr "ファイル {} 個 (フォルダー {} 個分) を開きますか?{}"
+
+#: cd_ext.py:2141
+msgid ""
+"Text is modified!\n"
+"Command will use file content from disk.\n"
+"\n"
+"Continue?"
+msgstr ""
+"テキストが変更されています。\n"
+"コマンドはディスク上のファイルの内容を使用します。\n"
+"\n"
+"続行しますか?"
+
+#: cd_ext.py:2301
+msgid "Removed {} tag(s)"
+msgstr "{} 個のタグを削除しました"
+
+#: cd_ext.py:2303
+msgid "Removed {} comment(s), {} tag(s)"
+msgstr "{} 個のコメントと {} 個のタグを削除しました"
+
+#: cd_ext.py:2356
+msgid "Folded {} range(s)"
+msgstr "{} 個の範囲を折りたたみました"
+
+#: cd_ext.py:1653
+msgid "Name to save splitters layout"
+msgstr "分割ウィンドウのレイアウトを保存する名前"
+
+#: cd_ext.py:1656
+msgid "Layout with name \"{nm}\" already exists. Replace?"
+msgstr "名前 \"{nm}\" のレイアウトはすでに存在します。置換しますか?"
+
+#: cd_ext.py:1894
+msgid ""
+"There is directory with name:\n"
+"{}\n"
+"\n"
+"Choose another name."
+msgstr ""
+"次の名前のディレクトリがあります:\n"
+"{}\n"
+"\n"
+"別の名前を選択してください。"
+
+#: cd_ext.py:1905
+msgid "Rename file"
+msgstr "ファイル名の変更"
+
+#: cd_ext.py:2031
+msgid "Recent files:"
+msgstr "最近使ったファイル:"
+
+#: cd_ext.py:2162
+msgid "Error: "
+msgstr "エラー: "
+
+#: cd_ext.py:2266
+msgid "Removed {} line(s)"
+msgstr "{} 行を削除しました"
+
+#: cd_ext.py:2273
+msgid "No lines with \"{}\" were found"
+msgstr "\"{}\" を含む行は見つかりませんでした"
+
+#: cd_ext.py:2287
+msgid "Incorrect RegEx: "
+msgstr "正規表現が正しくありません: "
+
+#: cd_ext.py:1677
+msgid "No saved layout"
+msgstr "保存されたレイアウトがありません"
+
+#: cd_ext.py:1684
+msgid "Remove layout?"
+msgstr "レイアウトを削除しますか?"
+
+#: cd_ext.py:1684
+msgid "Restore layout?"
+msgstr "レイアウトを復元しますか?"
+
+#: cd_ext.py:1707
+msgid "Restored layout: "
+msgstr "復元したレイアウト: "
+
+#: cd_ext.py:1897
+msgid ""
+"File\n"
+"{}\n"
+"already exists.\n"
+"\n"
+"Replace?"
+msgstr ""
+"ファイル\n"
+"{}\n"
+"はすでに存在します。\n"
+"\n"
+"置換しますか?"
+
+#: cd_ext.py:2185
+msgid "Saved:"
+msgstr "保存しました:"
+
+#: cd_ext.py:2199
+msgid "Save all tabs (including not visible)"
+msgstr "すべてのタブを保存 (非表示のものを含む)"
+
+#: cd_ext.py:2200
+msgid "Save visible editors in all groups"
+msgstr "すべてのグループの表示中のエディタを保存"
+
+#: cd_ext.py:2201
+msgid "Separator line:"
+msgstr "区切り行:"
+
+#: cd_ext.py:2203 cd_ext.py:2082
+msgid "&OK"
+msgstr "OK(&O)"
+
+#: cd_ext.py:2204 cd_ext.py:2083 cd_ext.py:1916 cd_ext_find_repl.py:1442
+#: cd_ext_find_repl.py:1811 cd_ext_find_repl.py:1260
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: cd_ext.py:2041
+msgid "<Sort by path>"
+msgstr "<パス順>"
+
+#: cd_ext.py:2073
+msgid "Mask(s) for filename (\"*\" - all files; \"*.txt *.bat\" - two masks)"
+msgstr "ファイル名のマスク (\"*\" - すべてのファイル; \"*.txt *.bat\" - 2 つのマスク)"
+
+#: cd_ext.py:2075
+msgid "Non-text files:"
+msgstr "テキスト以外のファイル:"
+
+#: cd_ext.py:2076
+msgid "View in &text mode"
+msgstr "テキストモードで表示(&T)"
+
+#: cd_ext.py:2077
+msgid "View in &binary mode"
+msgstr "バイナリモードで表示(&B)"
+
+#: cd_ext.py:2078
+msgid "View in &hex mode"
+msgstr "16進モードで表示(&H)"
+
+#: cd_ext.py:2079
+msgid "View in &unicode mode"
+msgstr "Unicode モードで表示(&U)"
+
+#: cd_ext.py:2080
+msgid "View in un&icode/hex mode"
+msgstr "Unicode/16進モードで表示(&I)"
+
+#: cd_ext.py:2081
+msgid "Do &not open"
+msgstr "開かない(&N)"
+
+#: cd_ext.py:1911
+msgid "Enter n&ew file name:"
+msgstr "新しいファイル名を入力(&E):"
+
+#: cd_ext.py:1915 cd_ext_find_repl.py:1441 cd_ext_find_repl.py:1810
+#: cd_ext_find_repl.py:1261
+msgid "OK"
+msgstr "OK"
+
+#: cd_ext.py:2039
+msgid "<Show \"name (path)\">"
+msgstr "<\"名前 (パス)\" で表示>"
+
+#: cd_ext.py:2040
+msgid "<Show \"path/name\">"
+msgstr "<\"パス/名前\" で表示>"
+
+#: cd_ext.py:2042
+msgid "<Sort by name>"
+msgstr "<名前順>"
+
+#: cd_ext.py:2043
+msgid "<Sort by time>"
+msgstr "<時刻順>"
+
+#: cd_ext.py:2044
+msgid "<Sort by last closed>"
+msgstr "<最後に閉じた順>"
+
+#: cd_ext_find_repl.py:45
+msgid "Replace all in Lines"
+msgstr "行内をすべて置換"
+
+#: cd_ext_find_repl.py:53
+msgid "Regular expression\rRegEx engine from CudaText is used"
+msgstr "正規表現\rCudaText の正規表現エンジンを使用します"
+
+#: cd_ext_find_repl.py:55 cd_ext_find_repl.py:897 cd_ext_tree.py:345
+msgid "Case sensitive"
+msgstr "大文字と小文字を区別"
+
+#: cd_ext_find_repl.py:56 cd_ext_find_repl.py:898 cd_ext_tree.py:346
+msgid "Whole words"
+msgstr "単語単位"
+
+#: cd_ext_find_repl.py:57
+msgid "Kit of pairs to replace\rAlt+Left/Right - load previous/next pair\rAlt+Shift+Left/Right - activate previous/next kit"
+msgstr "置換ペアのキット\rAlt+Left/Right - 前/次のペアを読み込む\rAlt+Shift+Left/Right - 前/次のキットをアクティブ化"
+
+#: cd_ext_find_repl.py:60
+msgid "Pattern to search\rEnter - to find next\rShift+Enter - to find previous"
+msgstr "検索するパターン\rEnter - 次を検索\rShift+Enter - 前を検索"
+
+#: cd_ext_find_repl.py:63
+msgid "Pattern to replace\rRegExp sub-groups are $1, $2, ..."
+msgstr "置換するパターン\r正規表現のサブグループは $1, $2, です..."
+
+#: cd_ext_find_repl.py:66
+msgid "Replace all"
+msgstr "すべて置換"
+
+#: cd_ext_find_repl.py:67
+msgid "Replace all for all pairs from the kit"
+msgstr "キットのすべてのペアですべて置換"
+
+#: cd_ext_find_repl.py:68
+msgid "<def>"
+msgstr "<def>"
+
+#: cd_ext_find_repl.py:786
+msgid "Find in Lines"
+msgstr "行内を検索"
+
+#: cd_ext_find_repl.py:46
+msgid "(Enter in first field to find)"
+msgstr "(最初の欄で Enter を押すと検索)"
+
+#: cd_ext_find_repl.py:230
+msgid "Replace A&LL for all pairs of a selected kit..."
+msgstr "選択したキットのすべてのペアですべて置換(&L)..."
+
+#: cd_ext_find_repl.py:1304
+msgid "Converted to column block"
+msgstr "矩形選択に変換しました"
+
+#: cd_ext_find_repl.py:1361
+msgid "Enter separator string"
+msgstr "区切り文字列を入力"
+
+#: cd_ext_find_repl.py:1561 cd_ext_find_repl.py:2084
+msgid "Align by margin value:"
+msgstr "マージン値で整列:"
+
+#: cd_ext_find_repl.py:1628
+msgid "Joined selected lines"
+msgstr "選択行を連結しました"
+
+#: cd_ext_find_repl.py:1747
+msgid "Margin value:"
+msgstr "マージン値:"
+
+#: cd_ext_find_repl.py:1875
+msgid "Separator char:"
+msgstr "区切り文字:"
+
+#: cd_ext_find_repl.py:2083
+msgid "Align comments"
+msgstr "コメントを整列"
+
+#: cd_ext_find_repl.py:2085
+msgid "Minimal allowed column pos:"
+msgstr "許可される最小の桁位置:"
+
+#: cd_ext_find_repl.py:47
+msgid ""
+"\n"
+"• [Shift+]Enter in \"Find\" field to search [previous] next fragment.\n"
+"• Ctrl+Down/Up to copy pattern lower/upper.\n"
+"• Command \"Restore initial selection\" (Shift+Esc) tries to restore only first of initial carets.\n"
+"• RegExp engine from CudaText is used. Names of RegEx sub-groups are $1, $2...\n"
+"    "
+msgstr ""
+"\n"
+"• \"Find\" 欄で [Shift+]Enter を押すと、[前の] 次の箇所を検索します。\n"
+"• Ctrl+Down/Up でパターンを下/上へコピーします。\n"
+"• コマンド \"Restore initial selection\" (Shift+Esc) は、最初のキャレットのうち先頭の 1つだけを復元しようとします。\n"
+"• CudaText の正規表現エンジンを使用します。正規表現のサブグループ名は $1, $2... です。\n"
+"    "
+
+#: cd_ext_find_repl.py:229
+msgid "Replace A&LL for all pairs (#{}) of the kit..."
+msgstr "キットのすべてのペア (#{}) ですべて置換(&L)..."
+
+#: cd_ext_find_repl.py:467
+msgid "Search options as a string (any order):\r  . - RegExp\r  c - Case sensitive\r  w - Whole word"
+msgstr "検索オプションを文字列で指定 (順不同):\r  . - 正規表現\r  c - 大文字と小文字を区別\r  w - 単語単位"
+
+#: cd_ext_find_repl.py:787
+msgid ""
+"\n"
+"• Search \"in Lines\" starts immediately (if focus is in the left field) or on Enter or Shift+Enter (if focus is in the right field).\n"
+"• The found fragment, after first caret, will be selected.\n"
+"• All found fragments are remembered and dialog can jump over them by [Shift+]Enter or by menu commands.\n"
+"• Ctrl+Right (or Alt+Right) copies text from the left edit to the right.\n"
+"• Ctrl+Left (or Alt+Left) copies text from the right edit to the left.\n"
+"• Option \".*\" (regular expression) allows to use Python reg.ex. See \"docs.python.org/3/library/re.html\".\n"
+"• Option \"w\" (whole words) is ignored if entered string contains not a word.\n"
+"• If option \"Instant search\" (in menu) is tuned on, search result will be updated on start and after each change of pattern.\n"
+"• Command \"Restore initial selection\" (Shift+Esc) restores only first of initial carets.\n"
+"• Ctrl+F (or Ctrl+R) calls appication dialog Find (or Replace).\n"
+"    "
+msgstr ""
+"\n"
+"• \"行内\" の検索は、左側の欄にフォーカスがあるときは即座に、右側の欄にフォーカスがあるときは Enter または Shift+Enter で開始します。\n"
+"• 見つかった箇所のうち、最初のキャレットより後ろのものが選択されます。\n"
+"• 見つかった箇所はすべて記憶され、[Shift+]Enter またはメニューのコマンドで順に移動できます。\n"
+"• Ctrl+Right (または Alt+Right) で左の入力欄のテキストを右へコピーします。\n"
+"• Ctrl+Left (または Alt+Left) で右の入力欄のテキストを左へコピーします。\n"
+"• オプション \".*\" (正規表現) では Python の正規表現を使用できます。\"docs.python.org/3/library/re.html\" を参照してください。\n"
+"• オプション \"w\" (単語単位) は、入力した文字列が単語でない場合は無視されます。\n"
+"• メニューの \"Instant search\" オプションがオンの場合、検索結果は開始時とパターンを変更するたびに更新されます。\n"
+"• コマンド \"Restore initial selection\" (Shift+Esc) は、最初のキャレットのうち先頭の1つだけを復元します。\n"
+"• Ctrl+F (または Ctrl+R) でアプリケーションの検索 (または置換) ダイアログを呼び出します。\n"
+"    "
+
+#: cd_ext_find_repl.py:1067
+msgid "&Minimal length of instant-search (left) field: {}..."
+msgstr "インスタント検索 (左) 欄の最小文字数: {}(&M)..."
+
+#: cd_ext_find_repl.py:1207
+msgid "No selected text to replace"
+msgstr "置換する選択テキストがありません"
+
+#: cd_ext_find_repl.py:1209
+msgid "No clipped text to replace"
+msgstr "置換に使うクリップボードのテキストがありません"
+
+#: cd_ext_find_repl.py:1280
+msgid "Added {} caret(s)"
+msgstr "{} 個のキャレットを追加しました"
+
+#: cd_ext_find_repl.py:1334
+msgid "Make selection first"
+msgstr "先に範囲を選択してください"
+
+#: cd_ext_find_repl.py:1375
+msgid "Text change not needed"
+msgstr "テキストの変更は不要です"
+
+#: cd_ext_find_repl.py:1386 cd_ext_find_repl.py:1595 cd_ext_find_repl.py:1633
+#: cd_ext_find_repl.py:1744 cd_ext_find_repl.py:1781 cd_ext_find_repl.py:1796
+msgid "Need to update application"
+msgstr "アプリケーションの更新が必要です"
+
+#: cd_ext_find_repl.py:1403
+msgid ""
+"\n"
+"To specify two/four/eight blanks enter\n"
+"    these blanks\n"
+"or\n"
+"    \"2b\"/\"4b\"/\"8b\"\n"
+"or\n"
+"    \"..\"/\"....\"/\"........\" (dots).\n"
+"To specify TAB enter \"t\".\n"
+"                  "
+msgstr ""
+"\n"
+"2/4/8 個の空白を指定するには、\n"
+"    その空白そのもの\n"
+"または\n"
+"    \"2b\"/\"4b\"/\"8b\"\n"
+"または\n"
+"    \"..\"/\"....\"/\"........\" (ドット) を入力します。\n"
+"TAB を指定するには \"t\" を入力します。\n"
+"                  "
+
+#: cd_ext_find_repl.py:1453
+msgid "Reindent skipped"
+msgstr "インデントの再設定をスキップしました"
+
+#: cd_ext_find_repl.py:1483
+msgid "Need selected lines"
+msgstr "選択行が必要です"
+
+#: cd_ext_find_repl.py:1488
+msgid "Need more than one selected lines"
+msgstr "2行以上の選択が必要です"
+
+#: cd_ext_find_repl.py:1509
+msgid "Required normal selection(s)"
+msgstr "通常の選択範囲が必要です"
+
+#: cd_ext_find_repl.py:1552
+msgid "Nothing to align"
+msgstr "整列する対象がありません"
+
+#: cd_ext_find_repl.py:1559
+msgid "Fail to use Tab to align"
+msgstr "タブでの整列に失敗しました"
+
+#: cd_ext_find_repl.py:1617
+msgid "Joined line with next line"
+msgstr "行を次の行と連結しました"
+
+#: cd_ext_find_repl.py:1650 cd_ext_find_repl.py:1644
+msgid "No duplicate spaces"
+msgstr "連続する空白はありません"
+
+#: cd_ext_find_repl.py:1655 cd_ext_find_repl.py:1647
+msgid "Deleted spaces: {}"
+msgstr "削除した空白の数: {}"
+
+#: cd_ext_find_repl.py:1757 cd_ext_find_repl.py:2075
+msgid "Need lexer active"
+msgstr "Lexer を有効にしてください"
+
+#: cd_ext_find_repl.py:1759 cd_ext_find_repl.py:2078
+msgid "Need lexer with line-comment chars"
+msgstr "行コメント文字を持つ Lexer が必要です"
+
+#: cd_ext_find_repl.py:1764
+msgid "Current line is not line-comment"
+msgstr "現在の行は行コメントではありません"
+
+#: cd_ext_find_repl.py:1785
+msgid "Set the margin via \"Plugins / Cuda-Ext / Paragraph / Align: Configure...\""
+msgstr "マージンは \"プラグイン / Cuda-Ext / 段落 / 整列: 設定...\" で設定してください"
+
+#: cd_ext_find_repl.py:1822
+msgid "Not digit margin"
+msgstr "マージンが数字ではありません"
+
+#: cd_ext_find_repl.py:1878
+msgid "Wrong separator char"
+msgstr "区切り文字が正しくありません"
+
+#: cd_ext_find_repl.py:1909 cd_ext_find_repl.py:1913
+msgid "No selection"
+msgstr "選択範囲がありません"
+
+#: cd_ext_find_repl.py:1937
+msgid "Replaced {} line(s)"
+msgstr "{} 行を置換しました"
+
+#: cd_ext_find_repl.py:1946
+msgid "Command does only work with multi-carets"
+msgstr "このコマンドはマルチキャレットでのみ動作します"
+
+#: cd_ext_find_repl.py:2099
+msgid "Aligned comments: "
+msgstr "整列したコメント: "
+
+#: cd_ext_find_repl.py:1336
+msgid "Reversed 1 fragment"
+msgstr "1箇所を逆順にしました"
+
+#: cd_ext_find_repl.py:1950
+msgid "This command cannot handle selection(s)"
+msgstr "このコマンドは選択範囲を処理できません"
+
+#: cd_ext_find_repl.py:399
+msgid "Select kit to Replace ALL"
+msgstr "すべて置換するキットを選択"
+
+#: cd_ext_find_repl.py:440
+msgid "Skip new order - kit names were not saved"
+msgstr "新しい順序をスキップしました - キット名が保存されていません"
+
+#: cd_ext_find_repl.py:449
+msgid "Enter a non-empty Find pattern"
+msgstr "検索パターンを入力してください (空にはできません)"
+
+#: cd_ext_find_repl.py:456
+msgid "The pair is already in the kit"
+msgstr "このペアはすでにキットにあります"
+
+#: cd_ext_find_repl.py:486
+msgid "New kit"
+msgstr "新しいキット"
+
+#: cd_ext_find_repl.py:736
+msgid "Not found. "
+msgstr "見つかりません。 "
+
+#: cd_ext_find_repl.py:739
+msgid "Not found"
+msgstr "見つかりません"
+
+#: cd_ext_find_repl.py:826
+msgid "Left input: at least {} chars. Right input: ENTER."
+msgstr "左の入力欄: {} 文字以上。右の入力欄: ENTER。"
+
+#: cd_ext_find_repl.py:1293 cd_ext_find_repl.py:1360
+msgid "{} works with multiline selection"
+msgstr "{} は複数行の選択範囲で動作します"
+
+#: cd_ext_find_repl.py:1370
+msgid "No separator '{}' in selected lines"
+msgstr "選択行に区切り文字 '{}' がありません"
+
+#: cd_ext_find_repl.py:1423
+msgid ""
+"Fill \"Old step\".\n"
+"\n"
+msgstr ""
+"\"以前のインデント幅\" を入力してください。\n"
+"\n"
+
+#: cd_ext_find_repl.py:1426
+msgid ""
+"Fill \"New step\".\n"
+"\n"
+msgstr ""
+"\"新しいインデント幅\" を入力してください。\n"
+"\n"
+
+#: cd_ext_find_repl.py:1549
+msgid "Aligned selection for {} of {} caret(s)"
+msgstr "{} / {} 個のキャレットの選択範囲を整列しました"
+
+#: cd_ext_find_repl.py:1754
+msgid "Incorrect margin value: "
+msgstr "マージン値が正しくありません: "
+
+#: cd_ext_find_repl.py:1802
+msgid "Re-wrap lines"
+msgstr "行を再折り返し"
+
+#: cd_ext_find_repl.py:175
+msgid "&All"
+msgstr "すべて(&A)"
+
+#: cd_ext_find_repl.py:178
+msgid "A&LL"
+msgstr "すべて(&L)"
+
+#: cd_ext_find_repl.py:480
+msgid "Set equal number of Find/Replace patterns"
+msgstr "検索パターンと置換パターンの数を揃えてください"
+
+#: cd_ext_find_repl.py:482
+msgid "Enter all non-empty Find patterns"
+msgstr "すべての検索パターンを入力してください (空にはできません)"
+
+#: cd_ext_find_repl.py:484
+msgid "Set another name for kit"
+msgstr "キットに別の名前を設定してください"
+
+#: cd_ext_find_repl.py:487
+msgid "Content of kit ({})"
+msgstr "キット ({}) の内容"
+
+#: cd_ext_find_repl.py:681
+msgid "No pairs in kit \"{}\""
+msgstr "キット \"{}\" にペアがありません"
+
+#: cd_ext_find_repl.py:690
+msgid ""
+"{}? {}\n"
+"   {}\n"
+"   {}"
+msgstr ""
+"{}? {}\n"
+"   {}\n"
+"   {}"
+
+#: cd_ext_find_repl.py:692
+msgid "No fragments to replace with kit \"{}\""
+msgstr "キット \"{}\" で置換する箇所がありません"
+
+#: cd_ext_find_repl.py:713
+msgid ""
+"{}! {}\n"
+"   {}\n"
+"   {}"
+msgstr ""
+"{}! {}\n"
+"   {}\n"
+"   {}"
+
+#: cd_ext_find_repl.py:1046
+msgid "Instant search - minimal length"
+msgstr "インスタント検索 - 最小文字数"
+
+#: cd_ext_find_repl.py:1338
+msgid "Reversed {} fragments"
+msgstr "{} 箇所を逆順にしました"
+
+#: cd_ext_find_repl.py:1432
+msgid "Reindent selected lines ({})"
+msgstr "選択行のインデントを再設定 ({})"
+
+#: cd_ext_find_repl.py:171
+msgid "&Find"
+msgstr "検索(&F)"
+
+#: cd_ext_find_repl.py:173
+msgid "&Replace"
+msgstr "置換(&R)"
+
+#: cd_ext_find_repl.py:176 cd_ext_find_repl.py:239
+msgid "&Kits"
+msgstr "キット(&K)"
+
+#: cd_ext_find_repl.py:223
+msgid "Edit kits..."
+msgstr "キットを編集..."
+
+#: cd_ext_find_repl.py:224
+msgid "&Import from Replace history..."
+msgstr "置換履歴からインポート(&I)..."
+
+#: cd_ext_find_repl.py:225
+msgid "Rem&ove kit"
+msgstr "キットを削除(&O)"
+
+#: cd_ext_find_repl.py:227
+msgid "&Change kits order..."
+msgstr "キットの順序を変更(&C)..."
+
+#: cd_ext_find_repl.py:232
+msgid "Replace &all"
+msgstr "すべて置換(&A)"
+
+#: cd_ext_find_repl.py:236
+msgid "Create &new kit..."
+msgstr "新しいキットを作成(&N)..."
+
+#: cd_ext_find_repl.py:237
+msgid "&Save pattern pair to kit"
+msgstr "パターンのペアをキットに保存(&S)"
+
+#: cd_ext_find_repl.py:238
+msgid "&Edit kit..."
+msgstr "キットを編集(&E)..."
+
+#: cd_ext_find_repl.py:241
+msgid "Load previous kit pair"
+msgstr "前のキットのペアを読み込む"
+
+#: cd_ext_find_repl.py:242
+msgid "Load next kit pair"
+msgstr "次のキットのペアを読み込む"
+
+#: cd_ext_find_repl.py:243
+msgid "Load previous kit"
+msgstr "前のキットを読み込む"
+
+#: cd_ext_find_repl.py:244
+msgid "Load next kit"
+msgstr "次のキットを読み込む"
+
+#: cd_ext_find_repl.py:246
+msgid "Hide dialog"
+msgstr "ダイアログを隠す"
+
+#: cd_ext_find_repl.py:247
+msgid "Hide dialog and restore selection &="
+msgstr "ダイアログを隠して選択範囲を復元(&=)"
+
+#: cd_ext_find_repl.py:248 cd_ext_find_repl.py:1072 cd_ext_tree.py:239
+msgid "&Help..."
+msgstr "ヘルプ(&H)..."
+
+#: cd_ext_find_repl.py:249
+msgid "Help - &show guide in browser"
+msgstr "ヘルプ - ブラウザでガイドを表示(&S)"
+
+#: cd_ext_find_repl.py:251 cd_ext_find_repl.py:1074 cd_ext_tree.py:241
+msgid "Find &previous"
+msgstr "前を検索(&P)"
+
+#: cd_ext_find_repl.py:252 cd_ext_find_repl.py:1075 cd_ext_tree.py:242
+msgid "F&ind next"
+msgstr "次を検索(&I)"
+
+#: cd_ext_find_repl.py:256
+msgid "Copy down: Find->Replace"
+msgstr "下へコピー: 検索->置換"
+
+#: cd_ext_find_repl.py:257
+msgid "Copy up: Replace->Find"
+msgstr "上へコピー: 置換->検索"
+
+#: cd_ext_find_repl.py:259
+msgid "Move to app Find dialog"
+msgstr "アプリの検索ダイアログへ移動"
+
+#: cd_ext_find_repl.py:260
+msgid "Move to app Replace dialog"
+msgstr "アプリの置換ダイアログへ移動"
+
+#: cd_ext_find_repl.py:262 cd_ext_find_repl.py:1080
+msgid "=== Options ==="
+msgstr "=== オプション ==="
+
+#: cd_ext_find_repl.py:263 cd_ext_find_repl.py:1081
+msgid "Use &selection from document"
+msgstr "ドキュメントの選択範囲を使用(&S)"
+
+#: cd_ext_find_repl.py:264
+msgid "Auto-fit Replace pattern on start and on Next pair"
+msgstr "開始時と次のペアへ移るときに置換パターンを自動調整"
+
+#: cd_ext_find_repl.py:265
+msgid "Load next pair after \"Replace all\""
+msgstr "\"すべて置換\" の後に次のペアを読み込む"
+
+#: cd_ext_find_repl.py:417
+msgid "Remove kit {}"
+msgstr "キット {} を削除"
+
+#: cd_ext_find_repl.py:520
+msgid "Use 1+3*n lines for each kit.\r  First line for\r    n:kit name.\r  Three lines for each kit pair\r    a:attributes - \".\" \"c\" \"w\" - in any order,\r    f:pattern Find,\r    r:pattern Replace.\r\rFormat:\r- The order of lines with \"n:\", \"a:\", \"f:\", \"r:\" is fixed.\r- Feel free to use empty lines and some blanks before \"n:\", \"a:\", \"f:\", \"r:\".\r\rRules:\r- Empty name is correct.\r- Names must not be repeated.\r- Pattern Find must not be empty."
+msgstr "キットごとに 1+3*n 行を使用します。\r  1 行目:\r    n:キット名\r  キットのペアごとに 3 行:\r    a:属性 - \".\" \"c\" \"w\" - 順不同,\r    f:検索パターン,\r    r:置換パターン\r\r書式:\r- \"n:\", \"a:\", \"f:\", \"r:\" の行の順序は固定です。\r- \"n:\", \"a:\", \"f:\", \"r:\" の前に空行や空白を入れても構いません。\r\r規則:\r- 名前は空でも構いません。\r- 名前を重複させることはできません。\r- 検索パターンは空にできません。"
+
+#: cd_ext_find_repl.py:571 cd_ext_find_repl.py:566
+msgid "Error: empty Find pattern for kit - "
+msgstr "エラー: キットの検索パターンが空です - "
+
+#: cd_ext_find_repl.py:572
+msgid "Error: no Replace pattern for kit - "
+msgstr "エラー: キットに置換パターンがありません - "
+
+#: cd_ext_find_repl.py:1070
+msgid "Hide dialog &="
+msgstr "ダイアログを隠す(&=)"
+
+#: cd_ext_find_repl.py:1071
+msgid "Hi&de dialog and restore selection"
+msgstr "ダイアログを隠して選択範囲を復元(&D)"
+
+#: cd_ext_find_repl.py:1077
+msgid "Move to app &Find dialog"
+msgstr "アプリの検索ダイアログへ移動(&F)"
+
+#: cd_ext_find_repl.py:1078
+msgid "Move to app &Replace dialog"
+msgstr "アプリの置換ダイアログへ移動(&R)"
+
+#: cd_ext_find_repl.py:1084
+msgid "Work in non-modal mod&e (close dialog)"
+msgstr "モードレスで動作 (ダイアログを閉じる)(&E)"
+
+#: cd_ext_find_repl.py:1085
+msgid "Dock to window &top (close dialog)"
+msgstr "ウィンドウの上部にドッキング (ダイアログを閉じる)(&T)"
+
+#: cd_ext_find_repl.py:1086
+msgid "Dock to window &bottom (close dialog)"
+msgstr "ウィンドウの下部にドッキング (ダイアログを閉じる)(&B)"
+
+#: cd_ext_find_repl.py:1248
+msgid "Set carets aligned as column"
+msgstr "キャレットを列状に揃えて配置"
+
+#: cd_ext_find_repl.py:2093
+msgid "Incorrect number(s) entered: "
+msgstr "入力された数値が正しくありません: "
+
+#: cd_ext_find_repl.py:446
+msgid "Kits order was changed"
+msgstr "キットの順序を変更しました"
+
+#: cd_ext_find_repl.py:459
+msgid "The pair was saved"
+msgstr "ペアを保存しました"
+
+#: cd_ext_find_repl.py:554
+msgid "Error: order of lines - line "
+msgstr "エラー: 行の順序が正しくありません - 行 "
+
+#: cd_ext_find_repl.py:697
+msgid "Replace ALL for kit (\"{}\")"
+msgstr "キット (\"{}\") ですべて置換"
+
+#: cd_ext_find_repl.py:714
+msgid "Results for kit (\"{}\")"
+msgstr "キット (\"{}\") の結果"
+
+#: cd_ext_find_repl.py:767
+msgid "Replaces made: {}. "
+msgstr "置換した件数: {}。 "
+
+#: cd_ext_find_repl.py:770
+msgid "Replaces made: {}"
+msgstr "置換した件数: {}"
+
+#: cd_ext_find_repl.py:1804
+msgid "&Margin:"
+msgstr "マージン(&M):"
+
+#: cd_ext_find_repl.py:1806
+msgid "&Comment sign:"
+msgstr "コメント記号(&C):"
+
+#: cd_ext_find_repl.py:1808
+msgid "&Keep indent"
+msgstr "インデントを維持(&K)"
+
+#: cd_ext_find_repl.py:1809
+msgid "&Force split very long lines"
+msgstr "非常に長い行を強制的に分割(&F)"
+
+#: cd_ext_find_repl.py:428
+msgid "Re-order kits"
+msgstr "キットの順序を変更"
+
+#: cd_ext_find_repl.py:557
+msgid "Error: kit name repeated - "
+msgstr "エラー: キット名が重複しています - "
+
+#: cd_ext_find_repl.py:623 cd_ext_find_repl.py:642
+msgid "Loaded pair {}/{}"
+msgstr "ペア {}/{} を読み込みました"
+
+#: cd_ext_find_repl.py:699
+msgid "Yes"
+msgstr "はい"
+
+#: cd_ext_find_repl.py:700
+msgid "No"
+msgstr "いいえ"
+
+#: cd_ext_find_repl.py:716
+msgid "Close"
+msgstr "閉じる"
+
+#: cd_ext_find_repl.py:896 cd_ext_tree.py:344
+msgid "Regular expression"
+msgstr "正規表現"
+
+#: cd_ext_find_repl.py:1258
+msgid "&Keep existing caret(s)"
+msgstr "既存のキャレットを維持(&K)"
+
+#: cd_ext_find_repl.py:1437
+msgid "&Old indent step:"
+msgstr "以前のインデント幅(&O):"
+
+#: cd_ext_find_repl.py:1439
+msgid "&New indent step:"
+msgstr "新しいインデント幅(&N):"
+
+#: cd_ext_find_repl.py:582
+msgid "Edit kits"
+msgstr "キットを編集"
+
+#: cd_ext_find_repl.py:1250
+msgid "At &line:"
+msgstr "行番号(&L):"
+
+#: cd_ext_find_repl.py:1252
+msgid "At &column:"
+msgstr "桁位置(&C):"
+
+#: cd_ext_find_repl.py:1254
+msgid "&Height in lines:"
+msgstr "行数での高さ(&H):"
+
+#: cd_ext_find_repl.py:1256
+msgid "&Width of selection:"
+msgstr "選択範囲の幅(&W):"
+
+#: cd_ext_find_repl.py:431
+msgid "Save"
+msgstr "保存"
+
+#: cd_ext_find_repl.py:493
+msgid ". c w"
+msgstr ". c w"
+
+#: cd_ext_find_repl.py:495
+msgid "&Find patterns:"
+msgstr "検索パターン(&F):"
+
+#: cd_ext_find_repl.py:497
+msgid "&Replace patterns:"
+msgstr "置換パターン(&R):"
+
+#: cd_ext_find_repl.py:502
+msgid "&ы"
+msgstr "&ы"
+
+#: cd_ext_find_repl.py:503 cd_ext_find_repl.py:586 cd_kv_dlg.py:1930
+msgid "&Save"
+msgstr "保存(&S)"
+
+#: cd_ext_find_repl.py:587
+msgid "?"
+msgstr "?"
+
+#: cd_ext_find_repl.py:214
+msgid "Activate kit \"{}\""
+msgstr "キット \"{}\" をアクティブ化"
+
+#: cd_ext_find_repl.py:499
+msgid "&Name:"
+msgstr "名前(&N):"
+
+#: cd_ext_tabs.py:279
+msgid "Find tab by title"
+msgstr "タイトルでタブを検索"
+
+#: cd_ext_tabs.py:40
+msgid "No yet other activated tab"
+msgstr "他にアクティブにしたタブはまだありません"
+
+#: cd_ext_tabs.py:310
+msgid "Cannot arrange tabs with single group"
+msgstr "グループが 1つだけのときはタブを整列できません"
+
+#: cd_ext_tabs.py:323
+msgid "Arranged {} tab(s) across {} group(s)"
+msgstr "{} 個のタブを {} 個のグループにまたがって整列しました"
+
+#: cd_ext_tabs.py:328
+msgid "What tab number to activate? Input: [group:]number"
+msgstr "アクティブにするタブの番号は? 入力形式: [グループ:]番号"
+
+#: cd_ext_tabs.py:340
+msgid "No tab \"{}\""
+msgstr "タブ \"{}\" がありません"
+
+#: cd_ext_tabs.py:376
+msgid "No files in group"
+msgstr "グループにファイルがありません"
+
+#: cd_ext_tabs.py:399 cd_ext_tabs.py:407
+msgid "Not a paired ui-tab"
+msgstr "ペアの UI タブではありません"
+
+#: cd_ext_tabs.py:411
+msgid "Paired ui-tab has modified file(s)"
+msgstr "ペアタブに変更されたファイルがあります"
+
+#: cd_ext_tabs.py:450
+msgid "Sorted UI-tabs in %d group(s)"
+msgstr "%d 個のグループの UI タブを並べ替えました"
+
+#: cd_ext_tabs.py:265
+msgid "New position (max={gr_cnt})"
+msgstr "新しい位置 (最大={gr_cnt})"
+
+#: cd_ext_tabs.py:181
+msgid "Switcher"
+msgstr "スイッチャ"
+
+#: cd_ext_tree.py:148
+msgid ""
+"\n"
+"Search starts on Enter.\n"
+"• A found node after current one will be selected.\n"
+"• All found nodes are remembered and dialog can jump over them by [Shift+]Enter or by menu commands.\n"
+"• If option \"O\" (wrapped search) is tuned on:\n"
+"    - Search continues from the start, when end of the tree is reached\n"
+"    - Jumps to previous/next nodes are looped too\n"
+"• Option \".*\" (regular expression) allows to use Python reg.ex. See \"docs.python.org/3/library/re.html\".\n"
+"• Option \"w\" (whole words) is ignored if entered string contains not a word.\n"
+"• If option \"Close on success\" (in menu) is tuned on, dialog will close after successful search.\n"
+"• Option \"Show full tree path\" (in menu) shows in the statusbar the path of the found node (names of all parents).\n"
+"• Command \"Restore initial selection\" (in menu) restores only first of initial carets.\n"
+"    "
+msgstr ""
+"\n"
+"Enter で検索を開始します。\n"
+"• 現在のノードより後ろで見つかったノードが選択されます。\n"
+"• 見つかったノードはすべて記憶され、[Shift+]Enter またはメニューのコマンドで順に移動できます。\n"
+"• オプション \"O\" (循環検索) がオンの場合:\n"
+"    - ツリーの末尾に達すると、先頭から検索を続けます\n"
+"    - 前/次のノードへの移動も循環します\n"
+"• オプション \".*\" (正規表現) では Python の正規表現を使用できます。\"docs.python.org/3/library/re.html\" を参照してください。\n"
+"• オプション \"w\" (単語単位) は、入力した文字列が単語でない場合は無視されます。\n"
+"• メニューの \"成功したら閉じる\" オプションがオンの場合、検索に成功するとダイアログを閉じます。\n"
+"• メニューの \"ツリーのフルパスを表示\" オプションは、見つかったノードのパス (すべての親の名前) をステータスバーに表示します。\n"
+"• メニューのコマンド \"Restore initial selection\" は、最初のキャレットのうち先頭の 1つだけを復元します。\n"
+"    "
+
+#: cd_ext_tree.py:167
+msgid "No CodeTree"
+msgstr "コードツリーがありません"
+
+#: cd_ext_tree.py:219
+msgid "No suitable nodes"
+msgstr "適切なノードがありません"
+
+#: cd_ext_tree.py:221
+msgid "Error"
+msgstr "エラー"
+
+#: cd_ext_tree.py:102
+msgid "No items in Code Tree"
+msgstr "コードツリーに項目がありません"
+
+#: cd_ext_tree.py:337
+msgid "Find tree node"
+msgstr "ツリーのノードを検索"
+
+#: cd_ext_tree.py:112
+msgid "Code Tree symbols"
+msgstr "コードツリーのシンボル"
+
+#: cd_ext_tree.py:120
+msgid "              <Only 3 up levels>"
+msgstr "              <上位 3 レベルのみ>"
+
+#: cd_ext_tree.py:244
+msgid "&Options"
+msgstr "オプション(&O)"
+
+#: cd_ext_tree.py:248
+msgid "Restore initial selection and close dialog &="
+msgstr "初期選択を復元してダイアログを閉じる(&=)"
+
+#: cd_ext_tree.py:119
+msgid "              <Only 2 up levels>"
+msgstr "              <上位 2 レベルのみ>"
+
+#: cd_ext_tree.py:118
+msgid "              <Only 1 up level>"
+msgstr "              <上位 1 レベルのみ>"
+
+#: cd_ext_tree.py:347
+msgid "Wrapped search"
+msgstr "循環検索"
+
+#: cd_ext_tree.py:117
+msgid "              <All levels>"
+msgstr "              <すべてのレベル>"
+
+#: cd_ext_tree.py:245
+msgid "Show full tree path"
+msgstr "ツリーのフルパスを表示"
+
+#: cd_ext_tree.py:246
+msgid "Close on success"
+msgstr "成功したら閉じる"
+
+#: cd_ext_tree.py:116
+msgid "<Update Code Tree>"
+msgstr "<コードツリーを更新>"
+
+#: cd_kv_base.py:532
+msgid "Fail. Use only for python file."
+msgstr "失敗しました。Python ファイルでのみ使用してください。"
+
+#: cd_kv_dlg.py:1882
+msgid "Apply the tunings to controls of all dialogs."
+msgstr "調整内容をすべてのダイアログのコントロールに適用します。"
+
+#: cd_kv_dlg.py:1934
+msgid "Tuning text vertical alignment for control pairs"
+msgstr "コントロールのペアのテキストの縦位置を調整"

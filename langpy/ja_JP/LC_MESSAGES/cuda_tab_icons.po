@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_tab_icons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-04 00:54+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+
+#: __init__.py:57
+msgid "Set tab icon..."
+msgstr "タブアイコンの設定..."
+
+#: __init__.py:278
+msgid "(reset icon)"
+msgstr "(アイコンをリセット)"
+
+#: __init__.py:103
+msgid ": Incorrect filetype icon:"
+msgstr ": ファイルタイプのアイコンが正しくありません:"
+
+#: __init__.py:259
+msgid "Choose icon for: "
+msgstr "アイコンを選択する対象: "
+
+#: __init__.py:42
+msgid ": incorrect theme name, must be nnnn_NNxNN:"
+msgstr ": テーマ名が正しくありません。nnnn_NNxNN の形式にしてください:"
+
+#: __init__.py:49
+msgid ": using theme "
+msgstr ": 使用するテーマ: "
+
+#: __init__.py:350
+msgid ": update CudaText to enable tab pinning"
+msgstr ": タブのピン留めを有効にするには CudaText を更新してください"

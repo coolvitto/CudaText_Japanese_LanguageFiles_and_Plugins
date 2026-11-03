@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_hash_gen\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:25+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&Browse..."
+msgstr "参照(&B)..."
+
+msgid "&Copy"
+msgstr "コピー(&C)"
+
+msgid "&Enter hash to verify:"
+msgstr "検証するハッシュを入力(&E):"
+
+msgid "&Hash -- of {}:"
+msgstr "{} のハッシュ(&H):"
+
+msgid "&Hash value:"
+msgstr "ハッシュ値(&H):"
+
+msgid "&Verify"
+msgstr "検証(&V)"
+
+msgid "C&alculate"
+msgstr "計算(&A)"
+
+msgid "Calculate hash from &file:"
+msgstr "ファイルからハッシュを計算(&F):"
+
+msgid "Calculate hash from &string:"
+msgstr "文字列からハッシュを計算(&S):"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Hash &type:"
+msgstr "ハッシュの種類(&T):"
+
+msgid "Hash Generator"
+msgstr "ハッシュジェネレーター"
+
+msgid "Hash copied to clipboard"
+msgstr "ハッシュをクリップボードにコピーしました"
+
+msgid "Verified"
+msgstr "検証済み"
+
+msgid "file"
+msgstr "ファイル"
+
+msgid "string"
+msgstr "文字列"

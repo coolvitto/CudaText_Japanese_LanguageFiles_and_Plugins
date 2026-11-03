@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_sess_manager\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "CudaText sessions|*{}"
+msgstr "CudaText セッション|*{}"
+
+msgid "CudaText sessions|*{}|SynWrite sessions|*{}|All files|*.*"
+msgstr "CudaText セッション|*{}|SynWrite セッション|*{}|すべてのファイル|*.*"
+
+msgid ""
+"File \"%s\" is a session file. Do you want to open the session (Yes) or open "
+"the raw content (No)?"
+msgstr ""
+"ファイル \"%s\" はセッションファイルです。セッションとして開きますか (はい)?"
+"それともテキストとして開きますか (いいえ)?"
+
+msgid "No previous session"
+msgstr "前のセッションはありません"
+
+msgid "No recent sessions"
+msgstr "最近使用したセッションはありません"
+
+msgid "Plugin needs newer app version"
+msgstr "プラグインにはより新しい本体バージョンが必要です"
+
+msgid "Session \"{stem}\" is created"
+msgstr "セッション \"{stem}\" を作成しました"
+
+msgid "Session \"{stem}\" is opened"
+msgstr "セッション \"{stem}\" を開きました"
+
+msgid "Session \"{stem}\" is saved"
+msgstr "セッション \"{stem}\" を保存しました"
+
+msgid ""
+"Session \"{stem}\" not found\n"
+"\n"
+"Create it?"
+msgstr ""
+"セッション \"{stem}\" が見つかりません\n"
+"\n"
+"作成しますか?"

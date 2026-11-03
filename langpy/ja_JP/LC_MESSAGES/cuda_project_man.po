@@ -1,0 +1,437 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_project_man\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:29+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "%d deleted item(s)"
+msgstr "%d 個の削除された項目"
+
+msgid "&Main file (read-only, change in context menu)"
+msgstr "メインファイル (読み取り専用、コンテキストメニューで変更)(&M)"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Recent projects:"
+msgstr "最近のプロジェクト(&R):"
+
+msgid "&Show toolbar"
+msgstr "ツールバーを表示(&S)"
+
+msgid "&Use \"preview tab\" on item clicking"
+msgstr "項目クリック時に「プレビュータブ」を使用(&U)"
+
+msgid "&Variables (in form Name=Value)"
+msgstr "変数 (名前=値 の形式)(&V)"
+
+msgid "(*) - requires CudaText restart"
+msgstr "(*) - CudaText の再起動が必要です"
+
+msgid "(Unsaved project)"
+msgstr "(未保存のプロジェクト)"
+
+msgid "(none)"
+msgstr "(なし)"
+
+msgid "-"
+msgstr "-"
+
+msgid "Add file"
+msgstr "ファイルを追加"
+
+msgid "Add file..."
+msgstr "ファイルを追加..."
+
+msgid "Add folder"
+msgstr "フォルダーを追加"
+
+msgid "Add folder..."
+msgstr "フォルダーを追加..."
+
+msgid "Adding to project: "
+msgstr "プロジェクトに追加中: "
+
+msgid "Always sync project-tree with current editor file"
+msgstr "プロジェクトツリーを現在のエディタファイルと常に同期する"
+
+msgid "Backup to:"
+msgstr "バックアップ先:"
+
+msgid "Backup..."
+msgstr "バックアップ..."
+
+msgid "Called \"Find in Files 4\" for \"%s\""
+msgstr "\"%s\" に対して「ファイル内検索 4」を呼び出しました"
+
+msgid "Called \"Find in Files\" for \"%s\""
+msgstr "\"%s\" に対して「ファイル内検索」を呼び出しました"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot jump to file: "
+msgstr "ファイルにジャンプできません: "
+
+msgid "Clear project"
+msgstr "プロジェクトをクリア"
+
+msgid "Clear project..."
+msgstr "プロジェクトをクリア..."
+
+msgid "Copied to: "
+msgstr "コピー先: "
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Copy path"
+msgstr "パスをコピー"
+
+msgid "Copy relative path"
+msgstr "相対パスをコピー"
+
+msgid ""
+"CudaText has opened %d tab(s) not belonging to the project \"%s\". Close "
+"them?"
+msgstr ""
+"CudaText はプロジェクト \"%s\" に属さない %d 個のタブを開いています。閉じます"
+"か?"
+
+msgid "CudaText projects"
+msgstr "CudaText プロジェクト"
+
+msgid "Cut"
+msgstr "切り取り"
+
+msgid "Date of creation: "
+msgstr "作成日時: "
+
+msgid "Date of modification: "
+msgstr "更新日時: "
+
+msgid "Date of opening: "
+msgstr "アクセス日時: "
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete file from disk:\n"
+msgstr "ディスクからファイルを削除:\n"
+
+msgid "Delete folder from disk:\n"
+msgstr "ディスクからフォルダーを削除:\n"
+
+msgid "Delete project session"
+msgstr "プロジェクトセッションを削除"
+
+msgid "Delete session..."
+msgstr "セッションを削除..."
+
+msgid "Deleted dir: "
+msgstr "削除されたディレクトリ: "
+
+msgid "Deleted file: "
+msgstr "削除されたファイル: "
+
+msgid "Empty session name"
+msgstr "空のセッション名"
+
+msgid "File type icons:"
+msgstr "ファイルタイプアイコン:"
+
+msgid "File: "
+msgstr "ファイル: "
+
+msgid "Find in folder..."
+msgstr "フォルダー内で検索..."
+
+msgid "Focus in file manager"
+msgstr "ファイルマネージャーにフォーカス"
+
+msgid "Folder: "
+msgstr "フォルダー: "
+
+msgid ""
+"For more icons, get add-ons of kind \"filetypeicons\", \"projtoolbaricons\""
+msgstr ""
+"さらにアイコンが必要な場合は、「filetypeicons」、「projtoolbaricons」の種類の"
+"アドオンを取得してください"
+
+msgid "Forget session, close all tabs"
+msgstr "セッションを破棄し、すべてのタブを閉じる"
+
+msgid "Go to file"
+msgstr "ファイルへ移動"
+
+msgid "Go to file..."
+msgstr "ファイルへ移動..."
+
+msgid "Ignore &files:"
+msgstr "無視するファイル(&F):"
+
+msgid "Ignore all &hidden files/folders"
+msgstr "すべての隠しファイル/フォルダーを無視(&H)"
+
+msgid "Ignore fold&ers:"
+msgstr "無視するフォルダー(&E):"
+
+msgid "Incorrect file name"
+msgstr "不正なファイル名"
+
+msgid "Loading project: "
+msgstr "プロジェクトを読み込み中: "
+
+msgid "New file..."
+msgstr "新規ファイル..."
+
+msgid "New file:"
+msgstr "新しいファイル:"
+
+msgid "New folder..."
+msgstr "新しいフォルダー..."
+
+msgid "New folder:"
+msgstr "新しいフォルダー:"
+
+msgid "New project"
+msgstr "新しいプロジェクト"
+
+msgid "No project sessions"
+msgstr "プロジェクトセッションはありません"
+
+msgid "Not allowed char(s) in the session name"
+msgstr "セッション名に使用できない文字が含まれています"
+
+msgid "Object not found"
+msgstr "オブジェクトが見つかりません"
+
+msgid "On opening file in Git/SVN repo, create project from repo (*)"
+msgstr ""
+"Git/SVN リポジトリ内のファイルを開いたときに、リポジトリからプロジェクトを作"
+"成する (*)"
+
+msgid "Open all %d file(s) in editor?"
+msgstr "すべての %d 個のファイルをエディタで開きますか?"
+
+msgid "Open file after \"&Go to file\" command"
+msgstr "「ファイルへ移動」コマンドの後にファイルを開く(&G)"
+
+msgid "Open files by &double-click"
+msgstr "ダブルクリックでファイルを開く(&D)"
+
+msgid "Open in default application"
+msgstr "デフォルトのアプリケーションで開く"
+
+msgid "Open project"
+msgstr "プロジェクトを開く"
+
+msgid "Open project session"
+msgstr "プロジェクトセッションを開く"
+
+msgid "Open project..."
+msgstr "プロジェクトを開く..."
+
+msgid "Opened project: "
+msgstr "開いたプロジェクト: "
+
+msgid "Paste"
+msgstr "貼り付け"
+
+msgid ""
+"Plugin \"Find in Files\" or \"Find in Files 4\" is not installed, install it "
+"first"
+msgstr ""
+"プラグイン「ファイル内検索」または「ファイル内検索 4」がインストールされてい"
+"ません。先にインストールしてください"
+
+msgid "Project Manager options"
+msgstr "プロジェクトマネージャーオプション"
+
+msgid "Project Manager: bad icons folder name: \"%s\""
+msgstr "プロジェクトマネージャー: アイコンフォルダー名が無効です: \"%s\""
+
+msgid "Project Manager: bad icons size: \"%s\""
+msgstr "プロジェクトマネージャー: アイコンサイズが無効です: \"%s\""
+
+msgid "Project Manager: folder is locked: "
+msgstr "プロジェクトマネージャー: フォルダーがロックされています: "
+
+msgid "Project Manager: folder not found: "
+msgstr "プロジェクトマネージャー: フォルダーが見つかりません: "
+
+msgid "Project Manager: incorrect filetype icon:"
+msgstr "プロジェクトマネージャー: ファイルタイプアイコンが無効です:"
+
+msgid "Project Manager: opened project for version-controlled folder: "
+msgstr ""
+"プロジェクトマネージャー: バージョン管理されたフォルダーのプロジェクトを開き"
+"ました: "
+
+msgid "Project Manager: saving options"
+msgstr "プロジェクトマネージャー: オプションを保存中"
+
+msgid "Project file"
+msgstr "プロジェクトファイル"
+
+msgid "Project file not found: "
+msgstr "プロジェクトファイルが見つかりません: "
+
+msgid "Project is empty"
+msgstr "プロジェクトは空です"
+
+msgid "Project jump: "
+msgstr "プロジェクトジャンプ: "
+
+msgid "Project main file is not set"
+msgstr "プロジェクトのメインファイルが設定されていません"
+
+msgid "Project not loaded"
+msgstr "プロジェクトが読み込まれていません"
+
+msgid "Project not opened"
+msgstr "プロジェクトが開かれていません"
+
+msgid "Project properties"
+msgstr "プロジェクトのプロパティ"
+
+msgid "Project saved"
+msgstr "プロジェクトが保存されました"
+
+msgid "Project session \"%s\" not found"
+msgstr "プロジェクトセッション \"%s\" が見つかりません"
+
+msgid "Project session:"
+msgstr "プロジェクトセッション:"
+
+msgid "Project sessions"
+msgstr "プロジェクトセッション"
+
+msgid "Properties"
+msgstr "プロパティ"
+
+msgid "Properties..."
+msgstr "プロパティ..."
+
+msgid "Recent projects"
+msgstr "最近のプロジェクト"
+
+msgid "Refresh"
+msgstr "更新"
+
+msgid "Remove deleted root nodes..."
+msgstr "削除されたルートノードを削除..."
+
+msgid "Remove node"
+msgstr "ノードを削除"
+
+msgid "Remove root node"
+msgstr "ルートノードを削除"
+
+msgid "Rename to:"
+msgstr "変更後の名前:"
+
+msgid "Rename..."
+msgstr "名前の変更..."
+
+msgid "Renamed to: "
+msgstr "名前を変更しました: "
+
+msgid "Root nodes"
+msgstr "ルートノード"
+
+msgid "Save current state to the session \"%s\"?"
+msgstr "現在の状態をセッション \"%s\" に保存しますか?"
+
+msgid "Save project as"
+msgstr "名前を付けてプロジェクトを保存"
+
+msgid "Save project as..."
+msgstr "名前を付けてプロジェクトを保存..."
+
+msgid "Save session with name:"
+msgstr "セッションに名前を付けて保存:"
+
+msgid "Save session..."
+msgstr "セッションを保存..."
+
+msgid "Saving project: "
+msgstr "プロジェクトを保存中: "
+
+msgid "Selected file"
+msgstr "選択したファイル"
+
+msgid "Selected folder"
+msgstr "選択したフォルダー"
+
+msgid "Session \"%s\" already exists"
+msgstr "セッション \"%s\" はすでに存在します"
+
+msgid "Set as main file"
+msgstr "メインファイルに設定"
+
+msgid "Set default project session"
+msgstr "デフォルトのプロジェクトセッションを設定"
+
+msgid "Set default session..."
+msgstr "デフォルトセッションを設定..."
+
+msgid "Size: "
+msgstr "サイズ: "
+
+msgid "Sorting order (*):"
+msgstr "並び替え順 (*):"
+
+msgid "Suggest to close tabs not belonging to project"
+msgstr "プロジェクトに属さないタブを閉じることを提案する"
+
+msgid "Sync project-tree with current editor file"
+msgstr "プロジェクトツリーを現在のエディタファイルと同期する"
+
+msgid ""
+"The file you are renaming has unsaved changes. Would you like to save the "
+"changes first?"
+msgstr ""
+"名前を変更しようとしているファイルに変更が保存されていません。変更を先に保存"
+"しますか?"
+
+msgid "Toolbar icons:"
+msgstr "ツールバーアイコン:"
+
+msgid "Untitled project"
+msgstr "無題のプロジェクト"
+
+msgid "by creation date"
+msgstr "作成日順"
+
+msgid "by creation date, descending"
+msgstr "作成日順 (降順)"
+
+msgid "by date"
+msgstr "日付順"
+
+msgid "by date, descending"
+msgstr "日付順 (降順)"
+
+msgid "by extension"
+msgstr "拡張子順"
+
+msgid "by name"
+msgstr "名前順"
+
+msgid "by size"
+msgstr "サイズ順"
+
+msgid "by size, descending"
+msgstr "サイズ順 (降順)"
+
+msgid "none"
+msgstr "なし"

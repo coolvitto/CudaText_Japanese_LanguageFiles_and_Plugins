@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_favorites\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:24+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&?"
+msgstr "&?"
+
+msgid "&Add opened"
+msgstr "開いているファイルを追加(&A)"
+
+msgid "&Delete"
+msgstr "削除(&D)"
+
+msgid "&Open"
+msgstr "開く(&O)"
+
+msgid "&Save"
+msgstr "保存(&S)"
+
+msgid "Add&..."
+msgstr "追加(&.)..."
+
+msgid "Added to Favorites: "
+msgstr "お気に入りに追加しました: "
+
+msgid "Already in Favorites: "
+msgstr "既にお気に入りに追加されています: "
+
+msgid "Apply the tunings to controls of all dialogs."
+msgstr "すべてのダイアログのコントロールに微調整を適用します。"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Choose file to append.\rShift+Click to choose folder"
+msgstr "追加するファイルを選択します。\rShift+クリックでフォルダーを選択"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Fail. Use only for python file."
+msgstr "失敗しました。Python ファイルでのみ使用できます。"
+
+msgid "Favorites"
+msgstr "お気に入り"
+
+msgid "Favorites 1.2"
+msgstr "お気に入り 1.2"
+
+msgid "Favorites: "
+msgstr "お気に入り: "
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Find favorite"
+msgstr "お気に入りを検索"
+
+msgid "Folder"
+msgstr "フォルダー"
+
+msgid "Move &up"
+msgstr "上へ移動(&U)"
+
+msgid "Move do&wn"
+msgstr "下へ移動(&W)"
+
+msgid "No favorite at #{}"
+msgstr "#{} にお気に入りはありません"
+
+msgid "Not exist: {}"
+msgstr "存在しません: {}"
+
+msgid ""
+"Open file/project and close dialog.\rShift+Click to open without dialog "
+"closing"
+msgstr ""
+"ファイル/プロジェクトを開いてダイアログを閉じます。\rShift+クリックでダイア"
+"ログを閉じずに開きます"
+
+msgid "Project"
+msgstr "プロジェクト"
+
+msgid "Project Manager has no opened project"
+msgstr "プロジェクトマネージャーで開かれているプロジェクトがありません"
+
+msgid "Project Manager plugin not installed"
+msgstr "Project Manager プラグインがインストールされていません"
+
+msgid "Projects"
+msgstr "プロジェクト"
+
+msgid "Show &paths"
+msgstr "パスを表示(&P)"
+
+msgid "Tuning text vertical alignment for control pairs"
+msgstr "コントロールペアのテキストの垂直方向の配置を調整"
+
+msgid ""
+"• Folders can be added by Shift + clicking \"Add...\".\r \r• Quick opening."
+"\rUse Alt+1, Alt+2, ..., Alt+9\ror Ctrl+1, Ctrl+2, ..., Ctrl+9\rto quickly "
+"open item by its index (1, 2, ... 9).\r \r• To import favorites from "
+"SynWrite, browse for file \"SynFav.ini\". This file is located in the "
+"\"Settings\" subfolder of SynWrite."
+msgstr ""
+"• 「追加...」を Shift + クリックするとフォルダーを追加できます。\r \r• ク"
+"イックオープン:\rAlt+1, Alt+2, ..., Alt+9\rまたは Ctrl+1, Ctrl+2, ..., "
+"Ctrl+9\rで、インデックス (1, 2, ... 9) を指定して項目を素早く開きます。\r "
+"\r• SynWrite からお気に入りをインポートするには、\"SynFav.ini\" ファイルを"
+"指定してください。このファイルは SynWrite の \"Settings\" サブフォルダーに"
+"あります。"

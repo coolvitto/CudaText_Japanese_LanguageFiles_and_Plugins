@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_html_ops\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Added new tag"
+msgstr "新しいタグを追加しました"
+
+msgid "Added tag <%s>"
+msgstr "タグ <%s> を追加しました"
+
+msgid "CSS styles ({}) copied to clipboard"
+msgstr "CSS スタイル ({}) をクリップボードにコピーしました"
+
+msgid "Cannot convert selection"
+msgstr "選択範囲を変換できません"
+
+msgid ""
+"Cannot detect image file:\n"
+"%s"
+msgstr ""
+"画像ファイルを検出できません:\n"
+"%s"
+
+msgid "Cannot open file: "
+msgstr "ファイルを開けません: "
+
+msgid "Cannot open validator URL"
+msgstr "バリデータ URL を開けません"
+
+msgid "Cannot parse validator reply"
+msgstr "バリデータからの応答を解析できません"
+
+msgid "Cannot preview untitled tab"
+msgstr "無題のタブはプレビューできません"
+
+msgid "Changed %d values"
+msgstr "%d 個の値を変更しました"
+
+msgid "Converted px<->rem"
+msgstr "px<->rem を変換しました"
+
+msgid "Decreased value"
+msgstr "値を減らしました"
+
+msgid "Document successfully checked as %s"
+msgstr "ドキュメントが %s として正常に検証されました"
+
+msgid "Image info inserted"
+msgstr "画像情報を挿入しました"
+
+msgid "Images"
+msgstr "画像"
+
+msgid "Incorrect number or zero: "
+msgstr "無効な数値またはゼロです: "
+
+msgid "Incorrect number: "
+msgstr "無効な数値です: "
+
+msgid "Increased value"
+msgstr "値を増やしました"
+
+msgid "Need single caret"
+msgstr "単一のキャレットが必要です"
+
+msgid "No CSS classes found"
+msgstr "CSS クラスが見つかりません"
+
+msgid "No carets"
+msgstr "キャレットがありません"
+
+msgid "Opened preview in browser"
+msgstr "ブラウザでプレビューを開きました"
+
+msgid "Place caret under number"
+msgstr "キャレットを数値の位置に置いてください"
+
+msgid "Smart HTML indent"
+msgstr "スマート HTML インデント"
+
+msgid "Table columns:"
+msgstr "テーブルの列数:"
+
+msgid "Text not selected"
+msgstr "テキストが選択されていません"
+
+msgid "Wrapped selection into tag"
+msgstr "選択範囲をタグで囲みました"

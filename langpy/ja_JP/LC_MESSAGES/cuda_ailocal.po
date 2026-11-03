@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_ailocal\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:19+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid ""
+"\n"
+"User prompt\n"
+msgstr ""
+"\n"
+"ユーザープロンプト\n"
+
+msgid "/clear: clear the console text"
+msgstr "/clear: コンソールのテキストをクリア"
+
+msgid "/insert: insert console selected text to the current document"
+msgstr "/insert: コンソールで選択したテキストを現在のドキュメントに挿入"
+
+msgid "AI Local: bad icons folder name: \"%s\""
+msgstr "AI Local: 無効なアイコンフォルダー名: \"%s\""
+
+msgid "AI Local: bad icons size: \"%s\""
+msgstr "AI Local: 無効なアイコンサイズ: \"%s\""
+
+msgid "Answer"
+msgstr "回答"
+
+msgid "Authorization: Bearer {}"
+msgstr "認証: Bearer {}"
+
+msgid "Enter the prompt text for the selected text (or /help):"
+msgstr "選択したテキストに対するプロンプトを入力してください (/help でヘルプ表示):"
+
+msgid "Error: Request failed with status code "
+msgstr "エラー: リクエストがステータスコードで失敗しました "
+
+msgid "Hotkey: Enter"
+msgstr "ホットキー: Enter"
+
+msgid "Inserted item %d..."
+msgstr "項目 %d を挿入しました..."
+
+msgid "Open Project action"
+msgstr "「プロジェクトを開く」アクション"
+
+msgid "Option 1: select the text and type the prompt"
+msgstr "オプション 1: テキストを選択してプロンプトを入力"
+
+msgid "Option 2: just type the prompt"
+msgstr "オプション 2: プロンプトをそのまま入力"
+
+msgid "Save Project As action"
+msgstr "「名前を付けてプロジェクトを保存」アクション"
+
+msgid "Sorry, I couldn't get a response."
+msgstr "申し訳ありません。回答を取得できませんでした。"

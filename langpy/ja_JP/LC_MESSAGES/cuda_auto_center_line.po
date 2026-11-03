@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_auto_center_line\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:19+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Auto Center Line activated"
+msgstr "自動中央揃え行を有効化しました"
+
+msgid "Auto Center Line deactivated"
+msgstr "自動中央揃え行を無効化しました"

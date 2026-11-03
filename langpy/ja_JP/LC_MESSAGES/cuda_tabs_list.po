@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_tabs_list\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Close others"
+msgstr "他をすべて閉じる"
+
+msgid "Copy filename only"
+msgstr "ファイル名のみコピー"
+
+msgid "Copy full filepath"
+msgstr "フルパスをコピー"
+
+msgid "Filter"
+msgstr "フィルター"

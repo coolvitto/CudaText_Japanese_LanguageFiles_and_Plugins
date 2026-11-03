@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_lsp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:26+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Choose config to edit"
+msgstr "編集する設定を選択"
+
+msgid "Clear"
+msgstr "消去"
+
+msgid "Copy"
+msgstr "コピー"
+
+msgid "Declaration"
+msgstr "宣言"
+
+msgid "Definition"
+msgstr "定義"
+
+msgid "Diagnostics"
+msgstr "診断"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "Go to: declaration"
+msgstr "移動: 宣言へ"
+
+msgid "Go to: definition"
+msgstr "移動: 定義へ"
+
+msgid "Go to: implementation"
+msgstr "移動: 実装へ"
+
+msgid "Go to: references"
+msgstr "移動: 参照へ"
+
+msgid "Go to: type definition"
+msgstr "移動: 型定義へ"
+
+msgid "Implementation"
+msgstr "実装"
+
+msgid "Info"
+msgstr "情報"
+
+msgid "LSP Docs"
+msgstr "LSP ドキュメント"
+
+msgid "Log"
+msgstr "ログ"
+
+msgid "Logs"
+msgstr "ログ"
+
+msgid "Messages"
+msgstr "メッセージ"
+
+msgid "No messages for server of current document"
+msgstr "現在のドキュメントのサーバーに対するメッセージはありません"
+
+msgid "No project opened"
+msgstr "プロジェクトが開かれていません"
+
+msgid "No server configs exist"
+msgstr "サーバー設定が存在しません"
+
+msgid "References"
+msgstr "参照"
+
+msgid "Response Error"
+msgstr "応答エラー"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Shutdown server"
+msgstr "サーバーをシャットダウン"
+
+msgid "Toggle word wrap"
+msgstr "折り返し表示の切り替え"
+
+msgid "Tooltip"
+msgstr "ツールチップ"
+
+msgid "Type definition"
+msgstr "型定義"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Wrong snippet: {}"
+msgstr "不正なスニペット: {}"
+
+msgid ""
+"{}: current Python version is not supported. Please upgrade to Python 3.6 or "
+"newer."
+msgstr ""
+"{}: 現在の Python バージョンはサポートされていません。Python 3.6 以降にアップ"
+"グレードしてください。"
+
+msgid "{}: starting server - {}; root: {}"
+msgstr "{}: サーバーを起動中 - {}; ルート: {}"
+
+msgid "{}: {} - Failed to connect on port {}"
+msgstr "{}: {} - ポート {} への接続に失敗しました"
+
+msgid "{}: {} - No format-on-save response came"
+msgstr "{}: {} - 保存時フォーマット (format-on-save) の応答がありませんでした"
+
+msgid "{}: {} - connecting via TCP, port: {}"
+msgstr "{}: {} - TCP 経由で接続中 (ポート: {})"
+
+msgid "{}: {} - file does not exist: {!r}, uri:{!r}"
+msgstr "{}: {} - ファイルが存在しません: {!r}, URI:{!r}"

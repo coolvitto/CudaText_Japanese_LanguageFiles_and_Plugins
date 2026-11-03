@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_extract_strings\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "&Find"
+msgstr "検索(&F)"
+
+msgid "&Ignore case"
+msgstr "大文字/小文字を無視(&I)"
+
+msgid "&OK"
+msgstr "&OK"
+
+msgid "&Reg.ex."
+msgstr "正規表現(&R)"
+
+msgid "&Regular expression:"
+msgstr "正規表現(&R):"
+
+msgid "&Sort output"
+msgstr "出力結果を並べ替え(&S)"
+
+msgid "&Text:"
+msgstr "テキスト(&T):"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cannot find lines: "
+msgstr "行が見つかりません: "
+
+msgid "Case &sensitive"
+msgstr "大文字/小文字を区別(&S)"
+
+msgid "Copied to clipboard"
+msgstr "クリップボードにコピーしました"
+
+msgid "Copied to tab"
+msgstr "タブにコピーしました"
+
+msgid "Copy to &clipboard"
+msgstr "クリップボードにコピー(&C)"
+
+msgid "Copy to &new tab"
+msgstr "新しいタブにコピー(&N)"
+
+msgid "Extract Strings"
+msgstr "文字列を抽出"
+
+msgid "F&ound strings:"
+msgstr "見つかった文字列(&O):"
+
+msgid "Filter Lines"
+msgstr "行をフィルター"
+
+msgid "Found %d matching lines"
+msgstr "一致する行が %d 行見つかりました"
+
+msgid "Found: %d"
+msgstr "検索結果: %d"
+
+msgid "Include line &numbers"
+msgstr "行番号を含める(&N)"
+
+msgid "Keep &lexer"
+msgstr "Lexer を保持(&L)"
+
+msgid "No strings found"
+msgstr "文字列が見つかりませんでした"
+
+msgid "Number of lines &before match:"
+msgstr "一致箇所の前の行数(&B):"
+
+msgid "Number of lines a&fter match:"
+msgstr "一致箇所の後の行数(&F):"
+
+msgid "Reg.ex. for e-mail"
+msgstr "メールアドレス用正規表現"
+
+msgid "S&ave options"
+msgstr "設定を保存(&A)"
+
+msgid "Unknown code of dlg"
+msgstr "ダイアログの不明なコードです"

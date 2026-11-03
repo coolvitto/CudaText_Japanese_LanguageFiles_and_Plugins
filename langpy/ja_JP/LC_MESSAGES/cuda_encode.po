@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_encode\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:23+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "All files"
+msgstr "すべてのファイル"
+
+msgid "Cannot copy global config file \"%s\" to local folder"
+msgstr "グローバル設定ファイル \"%s\" をローカルフォルダーにコピーできません"
+
+msgid "Cannot format text"
+msgstr "テキストをフォーマットできません"
+
+msgid "Cannot open local config file for untitled tab"
+msgstr "無題のタブのローカル設定ファイルを開けません"
+
+msgid "Cannot work without selection"
+msgstr "選択範囲がないため実行できません"
+
+msgid "Caret(s) must have selection(s)"
+msgstr "キャレット位置でテキストが選択されている必要があります"
+
+msgid "Changed %d line(s)"
+msgstr "%d 行変更しました"
+
+msgid "Column/line selections not supported"
+msgstr "列/行の選択範囲はサポートされていません"
+
+msgid "Formatting selected text"
+msgstr "選択したテキストを整形中"
+
+msgid "Global config file \"%s\" not found"
+msgstr "グローバル設定ファイル \"%s\" が見つかりません"
+
+msgid ""
+"Local config file \"%s\" not found.\n"
+"Do you want to create it?"
+msgstr ""
+"ローカル設定ファイル \"%s\" が見つかりません。\n"
+"作成しますか?"
+
+msgid "[Encode %s] "
+msgstr "[エンコード %s] "
+
+msgid "[Encode] "
+msgstr "[エンコード] "
+
+msgid "got %d error(s)"
+msgstr "%d 件のエラーが発生しました"

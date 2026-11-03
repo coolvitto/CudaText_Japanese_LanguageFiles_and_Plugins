@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_sqltools\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-02 16:30+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Connections"
+msgstr "接続一覧"
+
+msgid "ERROR: SQL Tools:"
+msgstr "エラー: SQL Tools:"
+
+msgid "Functions"
+msgstr "関数"
+
+msgid "History"
+msgstr "履歴"
+
+msgid "Need single caret"
+msgstr "単一のキャレットが必要です"
+
+msgid "Queries"
+msgstr "クエリ"
+
+msgid "Query alias:"
+msgstr "クエリエイリアス:"
+
+msgid "SQL Tools: History is empty"
+msgstr "SQL Tools: 履歴は空です"
+
+msgid "SQL Tools: No saved queries"
+msgstr "SQL Tools: 保存されたクエリはありません"
+
+msgid "SQL Tools: done"
+msgstr "SQL Tools: 完了"
+
+msgid "SQL Tools: formatted all text"
+msgstr "SQL Tools: 全体テキストを整形しました"
+
+msgid "SQL Tools: formatted selection"
+msgstr "SQL Tools: 選択範囲を整形しました"
+
+msgid "SQL Tools: {} active queries..."
+msgstr "SQL Tools: {} 件のアクティブなクエリを実行中..."
+
+msgid "SQL result"
+msgstr "SQL 実行結果"
+
+msgid "Table \"%s\""
+msgstr "テーブル \"%s\""
+
+msgid "Tables"
+msgstr "テーブル"
+
+msgid "Text is empty"
+msgstr "テキストが空です"
+
+msgid "Text not selected"
+msgstr "テキストが選択されていません"
+
+msgid "You need to setup your connections first"
+msgstr "最初に接続設定を行う必要があります"
+
+msgid "Your database has no functions"
+msgstr "データベースに関数が存在しません"
+
+msgid "Your database has no tables"
+msgstr "データベースにテーブルが存在しません"
