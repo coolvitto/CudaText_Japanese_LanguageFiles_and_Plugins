@@ -1,0 +1,12 @@
+[info]
+title=Configure Hotkeys Jp
+desc=ホットキーを確認・設定するためのダイアログを表示します
+type=cudatext-plugin
+subdir=cuda_config_keys_ja
+homepage=https://github.com/kvichans/cuda_config_keys
+
+[item1]
+section=commands
+caption=Configure Hotkeys Jp
+method=dlg_config_keys_resizable
+;menu=0

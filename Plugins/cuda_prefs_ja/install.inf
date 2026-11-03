@@ -1,0 +1,11 @@
+[info]
+title=Options Editor Jp
+desc=user.json のオプションを表示・変更します (Options Editor Lite の日本語版)
+type=cudatext-plugin
+subdir=cuda_prefs_ja
+homepage=https://github.com/halfbrained/cuda_prefs
+
+[item10]
+section=commands
+caption=Options Editor Jp...
+method=dlg_cuda_options

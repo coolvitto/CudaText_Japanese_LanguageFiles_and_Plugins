@@ -1,0 +1,5 @@
+1.0 (日本語版)
+- Options Editor Lite 2.3.18 をもとに日本語版を作成
+- 説明文・選択肢ラベルの日本語表示 (default_ja.json) と章ツリーの日本語表示
+- ダイアログのフォント指定 (既定: Yu Gothic UI)
+- default.json の翻訳で「ダイアログが開かない」問題を修正 (KeyError 対策)
