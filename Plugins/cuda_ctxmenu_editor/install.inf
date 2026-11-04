@@ -1,0 +1,16 @@
+[info]
+title=Context Menu Editor
+desc=エディタの右クリックメニュー、タブメニュー、メインメニューをGUIで編集するプラグイン。既存メニューへの項目追加、サブメニューの作成、既存項目の非表示・表示名の変更ができます。
+type=cudatext-plugin
+subdir=cuda_ctxmenu_editor
+api=1.0.350
+version=0.2.0
+
+[item1]
+section=commands
+caption=Context Menu Editor...
+method=config
+
+[item2]
+section=events
+events=on_start,on_click_right
