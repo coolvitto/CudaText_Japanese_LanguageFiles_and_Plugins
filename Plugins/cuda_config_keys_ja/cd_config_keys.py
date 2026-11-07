@@ -1,9 +1,9 @@
-''' Plugin for CudaText editor
+""" Plugin for CudaText editor
 Authors:
     Andrey Kvichansky (kvichans on github) / coolvitto (日本語化)
 Version:
     '2.1.8 2026-11-03'
-'''
+"""
 #! /usr/bin/env python3
 
 import os, json, re, collections, itertools
@@ -31,9 +31,8 @@ try:    # Is plugin cuda_snip2call acitive?
     from cuda_snip2call import SnipData
     sndt    = SnipData()
 except ImportError as ex:
-    pass;                      #LOG and log('ex={}',(ex))
+    pass;
     pass
-#sndt        = None
 
 VERSION     = re.split('Version:', __doc__)[1].split("'")[1]
 VERSION_V,  \
@@ -42,20 +41,18 @@ VERSION_D   = VERSION.split(' ')
 
 class CommandResizable:
     def dlg_config_keys_resizable(self):
-#       if app.app_api_version()<'1.0.136':     # dlg_hotkey, PROC_GET_HOTKEY, PROC_SET_HOTKEY
+# if app.app_api_version()<'1.0.136':     # dlg_hotkey, PROC_GET_HOTKEY, PROC_SET_HOTKEY
         if app.app_api_version()<'1.0.212':     # depr PROC_GET_COMMAND, PROC_GET_COMMAND_PLUGIN
             return app.msg_status(_('Need update CudaText'))
         CfgKeysDlg().show()
-       #def dlg_config_keys_resizable
-   #class CommandResizable
 
 def collect_keys():
     keys_json   = os.path.join(app.app_path(app.APP_DIR_SETTINGS), 'keys.json')
     keys        = apx._json_loads(open(keys_json).read()) if os.path.isfile(keys_json) else {}
 
     cmdinfos    = []
-    pass;                      #LOG and log('app.app_api_version()={}',(app.app_api_version()))
-#   if True: # app.app_api_version()>='1.0.212':
+    pass;
+# if True: # app.app_api_version()>='1.0.212':
     lcmds       = app.app_proc(app.PROC_GET_COMMANDS, '')
     cmdinfos    = [('Plugins'
                    ,cmd['name']
@@ -72,24 +69,22 @@ def collect_keys():
                    )
                         for cmd in lcmds
                         if cmd['type'] in ('plugin', 'cmd')
-#                       if cmd['type']!='lexer'
+# if cmd['type']!='lexer'
                 ]
     return cmdinfos
-   #def collect_keys
 
 class CfgKeysDlg():
     @staticmethod
     def prep_keys_info():
         cmdCNKKIs   = collect_keys()
-        pass;                  #LOG and log('cmdCNKKIs={}',pf(cmdCNKKIs))
-        pass;                  #LOG and open(r'py\cuda_config_keys\t.log', 'w').write(pf(cmdCNKKIs))
-        pass;                  #return
+        pass;
+        pass;
+        pass;                  # return
         nkki_l      =  [(nm,k1,k2,id)   for (ch,nm,k1,k2,id) in cmdCNKKIs]
         id2nkks     =  {id:[nm,k1,k2]   for (ch,nm,k1,k2,id) in cmdCNKKIs}
         ks2id       =  {k1:id           for (ch,nm,k1,k2,id) in cmdCNKKIs}
         ks2id.update(  {k2:id           for (ch,nm,k1,k2,id) in cmdCNKKIs})
         return nkki_l, id2nkks, ks2id
-       #def prep_keys_info
 
     COL_WS      = [310, 160, 160, 135]
     COL_WS      = [COL_WS[0]+COL_WS[3]]+COL_WS[1:3]+[0] if not sndt else COL_WS
@@ -134,7 +129,7 @@ class CfgKeysDlg():
         m.sort      = ('', True)
         m.cmd_id    = ''
         m.ccnd      = ''
-        pass;                  #m.ccnd      = 'space'
+        pass;                  # m.ccnd      = 'space'
         m.kcnd      = ''
         m.scnd      = ''
         m.orcn      = False
@@ -144,15 +139,14 @@ class CfgKeysDlg():
         m.nkki_l,   \
         m.id2nkks,  \
         m.ks2id     = M.prep_keys_info()
-        pass;                  #LOG and log('nkki_l={}',(pf(m.nkki_l)))
-       #def __init__
+        pass;
     
     def show(self):
         m,M         = self,self.__class__
         m.ag    = DlgAgent(
             form =dict(cap     = f(_('Configure Hotkeys ({})'), VERSION_V)
-                      ,resize  = True                              ##!!
-                      ,border  = app.DBORDER_SIZE                   ## Resizable window frame
+                      ,resize  = True                              # !!
+                      ,border  = app.DBORDER_SIZE                   # Resizable window frame
                       ,w       = M.DLG_W,   w_min   = M.DLG_W
                       ,h       = M.DLG_H,   h_min   = M.DLG_H
                       )
@@ -160,11 +154,10 @@ class CfgKeysDlg():
         ,   vals =self.get_vals()
         ,   fid  =m.fid
                             ,   options = {
-                               #'gen_repro_to_file':'repro_dlg_cfg_keys.py',
+                               # 'gen_repro_to_file':'repro_dlg_cfg_keys.py',
                                 }
         )
         m.ag.show()
-       #def show
     
     def get_cnts(self, what=''):
         m,M         = self,self.__class__
@@ -183,21 +176,20 @@ class CfgKeysDlg():
                 text    = '·' + M.reND.sub('·', text)    + '·'
                 cnd_s   = ' ' + cnd_s + ' '
                 cnd_s   = cnd_s.replace(' _', ' ·').replace('_ ', '· ')
-            pass;                  #LOG and log('cnd_s, text={}',(cnd_s, text))
+            pass;
             return all(map(lambda c:c in text, cnd_s.split()))
         def bmix(val1, bor12, val2, bor23, val3):
             val12   = val1  or val2     if bor12 else        val1  and val2
             return    val12 or val3     if bor23 else        val12 and val3
-#       def bmix(bor12, bor23, val1, val2, val3):
-#           val12   = val1  or val2     if bor12 else        val1  and val2
-#           return    val12 or val3     if bor23 else        val12 and val3
+# def bmix(bor12, bor23, val1, val2, val3):
+# return    val12 or val3     if bor23 else        val12 and val3
 
         ccnd_u  = m.ccnd.upper()
         kcnd_u  = m.kcnd.upper()
-        pass;                  #LOG and log('ccnd_u, kcnd_u, scnd={}',(ccnd_u, kcnd_u, m.scnd))
+        pass;
         nkkis_l = [    (nm, k1, k2, id, sndt.get_snips(id) if sndt else [])
                    for (nm, k1, k2, id)   in m.nkki_l]
-        pass;                  #LOG and log('nkkis_l={}',(pf(nkkis_l)))
+        pass;
         fl_NKKISs=[    (nm, k1, k2, id, sns)
                    for (nm, k1, k2, id, sns)   in nkkis_l
                    if  bmix( (not ccnd_u or test_cond(ccnd_u, nm) or test_cond(ccnd_u, translate_command_name(nm)))
@@ -207,15 +199,11 @@ class CfgKeysDlg():
                             ,(not m.scnd or not sndt   or is_cond4snps(m.scnd, sns)) 
                             )
                   ]
-#                  if  bmix(m.orcn, m.orsn
-#                                 ,(not ccnd_u or test_cond(ccnd_u, nm) or test_cond(ccnd_u, translate_command_name(nm)))
-#                                 ,(not kcnd_u or               test_cond(kcnd_u, k1, k2, 'keys'))
-#                                 ,(not m.scnd or not sndt   or is_cond4snps(m.scnd, sns)) )]
+# if  bmix(m.orcn, m.orsn
         sort_n  = apx.icase(m.sort[0]=='nm',0, m.sort[0]=='k1',1, m.sort[0]=='k2',2, m.sort[0]=='sn',4, 0)   # index in item of fl_NKKISs
         sort_c  = '' if not m.sort[0] else ' ▲' if m.sort[1] else ' ▼'
         if m.sort[0]: 
             fl_NKKISs   = sorted(fl_NKKISs, key=lambda mkkis:('_' if not mkkis[sort_n] and not m.sort[1] else mkkis[sort_n]), reverse=m.sort[1])
-#           fl_NKKISs   = sorted(fl_NKKISs, key=lambda mkkis:mkkis[sort_n], reverse=m.sort[1])
         stat_c  = f(' ({}/{})',len(fl_NKKISs), len(nkkis_l))                                + (sort_c if m.sort[0]=='nm' else '')
         stat_k1 = f(' ({}/{})',sum(1 if k1  else 0 for (nm, k1, k2, id, sns) in fl_NKKISs)  
                               ,sum(1 if k1  else 0 for (nm, k1, k2, id, sns) in nkkis_l))   + (sort_c if m.sort[0]=='k1' else '')
@@ -223,7 +211,7 @@ class CfgKeysDlg():
                               ,sum(1 if k2  else 0 for (nm, k1, k2, id, sns) in nkkis_l))   + (sort_c if m.sort[0]=='k2' else '')
         stat_s  = f(' ({}/{})',sum(1 if sns else 0 for (nm, k1, k2, id, sns) in fl_NKKISs)
                               ,sum(1 if sns else 0 for (nm, k1, k2, id, sns) in nkkis_l))   + (sort_c if m.sort[0]=='sn' else '')
-        m.fl_Is = [id         for (nm, k1, k2, id, sn) in fl_NKKISs ]   ##!!
+        m.fl_Is = [id         for (nm, k1, k2, id, sn) in fl_NKKISs ]   # !!
         itms    = (list(zip([_('Command')+stat_c, _('Hotkey-1')+stat_k1, _('Hotkey-2')+stat_k2, _('Snips')+stat_s], map(str, M.COL_WS)))
                   ,         [ (translate_command_name(nm), k1, k2, ', '.join(sns)) 
                                 for  (nm, k1, k2, id, sns) in fl_NKKISs ]
@@ -237,20 +225,16 @@ class CfgKeysDlg():
  ,('orcn',dict(tp='ch'  ,t=5            ,l=M.lfk1-60,w=40   ,cap=_('&OR')                                           ,call=m.do_fltr )) # &o
  ,('orsn',dict(tp='ch'  ,t=5            ,l=M.lfsn-60,w=40   ,cap=_('O&R')                               ,vis=sndt_b ,call=m.do_fltr )) # &r
  ,('ccn_',dict(tp='lb'  ,tid='orcn'     ,l=5+5      ,w=90   ,cap=_('In &Command:')      ,hint=M.ccnd_h                              )) # &c
- ,('ccnd',dict(tp='ed'  ,t=5+20         ,l=5+5      ,w=150                                                                          )) #
+ ,('ccnd',dict(tp='ed'  ,t=5+20         ,l=5+5      ,w=150                                                                          ))
  ,('kcn_',dict(tp='lb'  ,tid='orcn'     ,l=M.lfk1   ,w=50   ,cap=_('In &Hotkeys:')      ,hint=M.kcnd_h                              )) # &h
- ,('kcnd',dict(tp='ed'  ,t=5+20         ,l=M.lfk1   ,w=120                                                                          )) #
+ ,('kcnd',dict(tp='ed'  ,t=5+20         ,l=M.lfk1   ,w=120                                                                          ))
                                                                                                                             
  ,('scn_',dict(tp='lb'  ,tid='orsn'     ,l=M.lfsn   ,w=50   ,cap=_('In &Snip(s):')        ,hint=M.scnd_h  ,vis=sndt_b                 )) # &s
  ,('shlp',dict(tp='bt'  ,tid='orsn'     ,l=M.lfsn+80,w=20   ,cap=_('&?')                                ,vis=sndt_b ,call=m.do_shlp )) # &?
- ,('scnd',dict(tp='ed'  ,t=5+20         ,l=M.lfsn   ,w=100                                              ,vis=sndt_b                 )) #
+ ,('scnd',dict(tp='ed'  ,t=5+20         ,l=M.lfsn   ,w=100                                              ,vis=sndt_b                 ))
                                                                                                                                     
-#,('srt0',dict(tp='bt'  ,t  =0          ,l=1000     ,w=0    ,cap=_('&1')    ,sto=F                                  ,call=m.do_sort ))# &1
-#,('srt1',dict(tp='bt'  ,t  =0          ,l=1000     ,w=0    ,cap=_('&2')    ,sto=F                                  ,call=m.do_sort ))# &2
-#,('srt2',dict(tp='bt'  ,t  =0          ,l=1000     ,w=0    ,cap=_('&3')    ,sto=F                                  ,call=m.do_sort ))# &3
-#,('srt3',dict(tp='bt'  ,t  =0          ,l=1000     ,w=0    ,cap=_('&4')    ,sto=F                      ,vis=sndt_b ,call=m.do_sort ))# &4
  ,('lwks',dict(tp='lvw' ,t=5+50         ,l=5        ,w=M.LST_W,h=M.LST_H    ,items=itms ,ex0='1'        ,a='lRtB'                   
-                                                                ,on_click_header=lambda idd, idc, data:m.wn_sort(data)              )) #     grid
+                                                                ,on_click_header=lambda idd, idc, data:m.wn_sort(data)              )) # grid
                                                                                                                                     
  ,('cpnm',dict(tp='bt'  ,t=M.DLG_H-60   ,l=5+5      ,w=110  ,cap=_('Copy &name')        ,hint=M.cpnm_h  ,a='TB'     ,call=m.do_code )) # &n
  ,('open',dict(tp='bt'  ,t=M.DLG_H-30   ,l=5+5      ,w=110  ,cap=_('Open code &#')      ,hint=M.open_h  ,a='TB'     ,call=m.do_code )) # &#
@@ -262,10 +246,9 @@ class CfgKeysDlg():
  ,('del2',dict(tp='bt'  ,t=M.DLG_H-30   ,l=M.lfk2   ,w=150  ,cap=_('Remove Hotkey-2 &@')                ,a='TB'     ,call=m.do_work )) # &@
  ,('asnp',dict(tp='bt'  ,t=M.DLG_H-60   ,l=M.lfsn   ,w=150  ,cap=_('Set/A&dd Snip')     ,vis=sndt_b     ,a='TB'     ,call=m.do_work )) # &d
  ,('rsnp',dict(tp='bt'  ,t=M.DLG_H-30   ,l=M.lfsn   ,w=150  ,cap=_('R&emove Snip(s)')   ,vis=sndt_b     ,a='TB'     ,call=m.do_work )) # &e
- ,('help',dict(tp='bt'  ,t=M.DLG_H-60   ,l=M.lrpt   ,w=100  ,cap=_('Hel&p')                             ,a='TB'     ,call=m.do_shlp )) # &p 
+ ,('help',dict(tp='bt'  ,t=M.DLG_H-60   ,l=M.lrpt   ,w=100  ,cap=_('Hel&p')                             ,a='TB'     ,call=m.do_shlp )) # &p
                 ]
         return cnts
-       #def get_cnts
     
     def get_vals(self, what=''):
         m,M         = self,self.__class__
@@ -286,7 +269,6 @@ class CfgKeysDlg():
                             ,orsn=m.orsn
             ))
         return vals
-       #def get_vals
     
     def do_rprt(self, aid, ag, data=''):
         m,M         = self,self.__class__
@@ -303,13 +285,12 @@ class CfgKeysDlg():
             webbrowser.open_new_tab('file://'+htm_file)
             app.msg_status(_('Opened browser with file ')+htm_file)
         return []
-       #def do_rprt
     
     def do_shlp(self, aid, ag, data=''):
         m,M         = self,self.__class__
         DW, DH      = 500-2*GAP, 500-2*GAP
         dlg_wrapper(_('Help for "Config Hotkeys"'), 500, 500,
-             [dict(cid='htxt',tp='me'    ,t=GAP  ,h=DH-28,l=GAP          ,w=DW   ,ex0='1', ex1='0', ex2='1'  ) #  ro,mono,border
+             [dict(cid='htxt',tp='me'    ,t=GAP  ,h=DH-28,l=GAP          ,w=DW   ,ex0='1', ex1='0', ex2='1'  ) # ro,mono,border
              ,dict(cid='-'   ,tp='bt'    ,t=GAP+DH-23    ,l=GAP+DW-80    ,w=80   ,cap=_('&Close'))
              ], dict(htxt=
                      f(_('• In Command.\n{}'
@@ -324,16 +305,15 @@ class CfgKeysDlg():
                        M.addk_h, M.hrpt_h, M.trpt_h, M.sort_h)
                     ), focus_cid='htxt')
         return []
-       #def do_shlp
     
     def do_code(self, aid, ag, data=''):
         m,M         = self,self.__class__
         
         lwks_n  = ag.cval('lwks')
-        if lwks_n==-1:                      return [] #continue#while
+        if lwks_n==-1:                      return [] # continue#while
         m.cmd_id  = m.fl_Is[lwks_n]
-        pass;                  #LOG and log('m.fl_Is={}',(m.fl_Is))
-        pass;                  #LOG and log('lwks_n,m.cmd_id={}',(lwks_n,m.cmd_id))
+        pass;
+        pass;
         if False:pass
         elif aid=='cpnm':
             cmd_nkk = m.id2nkks[m.cmd_id]
@@ -341,7 +321,7 @@ class CfgKeysDlg():
         
         elif aid=='open':
             pass;               LOG and log('m.cmd_id={}',(m.cmd_id))
-            if type(m.cmd_id)!=str:         return [] #continue#while
+            if type(m.cmd_id)!=str:         return [] # continue#while
             plug_mdl,   \
             plug_mth    = m.cmd_id.split(',')[0:2]
             plug_mth    = 'def '+ plug_mth + '(self):'
@@ -351,11 +331,10 @@ class CfgKeysDlg():
             pass;               LOG and log('plug_mdl,plug_mth,plug_dir,plug_py={}',(plug_mdl,plug_mth,plug_dir,plug_py))
             mch         = re.search(r'from\s+\.(\w+)\s+import\s+Command', plug_body)
             if mch:
-                # from .other_py import Command
                 plug_py = plug_dir+os.sep+mch.group(1)+'.py'
                 pass;           LOG and log('plug_py={}',(plug_py))
                 plug_body=open(plug_py, encoding='UTF-8').read()
-            if plug_mth not in plug_body:   return [] #continue#while
+            if plug_mth not in plug_body:   return [] # continue#while
             # Open
             app.file_open(plug_py)
             # Locate
@@ -372,12 +351,11 @@ class CfgKeysDlg():
                 app.app_proc(app.PROC_SET_FINDER_PROP, user_opt)
             else:
                 app.app_proc(app.PROC_SET_FIND_OPTIONS, user_opt)   # Deprecated
-            return None #break#while
+            return None # break#while
         return []
-       #def do_code
     
     def wn_sort(self, col):
-        pass;                  #LOG and log('col={}',(col))
+        pass;
         m,M         = self,self.__class__
 
         col_s       = 'nm' if col==0 else \
@@ -392,22 +370,19 @@ class CfgKeysDlg():
                       (srt_s, True)                             \
                         if srt_s==col_s and not m.sort[1] else  \
                       ('', True)
-        pass;                  #LOG and log('m.sort={}',(m.sort))
+        pass;
         lwks_n      = m.ag.cval('lwks')
-        pass;                  #LOG and log('lwks_n={}',(lwks_n))
+        pass;
         m.cmd_id    = '' if lwks_n==-1 else m.fl_Is[lwks_n]
         lwks_its_v  = odict(             self.get_cnts('lwks'))
         lwks_its_v['lwks'].update({'val':self.get_vals('lwks')['lwks']})    if lwks_n>0 else 0  # Save "non-trivial" selection
-#       lwks_its_v['lwks'].update(self.get_vals('lwks'))                    ##!! :(
         m.ag.update(
                     ctrls=lwks_its_v
                 )
         return []
-       #def wn_sort
     
     def do_sort(self, aid, ag, data=''):
         return self.wn_sort(int(aid[3]))    # srtN
-       #def do_sort
     
     def do_fltr(self, aid, ag, data=''):
         m,M         = self,self.__class__
@@ -431,20 +406,19 @@ class CfgKeysDlg():
                 ,   vals =self.get_vals('lwks')
                 ,   fid  =fid
                 )
-       #def do_fltr
     
     def do_work(self, aid, ag, data=''):
         m,M         = self,self.__class__
 
         lwks_n      = ag.cval('lwks')
-        if lwks_n==-1:                      return [] #continue#while
+        if lwks_n==-1:                      return [] # continue#while
         m.cmd_id    = m.fl_Is[lwks_n]
         if False:pass
         elif aid in ('del1', 'del2'):
             # Delete the hotkeys
             cmd_nkk = m.id2nkks[m.cmd_id]
             del_i   = 1 if aid=='del1' else 2
-            if not cmd_nkk[del_i]:          return [] #continue#while
+            if not cmd_nkk[del_i]:          return [] # continue#while
             cmd_nkk[del_i]  = ''
             if  cmd_nkk[2]:
                 cmd_nkk[1]  = cmd_nkk[2]
@@ -457,13 +431,13 @@ class CfgKeysDlg():
         
         elif aid in ('add1', 'add2'):
             ext_k   = app.dlg_hotkey()
-            pass;              #LOG and log('ext_k={}',(ext_k,))
-            if ext_k is None:               return [] #continue#while
+            pass;
+            if ext_k is None:               return [] # continue#while
             cmd_nkk = m.id2nkks[m.cmd_id]
             add_i   = 1 if aid=='add1' else 2
             old_k   = cmd_nkk[add_i]
             new_k   = old_k + ' * ' + ext_k if old_k else ext_k
-            pass;              #LOG and log('cmd_nkk,old_k,new_k={}',(cmd_nkk,old_k,new_k))
+            pass;
             if new_k in m.ks2id:
                 dbl_id  = m.ks2id[new_k]
                 dbl_nkk = m.id2nkks[dbl_id]
@@ -472,18 +446,18 @@ class CfgKeysDlg():
                                    '\n'
                                    '\nDo you want to reassign the hotkey '
                                    '\nto selected command "{}"?')
-                                , new_k, dbl_nkk[0], cmd_nkk[0]), app.MB_OKCANCEL)==app.ID_CANCEL: return [] #continue#while
+                                , new_k, dbl_nkk[0], cmd_nkk[0]), app.MB_OKCANCEL)==app.ID_CANCEL: return [] # continue#while
                 dbl_i   = 1 if dbl_nkk[1]==new_k else 2
-                pass;          #LOG and log('dbl_id, dbl_nkk={}',(dbl_id, dbl_nkk))
+                pass;
                 dbl_nkk[dbl_i]  = ''
                 if dbl_nkk[2]:
                     dbl_nkk[1], dbl_nkk[2] = dbl_nkk[2], ''
-                pass;          #LOG and log('dbl_id, dbl_nkk={}',(dbl_id, dbl_nkk))
+                pass;
                 set_ok  = app.app_proc(app.PROC_SET_HOTKEY, f('{}|{}|{}', dbl_id, dbl_nkk[1], dbl_nkk[2]))
                 if not set_ok:  log('Fail to use PROC_SET_HOTKEY for cmd "{}"', dbl_id)
 
             cmd_nkk[add_i]  = new_k
-            pass;              #LOG and log('cmd_id, cmd_nkk={}',(cmd_id, cmd_nkk))
+            pass;
             set_ok  = app.app_proc(app.PROC_SET_HOTKEY, f('{}|{}|{}', m.cmd_id, cmd_nkk[1], cmd_nkk[2]))
             if not set_ok:  log('Fail to use PROC_SET_HOTKEY for cmd "{}"', m.cmd_id)
             m.nkki_l,   \
@@ -493,12 +467,12 @@ class CfgKeysDlg():
         elif aid=='asnp' and sndt:
             cnm     = sndt.get_name(m.cmd_id)
             new_sn  = app.dlg_input(f(_('Add snip for "{}"'), cnm), '') 
-            if not new_sn:                  return [] #continue#while
+            if not new_sn:                  return [] # continue#while
             while not SnipData.is_snip(new_sn):
                 app.msg_status(SnipData.msg_correct_snip)
                 new_sn  = app.dlg_input(f(_('Snip for "{}"'), cnm), new_sn) 
                 if not new_sn:  break
-            if not new_sn:                  return [] #continue#while
+            if not new_sn:                  return [] # continue#while
             pre_cid = sndt.get_cmdid(new_sn)
             if pre_cid:
                 pre_cnm = sndt.get_name(pre_cid)
@@ -507,7 +481,7 @@ class CfgKeysDlg():
                                    '\n'
                                    '\nDo you want to reassign the snippet'
                                    '\nto command "{}"?')
-                                , new_sn, pre_cnm, cnm), app.MB_OKCANCEL)==app.ID_CANCEL: return [] #continue#while
+                                , new_sn, pre_cnm, cnm), app.MB_OKCANCEL)==app.ID_CANCEL: return [] # continue#while
             sndt.set(new_sn, cmd_id)
 
         elif aid=='rsnp' and sndt: 
@@ -517,7 +491,7 @@ class CfgKeysDlg():
             if app.msg_box(f(_('Do you want to remove snip(s) '
                                '\n    {}'
                                '\nfor command "{}"?')
-                            , snps, cnm), app.MB_OKCANCEL)==app.ID_CANCEL: return [] #continue#while
+                            , snps, cnm), app.MB_OKCANCEL)==app.ID_CANCEL: return [] # continue#while
             for snp in snp_l:
                 sndt.free(snp)
 
@@ -525,19 +499,8 @@ class CfgKeysDlg():
                 ,   vals =self.get_vals('lwks')
                 ,   fid  ='lwks'
                 )
-       #def do_work
     
-   #class CfgKeysDlg
 
-#######################################################
 if __name__ == '__main__':
     pass;                       print('OK')
 
-""" TODO
-[+][kv-kv][11dec15] Init
-[+][kv-kv][10may16] Shift HK-2 to HK-1 after del HK-1
-[ ][kv-kv][10may16] @ in "In cmd" for filter in keys
-[ ][kv-kv][27may16] Remove & to filter
-[ ][kv-kv][27may16] Force unhide cmd after RemoveK 
-[ ][kv-kv][01mar18] Bug: <'smth' OR ''> show all
-"""

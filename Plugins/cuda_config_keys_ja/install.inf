@@ -1,9 +1,10 @@
 [info]
-title=Configure Hotkeys Jp
+title=Configure Hotkeys Jp - ホットキーの設定日本語版
 desc=ホットキーを確認・設定するためのダイアログを表示します
 type=cudatext-plugin
 subdir=cuda_config_keys_ja
-homepage=https://github.com/kvichans/cuda_config_keys
+version=2.1.8
+homepage=https://coolvitto.hateblo.jp
 
 [item1]
 section=commands

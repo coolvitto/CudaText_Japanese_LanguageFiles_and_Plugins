@@ -1,20 +1,19 @@
-''' Plugin for CudaText editor
+""" Plugin for CudaText editor
 Authors:
-	Andrey Kvichansky    (kvichans on github)
+	Andrey Kvichansky    (kvichans on github) / coolvitto
 Version:
     '1.1.3 2021-03-03'
-'''
+"""
 #! /usr/bin/env python3
 
 import os, webbrowser, tempfile, json, re, collections, itertools
-#import sw 		as app
 import cudatext as app
 from   cudatext    import ed
 
 from   .cd_plug_lib   import get_translation
 _      = get_translation(__file__)
 
-#### Release ####
+# --- Release ---
 app_name	= 'CudaText'
 rpt_head = '''
 <html>
@@ -92,15 +91,14 @@ btnsNum	= (
 		  ['']
 		  )
 btnsDig	= ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+"]
-#btnsDig= ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="]
 btnsLtrQ= ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]"]
 btnsLtrA= ["A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "\\"]
 btnsLtrZ= ["Z", "X", "C", "V", "B", "N", "M", ",", ".", "/"]
 btns	= btnsFn + btnsIns + btnsNum + btnsDig + btnsLtrQ + btnsLtrA + btnsLtrZ
 
 def collect_data():
-	''' Collect data
-	'''
+	""" Collect data
+	"""
 	keys2nms	= {}
 	has_series	= False
 	dblkeys		= []
@@ -113,14 +111,12 @@ def collect_data():
 				   ,cmd['name']
 				   ,cmd['key1']
 				   ,cmd['key2']
-				   #,cmd['cmd']
 				   )
 						if cmd['type']=='cmd' else 
 				   (_('Plugins')
 				   ,cmd['name']
 				   ,cmd['key1']
 				   ,cmd['key2']
-				   #,'{},{},{}'.format(cmd['p_module'], cmd['p_method'], cmd['p_method_params']).rstrip(',')
 				   )
 						for cmd in lcmds
 						if cmd['type']!='lexer'
@@ -128,8 +124,6 @@ def collect_data():
 	else: # Syn or old Cud
 		n=0
 		while True:
-			# Cud (5	  ,'smth', 'Shift+Ctrl+F1', 'Alt+Q * Ctrl+T')
-			# Syn (5,'ctg','smth', 'Shift+Ctrl+F1', 'Alt+Q · Ctrl+T')
 			cmdinfo = app.app_proc(app.PROC_GET_COMMAND, str(n))
 			n += 1
 			if cmdinfo is None: break
@@ -177,14 +171,14 @@ def collect_data():
 			if srs_dlm not in keys: continue
 			# Series: Alt+Q * Ctrl+T
 			# 1. Check a conflict with head
-			#	(Alt+)(Q)
+			# (Alt+)(Q)
 			keys_hd  = keys.split(srs_dlm)[0]					# 'Alt+Q'			from 'Alt+Q * Ctrl+T'
 			if keys_hd in keys2nms:
 				# Conflict!
 				dblkeys 			+= [keys_hd]
 				keys2nms[keys_hd]	+= [name]
 			# 2. Save as
-			#	(Alt+Q * Ctrl+)(T)
+			# (Alt+Q * Ctrl+)(T)
 			btn	= ('+'+keys.split(srs_dlm)[-1]).split('+')[-1]	# 'T' 				from 'Alt+Q * Ctrl+T' or 'Alt+Q * T'
 			save_btn_mod_name(
 				btn
@@ -198,7 +192,6 @@ def collect_data():
 			,dblkeys
 			,ctgs
 			,cmdinfos)
-	#def collect_data
 
 def do_report(fn):
 	(keys2nms
@@ -308,7 +301,6 @@ def do_report(fn):
 						f.write('\t<td{cls}>{txt}</td>\n'.format(
 								cls=icase(keys in dblkeys, ' class="dbl"'									, '')
 							   ,txt=icase(names,'<a title="{}">{}</a>'.format(keys, '<br/>'.join(names))	, '')
-#							   ,txt=icase(name, '<a title="{}">{}</a>'.format(keys, '<br/>'.join(names))	, '')
 					))
 				f.write('</tr>\n')
 			f.write('</table><br/>\n')
@@ -388,17 +380,15 @@ def keys4mod_btn(mod, btn):
 
 def add_cud_plugins(cmdinfos, prfx, ctg):
 	# {"commands":{
-	# 	"grp":{
-	#		"0":{"caption":"***", "hotkey":"***"},
-	#		"1":{"caption":"***", "hotkey":"***"},
-	#	},
+	# "grp":{
+	# "0":{"caption":"***", "hotkey":"***"},
+	# "1":{"caption":"***", "hotkey":"***"},
+	# },
 	# }}
-#	plugs_json	= os.path.join(app.app_path(app.APP_DIR_SETTINGS), 'plugins.json')
 	keys_json	= os.path.join(app.app_path(app.APP_DIR_SETTINGS), 'keys.json')
-#	plugs		= json_loads(open(plugs_json).read(), object_pairs_hook=collections.OrderedDict)
 	keys		= json_loads(open(keys_json).read())
 	for n in itertools.count():
-		if not	  app.app_proc(app.PROC_GET_COMMAND_PLUGIN, str(n)): break#for n
+		if not	  app.app_proc(app.PROC_GET_COMMAND_PLUGIN, str(n)): break# for n
 		(cap
 		,modul
 		,meth
@@ -411,9 +401,9 @@ def add_cud_plugins(cmdinfos, prfx, ctg):
 					, ' * '.join(dct_keys.get('s1', []))
 					, ' * '.join(dct_keys.get('s2', []))
 					)]
-		#for n
+		# for n
 	return cmdinfos
-	#def add_cud_plugins(cmdinfos, prfx, ctg):
+	# def add_cud_plugins(cmdinfos, prfx, ctg):
 
 def get_str_report(parts='compact|conflicts'):
 	(keys2nms
@@ -445,12 +435,11 @@ def get_str_report(parts='compact|conflicts'):
 		rpt	+= compact_str_view(keys2nms, dblkeys, mods, btnsLtrZ, True, True)
 
 	return rpt
-	#def get_str_report
 
-#### Main ####
+# --- Main ---
 class Command:
 	def report_to_html(self):
-#		if app_name=='CudaText' and app.app_api_version()<'1.0.105':
+# if app_name=='CudaText' and app.app_api_version()<'1.0.105':
 		if app_name=='CudaText' and app.app_api_version()<'1.0.212':     # depr PROC_GET_COMMAND, PROC_GET_COMMAND_PLUGIN
 			app.msg_box(_('Plugin needs newer app version'), app.MB_OK)
 			return
@@ -472,17 +461,17 @@ class Command:
 		elif app_name=='SynWrite':
 			pass
 
-#### Utils ####
+# --- Utils ---
 def json_loads(s, **kw):
-	''' Adapt s for json.loads
+	""" Adapt s for json.loads
 			Delete comments
 			Delete unnecessary ',' from {,***,} and [,***,]
-	'''
+	"""
 	s	= re.sub('//.*'		, ''	, s)
-	s	= re.sub('{\s*,'	, '{'	, s)
-	s	= re.sub(',\s*}'	, '}'	, s)
-	s	= re.sub('\[\s*,'	, '['	, s)
-	s	= re.sub(',\s*\]'	, ']'	, s)
+	s	= re.sub('{\\s*,'	, '{'	, s)
+	s	= re.sub(',\\s*}'	, '}'	, s)
+	s	= re.sub('\\[\\s*,'	, '['	, s)
+	s	= re.sub(',\\s*\\]'	, ']'	, s)
 	return json.loads(s, **kw)
 
 def icase(*pars):
@@ -497,13 +486,7 @@ def icase(*pars):
 		if pars[ppos-1] :
 			return pars[ppos]
 	return pars[-1] if 1==len(pars)%2 else None
-	#def icase
 
-#######################################################
 if __name__ == '__main__':
 	pass;						print('OK')
 
-""" TODO
-[+][kv-kv][09dec15] Output plain text to new tab
-[+][kv-kv][15dec15] New types: macro, exttool
-"""
