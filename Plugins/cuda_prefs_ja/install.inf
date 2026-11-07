@@ -1,9 +1,10 @@
 [info]
-title=Options Editor Jp
-desc=user.json のオプションを表示・変更します (Options Editor Lite の日本語版)
+title=Options Editor Jp - オプションエディタ Lite 日本語版
+desc=user.json のオプションを表示・変更します (オプションエディタ Lite の日本語版)
 type=cudatext-plugin
 subdir=cuda_prefs_ja
-homepage=https://github.com/halfbrained/cuda_prefs
+version=1.0
+homepage=https://coolvitto.hateblo.jp
 
 [item10]
 section=commands

@@ -28,5 +28,13 @@ CudaText の Options Editor Lite (halfbrained/cuda_prefs) の日本語版です�
 - default.json の説明文を翻訳しても開けなくなりません (表示用の文字列だけを差し替えるため)。
 - 開けなくなる原因だった KeyError を防ぐ修正を含みます。
 
-元のプラグイン: Andrey Kvichansky (kvichans) / halfbrained
+元のプラグイン: Andrey Kvichansky (kvichans) / halfbrained (https://github.com/halfbrained/cuda_prefs)
+日本語版: coolvitto
 License: MIT
+
+--------------------------------
+作者: coolvitto
+元の作者: Andrey Kvichansky (kvichans) / halfbrained
+バージョン: 1.0
+作成日時: 2026-11-03 16:21
+URL: https://coolvitto.hateblo.jp

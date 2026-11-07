@@ -12,7 +12,7 @@ import traceback
 import time
 
 from .ja_compat import get_translation, chp_label, chp_name, apply_font   # 日本語版
-_   = get_translation(__file__)  # I18N
+_   = get_translation(__file__)
 
 
 TITLE_DEFAULT = _('CudaText Preferences')
@@ -30,7 +30,7 @@ STATE_KEY_TREE_W = 'tree_w'
 STATE_KEY_DESCR_MEMO_H = 'descr_memo_h'
 STATE_KEY_FILTER_STR = 'filter_str'
 STATE_KEY_FILTER_HIST = 'filter_history'
-STATE_KEY_FILTER_VISIBLE = 'filter_visible' #TODO remove
+STATE_KEY_FILTER_VISIBLE = 'filter_visible'
 STATE_KEY_COL_CFG = 'columns'
 STATE_KEY_SORT_COL = 'sort_column'
 STATE_KEY_SEL_OPT = 'selected_option'
@@ -124,8 +124,8 @@ def load_imagelist(ic_filename_map):
     return h_iml, ind_map
 
 def get_tree_path_names(h_tree, item_id, l=None):
-    ''' returns list, node names starting with deepest
-    '''
+    """ returns list, node names starting with deepest
+    """
     if l is None:
         l = []
     prop = tree_proc(h_tree, TREE_ITEM_GET_PROPS, id_item=item_id)
@@ -153,7 +153,7 @@ def ignore_edit(h, ed_):
         ed_.set_prop(PROP_RO, False)
 
     h_ed = ed_.get_prop(PROP_HANDLE_SELF)
-    #NOTE: widgets are never deleted here, so `DLG_CTL_COUNT` should not be a problem
+    # NOTE: widgets are never deleted here, so `DLG_CTL_COUNT` should not be a problem
     for n in range(dlg_proc(h, DLG_CTL_COUNT)):
         h_ctl = dlg_proc(h, DLG_CTL_HANDLE, index=n)
         if h_ed == h_ctl:
@@ -251,7 +251,6 @@ class DialogMK2:
         """
         global ui_max_history_edits
 
-        #TODO get value from options if not present
         ui_max_history_edits = optman.get_scope_value('ui_max_history_edits', scope='u',
                                                         default=ui_max_history_edits)
         self._form_rect = {} # dict - x,y,w,h
@@ -303,7 +302,7 @@ class DialogMK2:
             return self._filter_ed.get_text_all()
         return ''
     @filter_val.setter
-    def filter_val(self, value): #SKIP
+    def filter_val(self, value): # SKIP
         if self.h:
             val_str = str(value)
             if val_str != self._filter_ed.get_text_all():
@@ -502,7 +501,6 @@ class DialogMK2:
                 print('NOTE: {}: {}'.format(self.title, msg))
 
 
-
     def show(self):
         if not self.h:
             self.h, self.opt_comment_ed = self.init_form()
@@ -531,13 +529,13 @@ class DialogMK2:
                 _ind = 0
             listbox_proc(self._h_list, LISTBOX_SET_SEL, index=_ind)
             listbox_proc(self._h_list, LISTBOX_SET_TOP, index=max(0, _ind-5))
-            #### click event
+            # --- click event ---
             self._on_opt_click(id_dlg=self.h, id_ctl=-1)
 
         # focus filter on start
         timer_proc(TIMER_START_ONE,  callback=lambda *args,**vargs: self._filter_ed.focus(),   interval=100)
 
-        # DBG #############
+        # --- DBG ---
         if IS_DBG:
             DialogMK2._dlg = self
             cmds = [    'from cuda_prefs_ja.dlg import DialogMK2',
@@ -547,7 +545,6 @@ class DialogMK2:
 
             dlg_proc(self.h, DLG_SHOW_NONMODAL)
             return
-        ###########
 
         dlg_proc(self.h, DLG_SHOW_MODAL)
         dlg_proc(self.h, DLG_FREE)
@@ -561,7 +558,7 @@ class DialogMK2:
         global COL_SPLITTER
 
         # load icons only once
-        def get_list_imagelist(): #SKIP
+        def get_list_imagelist(): # SKIP
             if not DialogMK2._h_list_iml:
                 DialogMK2._h_list_iml,  DialogMK2._lb_icon_inds = load_imagelist(fn_icons)
 
@@ -574,21 +571,21 @@ class DialogMK2:
         COL_SPLITTER = colors['SplitMain']['color']
         color_form_bg = colors['TabBg']['color']
 
-        ###### FORM #######################
+        # --- FORM ---
         dlg_proc(h, DLG_PROP_SET, prop={
                 'cap': self.title,
                 'w': 848, 'h': 576,
                 'w_min': 550, 'h_min': 250,
                 'border': DBORDER_SIZE,
                 'color': color_form_bg,
-                #'on_mouse_exit': self.dlgcolor_mouse_exit,
+                # 'on_mouse_exit': self.dlgcolor_mouse_exit,
                 'keypreview': True,
                 'on_key_down': self._on_key,
                 'on_close': lambda *args, **vargs: self._save_dlg_cfg(),
                 'topmost': True,
                 })
 
-        ###### MAIN PANEL
+        # --- MAIN PANEL ---
         n = dlg_proc(h, DLG_CTL_ADD, 'panel')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n,   prop={
                 'name': 'panel_main',
@@ -597,14 +594,14 @@ class DialogMK2:
                 })
 
 
-        ### tree ##########################
+        # --- tree ---
         n = dlg_proc(h, DLG_CTL_ADD, 'treeview')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'category_tree',
                 'p': 'panel_main',
                 'align': ALIGN_LEFT,
                 'w': 100,
-                #'sp_r': PAD,
+                # 'sp_r': PAD,
                 'on_change': self._on_tree_click,
                 'tab_stop': False,
                 })
@@ -612,15 +609,15 @@ class DialogMK2:
         tree_proc(self._h_tree, TREE_THEME)
 
 
-        ### RIGHT PANEL #########################
+        # --- RIGHT PANEL ---
         n = dlg_proc(h, DLG_CTL_ADD, 'panel')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n,   prop={
                 'name': 'panel_right',
                 'p': 'panel_main',
                 'align': ALIGN_CLIENT,
-                #'sp_l': PAD,
+                # 'sp_l': PAD,
                 })
-        # listbox ##########
+        # --- listbox ---
         n = dlg_proc(h, DLG_CTL_ADD, 'listbox_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'options_list',
@@ -637,13 +634,13 @@ class DialogMK2:
                 })
         self._h_list = dlg_proc(h, DLG_CTL_HANDLE, index=n)
 
-        ### FILTER panel ############################
+        # --- FILTER panel ---
         n = dlg_proc(h, DLG_CTL_ADD, 'panel')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'panel_filter',
                 'p': 'panel_right',
                 'align': ALIGN_TOP,  'h': BTN_H, 'max_h': BTN_H,
-                #'vis': self._state.get(STATE_KEY_FILTER_VISIBLE, False),
+                # 'vis': self._state.get(STATE_KEY_FILTER_VISIBLE, False),
                 })
         # filter label
         n = dlg_proc(h, DLG_CTL_ADD, 'label')
@@ -655,13 +652,13 @@ class DialogMK2:
                 'cap': _('Filter: '),
                 'font_color': COL_FONT,
                 })
-        # filter combo ##########
+        # --- filter combo ---
         n = dlg_proc(h, DLG_CTL_ADD, 'editor_combo')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'filter',
                 'p': 'panel_filter',
                 'h': BTN_H, 'max_h': BTN_H,
-                #'align': ALIGN_CLIENT,
+                # 'align': ALIGN_CLIENT,
                 'sp_r': 20,
                 'a_l': ('filter_label', ']'),   'a_r': ('', ']'),  'a_t': ('filter_label', '-'),
                 'on_change': self._on_filter,
@@ -671,7 +668,7 @@ class DialogMK2:
         self._filter_ed = Editor(h_ed)
 
 
-        ### BOTTOM PANEL ###############################
+        # --- BOTTOM PANEL ---
         n = dlg_proc(h, DLG_CTL_ADD, 'panel')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n,   prop={
                 'name': 'panel_value',
@@ -682,7 +679,7 @@ class DialogMK2:
                 'y': 4000,  # https://github.com/Alexey-T/CudaText/issues/3679#issuecomment-904845613
                 'sp_t': PAD,
                 })
-        # scope combo ##########
+        # --- scope combo ---
         n = dlg_proc(h, DLG_CTL_ADD, 'editor_combo')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'scope',
@@ -693,7 +690,7 @@ class DialogMK2:
                 'on_change': self._on_scope_change,
                 })
         h_scope_ed = dlg_proc(h, DLG_CTL_HANDLE, index=n)
-        # scope label ###
+        # --- scope label ---
         n = dlg_proc(h, DLG_CTL_ADD, 'label')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'scope_label',
@@ -704,7 +701,7 @@ class DialogMK2:
                 'cap': _('Scope: '),
                 'font_color': COL_FONT,
                 })
-        # btn reset ###########
+        # --- btn reset ---
         n = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': ValueEds.VALUE_ED_RESET,
@@ -716,7 +713,7 @@ class DialogMK2:
                 'cap': _('Reset'),
                 'on_change': self._on_reset,
                 })
-        # option description #########
+        # --- option description ---
         n = dlg_proc(h, DLG_CTL_ADD, 'editor')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'descr_memo',
@@ -740,7 +737,7 @@ class DialogMK2:
                 })
 
 
-        ### SPLITTERS ###
+        # --- SPLITTERS ---
         # list--opt_description
         n = dlg_proc(h, DLG_CTL_ADD, 'splitter')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
@@ -760,8 +757,8 @@ class DialogMK2:
                 })
 
 
-        ### Bottom Btns ###################
-        # OK #######
+        # --- Bottom Btns ---
+        # --- OK ---
         n = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'btn_ok',
@@ -772,7 +769,7 @@ class DialogMK2:
                 'cap': _('OK'),
                 'on_change': lambda *args, **vargs: (self.apply_changes(closing=True), self.close()),
                 })
-        # Apply #######
+        # --- Apply ---
         n = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'btn_apply',
@@ -783,7 +780,7 @@ class DialogMK2:
                 'cap': _('Apply'),
                 'on_change': lambda *args, **vargs: self.apply_changes(),
                 })
-        # Cancel #######
+        # --- Cancel ---
         n = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'btn_cancel',
@@ -795,7 +792,7 @@ class DialogMK2:
                 'on_change': lambda *args, **vargs: self.close(),
                 'tab_stop': False,
                 })
-        # help #######
+        # --- help ---
         n = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'h': BTN_H, 'max_h': BTN_H,
@@ -814,7 +811,7 @@ class DialogMK2:
             dlg_proc(h, DLG_CTL_PROP_SET, name='btn_ok',        prop={'a_r': ('btn_apply',  '[')})
 
 
-        ### listbox
+        # --- listbox ---
         listbox_proc(self._h_list, LISTBOX_SET_COLUMN_SEP, text=LIST_SEP)
         # + icons
         h_iml = get_list_imagelist()
@@ -999,10 +996,10 @@ class DialogMK2:
                 del self._opt_changes[i]
                 break
 
-        if val is not None:  ### setting value
+        if val is not None:  # setting value
             if val == _old_val: # no change - ignore
                 return
-        else:  ### removing value
+        else:  # removing value
             if _old_val is None: # no change - ignore
                 return
 
@@ -1046,7 +1043,7 @@ class DialogMK2:
         prop_type = self._cur_opt['frm']
         pass;       LOG and print(' + ed name: {} [{}]'.format(ed_name, prop_type))
 
-        if ed_name == ValueEds.WGT_NAME__EDIT:       # str, int, float, -hotk  + ###
+        if ed_name == ValueEds.WGT_NAME__EDIT:       # str, int, float, -hotk  +
             if prop_type == '#rgb'  or  prop_type == '#rgb-e':
                 self._update_rgb_edit()
 
@@ -1060,7 +1057,7 @@ class DialogMK2:
             if val is None:
                 return
 
-        elif ed_name == ValueEds.WGT_NAME__COMBO:   # font, int2s, str2s, strs ###
+        elif ed_name == ValueEds.WGT_NAME__COMBO:   # font, int2s, str2s, strs
             val = self.val_eds.val_combo.get_text_all()
             # only accept values from combo-items
             if val not in self.val_eds.val_combo.get_prop(PROP_COMBO_ITEMS):
@@ -1069,10 +1066,10 @@ class DialogMK2:
 
             val = map_option_value(self._cur_opt, caption=val)
 
-        elif ed_name == ValueEds.WGT_NAME__CHECK:                       # bool ###
+        elif ed_name == ValueEds.WGT_NAME__CHECK:                       # bool
             val = self.val_eds.cb_value
 
-        elif ed_name == ValueEds.WGT_NAME__BTN_EDIT: # edit btn: hotk, color, json, file ###
+        elif ed_name == ValueEds.WGT_NAME__BTN_EDIT: # edit btn: hotk, color, json, file
             val = self._dlg_value(prop_type)
             if val is not None:
                 with ignore_edit(self.h, self.val_eds.val_edit):
@@ -1088,10 +1085,9 @@ class DialogMK2:
 
 
     def _on_opt_click(self, id_dlg, id_ctl, data='', info=''):
-        #print('LIST CIKCK: {}'.format((id_dlg, id_ctl, data, info)))
 
         _sel_ind = listbox_proc(self._h_list, LISTBOX_GET_SEL)
-        if _sel_ind == -1  or  not self._list_opt_names:  #  nothing selected disable bottom panel
+        if _sel_ind == -1  or  not self._list_opt_names:  # nothing selected disable bottom panel
             self._clear_opt_edits()
             dlg_proc(self.h, DLG_CTL_PROP_SET, name='panel_value', prop={'en':False})
             return
@@ -1120,7 +1116,6 @@ class DialogMK2:
                 else: # unsetting option
                     removed_scopes.add(opt_change.scope)
         else: # no matching changes
-            #active_scoped_val = self.optman.get_opt_active_value(self._cur_opt, is_ui=False, with_scope=True)
             # skip values that were reset,
             scopes = (scope  for scope in ['f', 'l', 'u', 'def']    if scope not in removed_scopes)
             scoped_vals = ((sc, self.optman.get_opt_scope_value(self._cur_opt, sc, is_ui=False))    for sc in scopes)
@@ -1199,8 +1194,7 @@ class DialogMK2:
                 _t1 = time.time()
                 pass;       LOG and print('* set-filter time:{:.3f}s'.format(_t1-_t0))
 
-        #else:   # on_change  (typing, pasting)
-            #print('        . CHANGE')
+        # else:   # on_change  (typing, pasting)
 
     def _on_tree_click(self, id_dlg, id_ctl, data='', info=''):
         if data == 0:   # deselected items
@@ -1230,7 +1224,6 @@ class DialogMK2:
     def _on_key(self, id_dlg, id_ctl, data='', info=''):
         key_code = id_ctl
         state = data
-        #print(' on -key:{}'.format((key_code, state)))
 
         if key_code == VK_F  and  state == 'c': # Ctrl+F -- show+focus filter
             self.toggle_filter(show=True)
@@ -1240,7 +1233,6 @@ class DialogMK2:
         elif key_code == VK_ESCAPE  and  not state:  # <escape> in filter - clear
             if self._filter_ed.get_prop(PROP_FOCUSED)  and  self.filter_val:
                 self.set_filter('')
-                #self.toggle_filter(show=False)
                 return False # consumed
 
     def listbox_menu(self, id_dlg, id_ctl, data='', info=''):
@@ -1265,7 +1257,7 @@ class DialogMK2:
 
                 la = lambda: self.configure_columns()
                 menu_proc(self._h_col_menu, MENU_ADD, command=la, caption=_('Configure...'))
-            #end if
+            # end if
 
 
             # update check state
@@ -1342,13 +1334,12 @@ class DialogMK2:
 
             j_ed = JsonEd(self._cur_opt, self.scope)
             val = j_ed.edit_json()
-        #end if
+        # end if
 
         return val
 
 
     def toggle_filter(self, show=False):
-        #dlg_proc(self.h, DLG_CTL_PROP_SET, name='panel_filter', prop={'vis': show})
 
         if show == False:  # if hiding filter - reset tree selection to 'All'
             for item in tree_proc(self._h_tree, TREE_ITEM_ENUM_EX):
@@ -1559,7 +1550,7 @@ class ValueEds:
             self.val_edit.set_text_all(value or '')
 
         elif newtype == 'bool':
-            #NOTE: UI bool values are: True, False, and '' for empty scope value
+            # NOTE: UI bool values are: True, False, and '' for empty scope value
             if   value is True:  imind = ValueEds._cb_icons[value]
             elif value is False: imind = ValueEds._cb_icons[value]
             else:                imind = ValueEds._cb_icons[None]
@@ -1585,7 +1576,6 @@ class ValueEds:
             self.val_edit.set_prop(PROP_NUMBERS_ONLY, True)
 
         elif newtype == 'int2s':
-            #ed_val = map_option_value(opt, caption=value)
             with ignore_edit(h, self.val_combo):
                 if isinstance(value, str):
                     self.val_combo.set_text_all(value)
@@ -1594,7 +1584,6 @@ class ValueEds:
             self.val_combo.set_prop(PROP_COMBO_ITEMS, '\n'.join(opt['jdc']))
 
         elif newtype == 'str2s':
-            #ed_val = map_option_value(opt, caption=value)
             with ignore_edit(h, self.val_combo):
                 self.val_combo.set_text_all(str(value))
             self.val_combo.set_prop(PROP_COMBO_ITEMS, '\n'.join(opt['jdc']))
@@ -1623,7 +1612,7 @@ class ValueEds:
             self.val_edit.set_prop(PROP_RO, True)
 
             self.layout_ed_btn(h, n, _('Edit...'))
-        #end if
+        # end if
 
         # set line state: normal (not edited)
         if type_wgt_name == M.WGT_NAME__EDIT:
@@ -1687,11 +1676,10 @@ class ValueEds:
             'a_t': (M.VALUE_ED_RESET, '['),
             'a_r': (M.VALUE_ED_RESET, '['),
             'a_b': (M.VALUE_ED_RESET, ']'),
-            #'sp_l': PAD,
+            # 'sp_l': PAD,
             'act': True, 'en': True,
         }
 
-        #TODO validate name
         if name == M.WGT_NAME__EDIT:
             n = dlg_proc(h, DLG_CTL_FIND, prop=name)
             if n == -1:     # add if not already
@@ -1737,10 +1725,9 @@ class ValueEds:
 
                 button_proc(self._h_cbx, BTN_SET_FLAT, True)
                 button_proc(self._h_cbx, BTN_SET_KIND, BTNKIND_TEXT_ICON_HORZ)
-                # icons  (checkbox)
                 h_iml = ValueEds._get_checkbox_imagelist()
                 button_proc(self._h_cbx, BTN_SET_IMAGELIST, h_iml)
-            #end if
+            # end if
 
         # Extra
         elif name == M.WGT_NAME__BTN_EDIT:
@@ -1752,7 +1739,7 @@ class ValueEds:
                 _props['on_change'] = self._val_change_callback
                 dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop=_props)
                 self._ctl_names[n] = name
-        #end if
+        # end if
 
         if show:   # set visible
             dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={'vis': True})
@@ -1779,7 +1766,7 @@ class ValueEds:
         cb_val = self.cb_value
         # cycle: [None => ] True => False => True...
         if   cb_val is True:  nextind = ValueEds._cb_icons[False]
-        #elif cb_val is False: nextind = ValueEds._cb_icons[True]
+        # elif cb_val is False: nextind = ValueEds._cb_icons[True]
         else:                 nextind = ValueEds._cb_icons[True]
 
         button_proc(self._h_cbx, BTN_SET_IMAGEINDEX, nextind)
@@ -1799,7 +1786,7 @@ class ValueEds:
         })
         # ... edit
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
-                #'a_l': ('', '['),
+                # 'a_l': ('', '['),
                 'a_r': (M.WGT_NAME__BTN_EDIT, '[')
         })
 

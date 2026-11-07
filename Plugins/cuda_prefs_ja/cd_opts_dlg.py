@@ -1,10 +1,11 @@
-''' Plugin for CudaText editor
+""" Plugin for CudaText editor
 Authors:
-    Andrey Kvichansky    (kvichans on github.com)
+    Andrey Kvichansky (kvichans on github.com) / coolvitto
 Version:
-    '2.3.18 2025-09-17'
+    '2.3.18 2025-09-17' オリジナル
+    '1.0 2026-11-03' 日本語版
 ToDo: (see end of file)
-'''
+"""
 
 import  re, os, sys, json, collections, tempfile
 from    itertools       import *
@@ -16,7 +17,6 @@ import  cudatext            as app
 import  cudatext_cmd        as cmds
 import  cudax_lib           as apx
 from    cudatext        import ed
-#from    .cd_plug_lib    import *
 
 d   = dict
 odict = collections.OrderedDict
@@ -27,7 +27,7 @@ pass;                           from pprint import pformat
 pass;                           pf=lambda d:pformat(d,width=150)
 pass;                           pf80=lambda d:pformat(d,width=80)
 pass;                           pf60=lambda d:pformat(d,width=60)
-pass;                           ##!! waits correction
+pass;                           # !! waits correction
 
 from    .ja_compat      import get_translation   # 日本語版: .mo の読み込み
 _   = get_translation(__file__) # I18N
@@ -45,7 +45,7 @@ FONT_LST    = ['default'] \
 
 NO_CHAP = _('_no_')
 
-pass;                          #FONT_LST=FONT_LST[:3]
+pass;                          # FONT_LST=FONT_LST[:3]
 
 
 def f(s, *args, **kwargs):return s.format(*args, **kwargs)
@@ -74,7 +74,7 @@ def load_definitions(defn_path_or_json)->list:
             ,   tgs:['tag',]
             }]
     """
-    pass;                      #LOG and log('defn_path_or_json={}',(defn_path_or_json))
+    pass;
     kinfs   = []
     lines   = defn_path_or_json \
                 if str==type(defn_path_or_json) else \
@@ -86,7 +86,7 @@ def load_definitions(defn_path_or_json)->list:
                   defn_path_or_json.open(encoding='utf8').read()
         kinfs   = json.loads(json_bd, object_pairs_hook=odict)
         for kinf in kinfs:
-            pass;              #LOG and log('opt in kinf={}',('opt' in kinf))
+            pass;
             if isinstance(kinf['cmt'], list):
                 kinf['cmt'] = '\n'.join(kinf['cmt'])
 
@@ -98,13 +98,12 @@ def load_definitions(defn_path_or_json)->list:
 
     l       = '\n'
 
-    #NOTE: parse_raw
+    # NOTE: parse_raw
     reTags  = re.compile(r' *\((#\w+,?)+\)')
     reN2S   = re.compile(r'^\s*(\d+): *(.+)'    , re.M)
     reS2S   = re.compile(r'^\s*"(\w*)": *(.+)'  , re.M)
-#   reLike  = re.compile(r' *\(like (\w+)\)')               ##??
     reFldFr = re.compile(r'\s*Folders from: (.+)')
-    def parse_cmnt(cmnt, frm):#, kinfs):
+    def parse_cmnt(cmnt, frm):# , kinfs):
         tags= set()
         mt  = reTags.search(cmnt)
         while mt:
@@ -119,14 +118,14 @@ def load_definitions(defn_path_or_json)->list:
         if mt:
             from_short  = mt.group(1)
             from_dir    = from_short if os.path.isabs(from_short) else os.path.join(app.app_path(app.APP_DIR_DATA), from_short)
-            pass;              #LOG and log('from_dir={}',(from_dir))
+            pass;
             if not os.path.isdir(from_dir):
                 log(_('No folder "{}" from\n{}'), from_short, cmnt)
             else:
                 lstF    = [d for d in os.listdir(from_dir)
                            if os.path.isdir(from_dir+os.sep+d) and d.upper()!='README' and d.strip()]
                 lstF    = sorted(lstF)
-                pass;          #LOG and log('lstF={}',(lstF))
+                pass;
         frm,\
         lst = ('strs' , lstF)    if lstF else \
               (frm    , []  )
@@ -135,7 +134,6 @@ def load_definitions(defn_path_or_json)->list:
               ('str2s', dctS)    if dctS else \
               (frm    , []  )
         return cmnt, frm, dct, lst, list(tags)
-       #def parse_cmnt
     def jsstr(s):
         return s[1:-1].replace(r'\"','"').replace(r'\\','\\')
 
@@ -181,12 +179,12 @@ def load_definitions(defn_path_or_json)->list:
                       ('unk',  dval_s       )
             dfrm,dval=('#rgb-e',''          )   if dfrm=='#rgb' and dval==''            else \
                       (dfrm,   dval         )
-            pass;              #LOG and log('key,dval_s,dfrm,dval={}',(key,dval_s,dfrm,dval))
+            pass;
 
             cmnt    = cmnt.strip(l)     if cmnt else pre_cmnt
             ref_frm = cmnt[:3]=='...'
             pre_cmnt= cmnt              if cmnt else pre_cmnt
-            pass;              #LOG and log('ref_frm,pre_cmnt,cmnt={}',(ref_frm,pre_cmnt,cmnt))
+            pass;
             cmnt    = cmnt.lstrip('.'+l)
 
             dfrm    = 'font-e' if dfrm=='font' and _('Empty string is allowed') in cmnt   else dfrm
@@ -199,7 +197,7 @@ def load_definitions(defn_path_or_json)->list:
             kinf['frm']         = dfrm
             if dfrm in ('int','str'):
                 cmnt,frm,\
-                dct,lst,tags    = parse_cmnt(cmnt, dfrm)#, kinfs)
+                dct,lst,tags    = parse_cmnt(cmnt, dfrm)# , kinfs)
                 kinf['cmt']     = cmnt.strip()
                 if frm!=dfrm:
                     kinf['frm'] = frm
@@ -218,7 +216,7 @@ def load_definitions(defn_path_or_json)->list:
 
             if ref_frm and pre_kinf:
                 # Copy frm data from prev oi
-                pass;          #LOG and log('Copy frm pre_kinf={}',(pre_kinf))
+                pass;
                 kinf[    'frm'] = pre_kinf['frm']
                 if 'dct' in pre_kinf:
                     kinf['dct'] = pre_kinf['dct']
@@ -227,14 +225,13 @@ def load_definitions(defn_path_or_json)->list:
 
             pre_kinf= kinf.copy()
             cmnt    = ''
-       #for line
-    pass;                      #open(str(defn_path_or_json)+'.p.json', 'w').write(json.dumps(kinfs,indent=2))
+       # for line
+    pass;                      # open(str(defn_path_or_json)+'.p.json', 'w').write(json.dumps(kinfs,indent=2))
     upd_cald_vals(kinfs, '+def')
     for kinf in kinfs:
         kinf['jdc'] = kinf.get('jdc', kinf.get('dct', []))
         kinf['jdf'] = kinf.get('jdf', kinf.get('def', ''))
     return kinfs
-   #def load_definitions
 
 JA_DEFAULT_JSON = os.path.join(os.path.dirname(__file__), 'default_ja.json')
 
@@ -296,11 +293,11 @@ def load_vals(opt_dfns:list, lexr_json='', ed_=None, full=False, user_json='user
                         if  os.path.isfile(lexr_def_json) else {}
     lexr_vals       = apx._json_loads(open(lexr_json    , encoding='utf8').read(), object_pairs_hook=odict) \
                         if  os.path.isfile(lexr_json)     else {}
-    pass;                      #LOG and log('lexr_vals={}',(lexr_vals))
-    pass;                      #LOG and log('lexr_def_vals={}',(lexr_def_vals))
+    pass;
+    pass;
 
     # Fill vals for defined opt
-    pass;                      #LOG and log('no opt={}',([oi for oi in opt_dfns if 'opt' not in oi]))
+    pass;
     oinf_valed  = odict([(oi['opt'], oi) for oi in opt_dfns])
     for opt, oinf in oinf_valed.items():
         if opt in lexr_def_vals:                                # Correct def-vals for lexer
@@ -319,7 +316,7 @@ def load_vals(opt_dfns:list, lexr_json='', ed_=None, full=False, user_json='user
         # Append item for non-defined opt
         reFontNm    = re.compile(r'font\w*_name')
         def val2frm(val, opt=''):
-            pass;              #LOG and log('opt,val={}',(opt,val))
+            pass;
             return  ('bool'     if isinstance(val, bool)    else
                      'int'      if isinstance(val, int)     else
                      'float'    if isinstance(val, float)   else
@@ -348,7 +345,6 @@ def load_vals(opt_dfns:list, lexr_json='', ed_=None, full=False, user_json='user
     upd_cald_vals(oinf_valed, '+def') if lexr_def_vals else None    # To update oi['jdf'] by oi['def']
 
     return oinf_valed
-   #def load_vals
 
 def upd_cald_vals(ois, what=''):
     # Fill calculated attrs
@@ -357,10 +353,10 @@ def upd_cald_vals(ois, what=''):
             dct = oi['dct']
             dval= oi['def']
             dc  = odict(dct)
-            pass;              #LOG and log('dct={}',(dct))
+            pass;
             oi['jdc']   = [f('({}) {}', vl,   cm      ) for vl,cm in dct]
             oi['jdf']   =  f('({}) {}', dval, dc.get(dval, ''))   # 日本語版: KeyErrorで開けなくなるのを防ぐ
-            pass;              #LOG and log('oi={}',(oi))
+            pass;
 
 
     # Fill calculated attrs
@@ -386,7 +382,6 @@ def upd_cald_vals(ois, what=''):
             oi['jfvl']  = oi.get('fval', '') \
                             if not dct or 'fval' not in oi else \
                           f('({}) {}', oi['fval'], dct.get(oi['fval'], ''))
-   #def upd_cald_vals
 
 
 class OptEdD:
@@ -404,11 +399,9 @@ class OptEdD:
         m.defn_path = Path(path_keys_info)  if str==type(path_keys_info) else json.dumps(path_keys_info)
 
         m.subset    = subset
-        #m.stores    = get_hist('dlg'
-                        #, json.loads(open(CFG_JSON).read(), object_pairs_hook=odict)
-                            #if os.path.exists(CFG_JSON) else odict())
-        pass;                  #LOG and log('ok',())
-#       m.bk_sets   = m.stores.get(m.subset+'bk_sets'    , False)
+        # m.stores    = get_hist('dlg'
+                            # if os.path.exists(CFG_JSON) else odict())
+        pass;
         m.lexr_l    = app.lexer_proc(app.LEXER_GET_LEXERS, False)
         m.lexr_w_l  = [f('{} {}'
                         ,'!!' if os.path.isfile(app.app_path(app.APP_DIR_SETTINGS)+os.sep+'lexer '+lxr+'.json') else '  '
@@ -430,34 +423,27 @@ class OptEdD:
         m.cols      = []        # Last info about listview columns
         m.itms      = []        # Last info about listview cells
 
-#       m.bk_files  = {}
-#       m.do_file('backup-user')    if m.bk_sets else 0
 
         m.do_file('load-data')
 
         m.for_ulf   = 'u'       # 'u' for User, 'l' for Lexer, 'f' for File
 
-        #m.apply_one = m.stores.get(m.subset+'apply_one', False) # Do one call OpsReloadAndApply on exit
-        #m.apply_need= False                                     # Need to call OpsReloadAndApply
-        #m.auto4file = m.stores.get(m.subset+'auto4file', True)  # Auto reset file value to over value def/user/lex
         m.auto4file = True  # Auto reset file value to over value def/user/lex
-       #def __init__
 
     def do_file(self, what, data='', opts={}):
         M,m = self.__class__,self
         if False:pass
         elif what=='load-data':
-            pass;              #LOG and log('',)
+            pass;
             m.opts_defn = load_definitions(m.defn_path)
             m.opts_defn = overlay_ja(m.opts_defn)           # 日本語版: 表示文字列を日本語に差し替え
-            pass;              #LOG and log('m.opts_defn={}',pf([o for o in m.opts_defn]))
-            pass;              #LOG and log('m.opts_defn={}',pf([o for o in m.opts_defn if '2s' in o['frm']]))
+            pass;
+            pass;
             m.opts_full = load_vals(m.opts_defn
                                    ,lexr_json='lexer '+m.lexr+'.json'
                                    ,user_json=m.how.get('stor_json', 'user.json')
                                    , ed_=m.ed, full=m.all_ops)
-            #m.cur_op    = m.cur_op if m.cur_op in m.opts_full else ''
-            pass;              #LOG and log('m.opts_full={}',pf(m.opts_full))
+            pass;
             m.do_file('build-chp-tree')
 
         elif what=='build-chp-tree':
@@ -482,11 +468,10 @@ class OptEdD:
                     ops_l      += [op]
                     if not ('/'+chp_s).endswith('/'+chp):   # not last
                         kids    = chp_node.setdefault('kids', odict())
-            pass;              #LOG and log('m.chp_tree=¶{}',pf60(m.chp_tree))
-            pass;              #LOG and log('m.pth2chp=¶{}',pf60(m.pth2chp))
+            pass;
+            pass;
 
         return []
-       #def do_file
 
 
     def show(self
@@ -531,9 +516,8 @@ class OptEdD:
 
     def do_setv(self, aid, ag, data):
         M,m = self.__class__,self
-        pass;                  #LOG and log('aid,m.cur_op={}',(aid,m.cur_op))
+        pass;
         if not m.cur_op:   return []
-        #m.col_ws= [ci['wd'] for ci in m.ag.cattr('lvls', 'cols')]
 
         cur_val = data
 
@@ -547,7 +531,7 @@ class OptEdD:
         uval    = oi.get('uval')
         lval    = oi.get('lval')
         fval    = oi.get('fval')
-        ulfvl   = oi.get(key4v ) #fval if m.for_ulf=='f' else lval if m.for_ulf=='l' else uval
+        ulfvl   = oi.get(key4v ) # fval if m.for_ulf=='f' else lval if m.for_ulf=='l' else uval
         jval    = oi['jlvl']    if m.for_ulf=='l' else \
                   oi['juvl']    if m.for_ulf=='u' else \
                   oi['jfvl']
@@ -561,7 +545,6 @@ class OptEdD:
             # Remove from file - set over def/user/lex val
             newv    = oi.get('lval', oi.get('uval', oi.get('def')))
             if newv==ulfvl:
-                #m.stbr_act(M.STBR_MSG, _('No need changes'))
                 return []
             erpt_s  = 'reset-f'
             m.ed.set_prop(apx.OPT2PROP[op], newv)
@@ -572,7 +555,6 @@ class OptEdD:
 
         elif aid=='setv':                   # Add/Set opt for user/lexer/file
             # Enter from edit. Need parse some string
-            #newv    = m.ag.cval('eded')
             newv    = cur_val
             try:
                 newv    =   int(newv)   if frm=='int'   else \
@@ -591,9 +573,8 @@ class OptEdD:
                     return d(form=d(fid='eded'))
 
 
-        ### Use new value to change env
+        # --- Use new value to change env ---
         if newv is not None and newv==ulfvl:
-            #m.stbr_act(M.STBR_MSG, _('No need changes'))
             return []
 
         if m.for_ulf=='f' and newv is not None and op in apx.OPT2PROP:
@@ -603,14 +584,14 @@ class OptEdD:
 
         if m.for_ulf!='f':
             # Change target file
-            pass;              #LOG and log('?? do_erpt',())
+            pass;
             erpt_s  =('reset-u' if newv  is None and m.for_ulf=='u' else
                       'reset-l' if newv  is None and m.for_ulf=='l' else
                       'add-u'   if ulfvl is None and m.for_ulf=='u' else
                       'add-l'   if ulfvl is None and m.for_ulf=='l' else
                       'set-u'   if                   m.for_ulf=='u' else
                       'set-l'   if                   m.for_ulf=='l' else '')
-            pass;              #LOG and log('?? set_opt',())
+            pass;
             apx.set_opt(op
                        ,newv
                        ,apx.CONFIG_LEV_LEX  if m.for_ulf=='l' else apx.CONFIG_LEV_USER
@@ -620,30 +601,29 @@ class OptEdD:
                        )
 
             if not m.apply_one:
-                pass;          #LOG and log('?? OpsReloadAndApply',())
+                pass;
                 ed.cmd(cmds.cmd_OpsReloadAndApply)
             else:
                 m.apply_need    = True
 
         # Use new value to change dlg data
-        pass;                  #LOG and log('?? oi={}',(oi))
-        pass;                  #LOG and log('?? m.opts_full={}',pf(m.opts_full))
+        pass;
+        pass;
         if False:pass
         elif aid=='setd':
             oi.pop(key4v, None)     if m.for_ulf!='f' else 0
         else:
-            pass;              #LOG and log('key4v, newv={}',(key4v, newv))
+            pass;
             oi[key4v] = newv
-        pass;                  #LOG and log('oi={}',(oi))
+        pass;
         upd_cald_vals(m.opts_full)
-        pass;                  #LOG and log('oi={}',(oi))
+        pass;
 
         jnewv   = oi['jlvl']   if m.for_ulf=='l' else oi['juvl']    if m.for_ulf=='u' else oi['jfvl']
-        #m.do_erpt(erpt_s, jnewv, jval)
-        pass;                  #LOG and log('ok oi={}',(oi))
-        pass;                  #LOG and log('ok m.opts_full={}',pf(m.opts_full))
+        pass;
+        pass;
 
-        pass;                  #LOG and log('?? get_cnts',())
+        pass;
 
         if m.for_ulf!='f' and m.auto4file and op in apx.OPT2PROP:
             # Change FILE to over  (("over" - override?))
@@ -655,15 +635,10 @@ class OptEdD:
                 jval        = oi['jfvl']
                 upd_cald_vals(m.opts_full)
                 jnewv       = oi['jfvl']
-                #m.do_erpt('auset-f', jnewv, jval)
 
-        pass;                  #LOG and log('m.get_vals(lvls-cur)={}',(m.get_vals('lvls-cur')))
-        #return d(ctrls=m.get_cnts('+lvls+cur')
-                #,vals =m.get_vals('lvls-cur')
-                #)
-       #def do_setv
-
-
+        pass;
+        # return d(ctrls=m.get_cnts('+lvls+cur')
+                # )
 
 
 class OptionsMan:
@@ -757,7 +732,7 @@ class OptionsMan:
     @classmethod
     def sort_opts(cls, opts, sort_field):
 
-        def key(opt): #SKIP
+        def key(opt): # SKIP
             """ returns key value depending on sort field
             """
             if sort_field == 'Value':
@@ -798,14 +773,14 @@ class OptionsMan:
                         unset_opts.append(sort_item)
                         continue
                 elif sort_field in {'uval', 'lval', 'fval'}:
-                    #if opt.get(field) is None:
+                    # if opt.get(field) is None:
                     if opt.get(sort_field) is None:
                         unset_opts.append(sort_item)
                         continue
 
                 _format_key = cls.FORMATS_ORDER[opt['frm']]
                 format_opts[_format_key].append(sort_item)
-            #end for
+            # end for
 
             pass;       LOG and print('unset vals: {}'.format(len(unset_opts)))
 
@@ -877,7 +852,7 @@ class OptionsMan:
             scope = 'f'
         else:
             raise Exception('Unsupported override-str:{}\n+ {}'.format(opt['!'], opt))
-        #end if
+        # end if
 
         return (scope, res)  if with_scope else  res
 
@@ -901,14 +876,10 @@ class OptionFilter:
         if not filter_str:
             return opts_defn[:]
 
-        #print(' >>>filter: {}, {}'.format(filter_str, len(opts_defn)))
 
         filter_str, chapters = cls._get_chapter_filter(filter_str)
-        #print(' >>>    chp: {}, {}'.format(filter_str, chapters))
         opts_defn = cls.chapter_filter(chapters, opts_defn)
-        #print(' >>>    chp filted len: {}'.format(len(opts_defn)))
         opts_defn = cls.opt_text_filter(filter_str, opts_defn)
-        #print(' >>>    txt filted len: {}'.format(len(opts_defn)))
         return opts_defn
 
     @classmethod
@@ -931,12 +902,10 @@ class OptionFilter:
         """ returns (filter_str, [chapters])
         """
         chp_conds    = None
-        #chp_no_c    = False    #TODO invesigate
         if  '@' in filter_str:
             # Prepare to match chapters
             chp_conds    = (mt.group(1).upper() for mt in re.finditer(r'@([\w/]+)'    , filter_str))
             chp_conds    = [chp for chp in chp_conds if chp != NO_CHAP.upper()]
-            #chp_no_c    = '@'+M.NO_CHAP in filter_str #WTF?
             filter_str      = re.sub(r'@([\w/]*)', '', filter_str)             # @s* clear @ and cph
         return filter_str, chp_conds
 
@@ -945,12 +914,12 @@ class OptionFilter:
     @classmethod
     def _filter_opt(cls, fltr_s, op, oi):
         if not fltr_s:                                  return True
-        pass;              #LOG and log('fltr_s, op, oi[!]={}',(fltr_s, op, oi['!']))
+        pass;
         if '!!!' in fltr_s and '!!!' not in oi['!']:    return False
         if '!!'  in fltr_s and '!!'  not in oi['!']:    return False
-        pass;              #LOG and log('skip !!',())
+        pass;
         if  '!'  in fltr_s and  '!'  not in oi['!']:    return False
-        pass;              #LOG and log('skip !',())
+        pass;
         text    = op + (' '+oi.get('cmt', '')  if '#' in fltr_s else  '')
         text    = text.upper()
         fltr_s  = fltr_s.replace('!', '').replace('#', '').upper()
@@ -958,7 +927,7 @@ class OptionFilter:
             text    = '·' + cls.reNotWdChar.sub('·', text)    + '·'
             fltr_s  = ' ' + fltr_s + ' '
             fltr_s  = fltr_s.replace(' <', ' ·').replace('> ', '· ')
-        pass;              #LOG and log('fltr_s, text={}',(fltr_s, text))
+        pass;
         return all(map(lambda ch:ch in text,  fltr_s.split()))
 
 
@@ -977,21 +946,12 @@ class Command:
                 defs_json = fn
 
         opted = OptEdD(path_keys_info=defs_json, subset='df.')
-        opted.show('オプションエディタ 日本語版')
-       #def _dlg_opt
-   #class Command
+        opted.show('オプションエディタ Lite 日本語版')
 
 
 if __name__ == '__main__' :     # Tests
     # To start the tests run in Console
-    #   exec(open(path_to_the_file, encoding="UTF-8").read())
-#   app.app_log(app.LOG_CONSOLE_CLEAR, 'm')
-#   for smk in [smk for smk
-#       in  sys.modules                             if 'cuda_options_editor.tests.test_options_editor' in smk]:
-#       del sys.modules[smk]        # Avoid old module
-#   import                                              cuda_options_editor.tests.test_options_editor
-#   import unittest
-#   suite = unittest.TestLoader().loadTestsFromModule(  cuda_options_editor.tests.test_options_editor)
-#   unittest.TextTestRunner(verbosity=0).run(suite)
+# for smk in [smk for smk
+# in  sys.modules                             if 'cuda_options_editor.tests.test_options_editor' in smk]:
 
     pass

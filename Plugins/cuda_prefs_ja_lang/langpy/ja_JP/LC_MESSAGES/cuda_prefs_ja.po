@@ -1,0 +1,213 @@
+# 作者: coolvitto
+# バージョン: 1.0
+# 作成日時: 2026-11-03 16:21
+# URL: https://coolvitto.hateblo.jp
+msgid ""
+msgstr ""
+"Project-Id-Version: cuda_prefs_ja\n"
+"PO-Revision-Date: 2026-11-03 20:53+0900\n"
+"Last-Translator: coolvitto\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid " (Error!)"
+msgstr " (エラー!)"
+
+msgid ""
+"About \"Filter\"\n"
+" Suitable options will contain all specified words.\n"
+" Tips and tricks:\n"
+" • Add \"#\" to search the words also in comments.\n"
+" • Add \"@sec\" to show options from section with \"sec\" in name.\n"
+"   Several sections are allowed.\n"
+"   Click item in sections tree with Ctrl to add it.\n"
+" • To show only overridden options:\n"
+"   - Add \"!\"   to show only User+Lexer+File.\n"
+"   - Add \"!!\"  to show only Lexer+File\n"
+"   - Add \"!!!\" to show only File.\n"
+" • Use \"<\" or \">\" for word boundary.\n"
+"     Example:\n"
+"       size> <tab\n"
+"     selects \"tab_size\" but not \"ui_tab_size\" or \"tab_size_x\".\n"
+"\n"
+" • Values in table column \"!\"\n"
+"     !   option is set in \"user.json\",\n"
+"     !!  option is set in \"lexer NNN.json\",\n"
+"     !!! option is set for current file,\n"
+"     L   default value is from \"settings_default/lexer NNN.json\",\n"
+"     +   not CudaText standard option.\n"
+msgstr ""
+"「フィルター」について\n"
+" 検索条件に該当するオプションには、指定したすべての単語が含まれます。\n"
+" ヒントと小ワザ:\n"
+" • \"#\" を追加すると、コメント内の単語も検索対象になります。\n"
+" • \"@sec\" を追加すると、名前に \"sec\" を含むセクションのオプションを表示し"
+"ます。\n"
+"   複数のセクション指定も可能です。\n"
+"   Ctrl キーを押しながらセクションツリーの項目をクリックすると追加できま"
+"す。\n"
+" • 上書きされたオプションのみを表示する場合:\n"
+"   - \"!\"   を追加: ユーザー+Lexer+ファイルのみ表示。\n"
+"   - \"!!\"  を追加: Lexer+ファイルのみ表示\n"
+"   - \"!!!\" を追加: ファイルのみ表示。\n"
+" • 単語の境界を指定するには \"<\" または \">\" を使用します。\n"
+"     例:\n"
+"       size> <tab\n"
+"     \"tab_size\" は選択されますが、\"ui_tab_size\" や \"tab_size_x\" は除外"
+"されます。\n"
+"\n"
+" • テーブル列 \"!\" の値:\n"
+"     !   オプションが \"user.json\" で設定されています\n"
+"     !!  オプションが \"lexer NNN.json\" で設定されています\n"
+"     !!! オプションが現在のファイルに対して設定されています\n"
+"     L   デフォルト値が \"settings_default/lexer NNN.json\" 由来です\n"
+"     +   CudaText の標準オプションではありません。\n"
+
+msgid "Apply"
+msgstr "適用"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Check"
+msgstr "確認"
+
+msgid "Choose file..."
+msgstr "ファイルを選択..."
+
+msgid "Choose file: {}"
+msgstr "ファイルを選択: {}"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Columns widths. In pixels (50px) or relative (100)"
+msgstr "列の幅。ピクセル (50px) または相対値 (100) で指定"
+
+msgid "Configure..."
+msgstr "設定..."
+
+msgid "CudaText Preferences"
+msgstr "CudaText の環境設定"
+
+msgid "CudaText options lite"
+msgstr "CudaText オプション Lite"
+
+msgid "Current value"
+msgstr "現在の値"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "Edit..."
+msgstr "編集..."
+
+msgid "Empty string is allowed"
+msgstr "空の文字列を許可"
+
+msgid "Enable"
+msgstr "有効化"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Filter: "
+msgstr "フィルター: "
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "Incorrect color token: "
+msgstr "不正なカラーコードです: "
+
+msgid "Incorrect value. It's needed in format: {}"
+msgstr "値が不正です。次の形式が必要です: {}"
+
+msgid "JSON option editor: {}"
+msgstr "JSON オプションエディタ: {}"
+
+msgid "Lexer"
+msgstr "Lexer"
+
+msgid "Load default"
+msgstr "デフォルトを読み込む"
+
+msgid "NOTE: {}: invalid column width format: {}"
+msgstr "注意: {}: 列幅のフォーマットが不正です: {}"
+
+msgid ""
+"No folder \"{}\" from\n"
+"{}"
+msgstr ""
+"「{}」フォルダーが見つかりません:\n"
+"{}"
+
+msgid "No option changes has been made"
+msgstr "オプションの変更は行われませんでした"
+
+msgid "Not available for a file"
+msgstr "ファイル設定では利用できません"
+
+msgid "Not available for lexers"
+msgstr "Lexer 設定では利用できません"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Option"
+msgstr "オプション"
+
+msgid "Option \"{}\" does not accept empty value"
+msgstr "オプション \"{}\" に空の値を設定することはできません"
+
+msgid "Option: "
+msgstr "オプション: "
+
+msgid "Options Editor Lite"
+msgstr "オプションエディタ Lite"
+
+msgid "OptionsError: unsupported option type: "
+msgstr "オプションエラー: サポートされていないオプション型です: "
+
+msgid ""
+"Remove option [{}]\n"
+"   {} = {!r}\n"
+"?"
+msgstr ""
+"オプション [{}] を削除\n"
+"   {} = {!r}\n"
+"?"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Scope: "
+msgstr "スコープ: "
+
+msgid "Section"
+msgstr "セクション"
+
+msgid "Undo changes"
+msgstr "変更を元に戻す"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "[ All ]"
+msgstr "[ すべて ]"
+
+msgid "[mod]"
+msgstr "[変更あり]"
+
+msgid "_no_"
+msgstr "_いいえ_"
+
+msgid "failed to apply new columns config: {}. {}"
+msgstr "新しい列構成の適用に失敗しました: {}. {}"
+
+msgid "reset"
+msgstr "リセット"

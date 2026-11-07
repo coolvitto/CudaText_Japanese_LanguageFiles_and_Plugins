@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
-''' オプションエディタ 日本語版: 日本語化のための補助モジュール
+""" オプションエディタ Lite 日本語版: 日本語化のための補助モジュール
     - 翻訳ファイル (.mo) の読み込み
     - 章 (カテゴリ) ツリーの表示名の日本語化 (内部名は英語のまま)
     - ダイアログのフォント指定
-'''
+"""
 import os
 import json
 import gettext
@@ -16,9 +15,9 @@ MO_DOMAINS = ('cuda_prefs_ja', 'cuda_prefs')
 
 
 def get_translation(plugin_filename):
-    ''' apx.get_translation の代わり。data/langpy/<言語>/LC_MESSAGES/ から
+    """ apx.get_translation の代わり。data/langpy/<言語>/LC_MESSAGES/ から
         cuda_prefs_ja.mo と cuda_prefs.mo を順に探して連結する。
-        どちらも無ければ apx.get_translation にまかせる。 '''
+        どちらも無ければ apx.get_translation にまかせる。 """
     try:
         lng = app.app_proc(app.PROC_GET_LANG, '')
         localedir = os.path.join(app.app_path(app.APP_DIR_DATA), 'langpy')
@@ -40,7 +39,7 @@ def get_translation(plugin_filename):
     return apx.get_translation(plugin_filename)
 
 
-# ---------------------------------------------------------------- 章ツリー
+# --- 章ツリー ---
 # 表示名のみ。フィルターの "@UI/Tabs" などに使う内部名は英語のまま。
 CHP_JA = {
     'Font': 'フォント', 'Renderer': '描画',
@@ -64,16 +63,16 @@ for _en, _ja in CHP_JA.items():
 
 
 def chp_label(name):
-    ''' 内部名 → 表示名 '''
+    """ 内部名 → 表示名 """
     return CHP_JA.get(name, name)
 
 
 def chp_name(text):
-    ''' 表示名 → 内部名 (フィルター用のパス作成に使う) '''
+    """ 表示名 → 内部名 (フィルター用のパス作成に使う) """
     return CHP_JA2EN.get(text, text)
 
 
-# ---------------------------------------------------------------- フォント
+# --- フォント ---
 CFG_NAME = 'cuda_prefs_ja.json'      # settings フォルダー (任意)
 DEFAULT_FONT_NAME = 'Yu Gothic UI'
 DEFAULT_FONT_SIZE = 11               # 0: 変更しない
@@ -94,8 +93,8 @@ def _font_cfg():
 
 
 def apply_font(h):
-    ''' ダイアログ h のすべてのコントロールにフォントを設定する。
-        指定フォントが未インストールなら何もしない。 '''
+    """ ダイアログ h のすべてのコントロールにフォントを設定する。
+        指定フォントが未インストールなら何もしない。 """
     try:
         name, size = _font_cfg()
         if not name:

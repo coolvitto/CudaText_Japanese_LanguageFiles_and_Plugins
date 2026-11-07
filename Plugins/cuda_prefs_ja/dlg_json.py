@@ -5,7 +5,7 @@ from cudatext import *
 from cudax_lib import get_opt
 from .ja_compat import get_translation   # 日本語版
 
-_   = get_translation(__file__)  # I18N
+_   = get_translation(__file__)
 
 
 PAD = 2
@@ -13,8 +13,8 @@ BTN_H = app_proc(PROC_GET_GUI_HEIGHT, 'button')
 BTN_W = BTN_H*3
 BTN_W_BIG = int(BTN_W*1.5)
 
-COL_GREEN   = 0x7cc87c #7cc87c
-COL_RED     = 0x7374d8 #d87473
+COL_GREEN   = 0x7cc87c # 7cc87c
+COL_RED     = 0x7374d8 # d87473
 
 
 class JsonEd:
@@ -53,7 +53,7 @@ class JsonEd:
         _colors = app_proc(PROC_THEME_UI_DICT_GET, '')
         color_form_bg = _colors['TabBg']['color']
 
-        ###### FORM #######################
+        # --- FORM ---
         dlg_proc(h, DLG_PROP_SET, prop={
                 'cap': _('JSON option editor: {}').format(self.opt['opt']),
                 'w': 600, 'h': 400,
@@ -63,7 +63,7 @@ class JsonEd:
                 })
 
 
-        # option description #########
+        # --- option description ---
         n = dlg_proc(h, DLG_CTL_ADD, 'editor')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'editor',
@@ -73,7 +73,7 @@ class JsonEd:
         h_ed = dlg_proc(h, DLG_CTL_HANDLE, index=n)
         self.edt = Editor(h_ed)
 
-        # option description #########
+        # --- option description ---
         n = dlg_proc(h, DLG_CTL_ADD, 'editor')
         dlg_proc(h, DLG_CTL_PROP_SET, index=n, prop={
                 'name': 'memo',
@@ -85,8 +85,8 @@ class JsonEd:
         self.memo = Editor(h_ed)
 
 
-        ### Bottom Btns ###################
-        # OK #######
+        # --- Bottom Btns ---
+        # --- OK ---
         self.n_ok = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=self.n_ok, prop={
                 'name': 'btn_ok',
@@ -97,7 +97,7 @@ class JsonEd:
                 'cap': _('OK'),
                 'on_change': self._on_btn_click,
                 })
-        # Cancel #######
+        # --- Cancel ---
         self.n_cancel = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=self.n_cancel, prop={
                 'name': 'btn_cancel',
@@ -108,7 +108,7 @@ class JsonEd:
                 'cap': _('Close'),
                 'on_change': self._on_btn_click,
                 })
-        # Check #######
+        # --- Check ---
         self.n_check = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=self.n_check, prop={
                 'h': BTN_H, 'max_h': BTN_H,
@@ -121,7 +121,7 @@ class JsonEd:
         self.h_btn_check = dlg_proc(h, DLG_CTL_HANDLE, index=self.n_check)
 
 
-        # Copy default #######
+        # --- Copy default ---
         self.n_load_def = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=self.n_load_def, prop={
                 'name': 'btn_defaults',
@@ -132,7 +132,7 @@ class JsonEd:
                 'cap': _('Load default'),
                 'on_change': self._on_btn_click,
                 })
-        # Undo changes #######
+        # --- Undo changes ---
         self.n_undo = dlg_proc(h, DLG_CTL_ADD, 'button_ex')
         dlg_proc(h, DLG_CTL_PROP_SET, index=self.n_undo, prop={
                 'h': BTN_H, 'max_h': BTN_H,
@@ -202,7 +202,7 @@ class JsonEd:
             self.edt.focus()
             self.edt.set_caret(ex.colno-1, ex.lineno-1)
 
-        ## add green/red line to check btn
+        # add green/red line to check btn
         button_proc(self.h_btn_check, BTN_SET_COLOR_LINE2, check_col)
         # reset after 1 sec
         timer_proc(TIMER_START_ONE, self._reset_check_col, 1000)
