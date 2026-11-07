@@ -1,0 +1,17 @@
+[info]
+title=Cuda Cool Grep
+desc=秀丸のような「Grep」および「Grep置換」ダイアログです。いくつかカスタマイズしてオプションを追加してます。
+type=cudatext-plugin
+subdir=cuda_cool_grep
+version=1.0
+homepage=https://coolvitto.hateblo.jp
+api=1.0.302
+
+[item1]
+section=commands
+caption=Run Cool Grep
+method=run
+
+[item2]
+section=events
+events=on_output_nav+,on_click_dbl+
