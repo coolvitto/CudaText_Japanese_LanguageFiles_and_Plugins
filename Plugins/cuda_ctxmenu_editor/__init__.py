@@ -1,4 +1,8 @@
-# -*- coding: utf-8 -*-
+# 名称:       メニューの編集 (cuda_ctxmenu_editor)
+# 作者:       coolvitto
+# バージョン: 0.2.0
+# 作成日時:   2026-11-04 05:12
+# URL:        https://coolvitto.hateblo.jp
 # Context Menu Editor for CudaText  (v0.2.0)
 # - 既存メニュー(エディタ右クリック/タブ/メインメニュー)に項目を追加、またはサブメニューを追加する
 # - 既存項目の非表示・表示名の変更ができる
@@ -10,7 +14,7 @@ import traceback
 from cudatext import *
 from cudax_lib import get_translation
 
-_ = get_translation(__file__)  # I18N
+_ = get_translation(__file__)
 
 
 def N_(s):
@@ -75,7 +79,7 @@ CATEGORY_RULES = [
 CATEGORY_ORDER = [c for c, _k in CATEGORY_RULES] + [CAT_OTHER, CAT_PLUGIN]
 
 
-# ---------------------------------------------------------------- config
+# --- config ---
 
 def cfg_path():
     return os.path.join(app_path(APP_DIR_SETTINGS), CFG_NAME)
@@ -134,7 +138,7 @@ def category_of(name):
     return CAT_OTHER
 
 
-# ---------------------------------------------------------------- command names (英語->日本語)
+# --- command names (英語->日本語) ---
 
 _names = None
 
@@ -188,7 +192,7 @@ def tr_name(name):
     return n.get(name) or n.get(name.lower()) or name
 
 
-# ---------------------------------------------------------------- runtime menu
+# --- runtime menu ---
 
 _added = []       # 自分が追加した項目のid(文字列)
 _groups = []      # (表示条件, [id, ...])
@@ -345,7 +349,7 @@ def run_plugin_item(*args, **kwargs):
         print(traceback.format_exc())
 
 
-# ---------------------------------------------------------------- command picker
+# --- command picker ---
 
 def collect_commands():
     res = []
@@ -475,7 +479,7 @@ class CommandPicker:
         return self.result
 
 
-# ---------------------------------------------------------------- main dialog
+# --- main dialog ---
 
 _dlg = None
 
@@ -509,7 +513,7 @@ class ConfigDialog:
         self.h = dlg_proc(0, DLG_CREATE)
         self._build()
 
-    # --- helpers
+    # --- helpers ---
     def _add(self, typ, name, **props):
         n = dlg_proc(self.h, DLG_CTL_ADD, typ)
         props['name'] = name
@@ -555,7 +559,7 @@ class ConfigDialog:
         i = self._val('lst_items')
         return self.rows[i] if 0 <= i < len(self.rows) else None
 
-    # --- UI
+    # --- UI ---
     def _build(self):
         dlg_proc(self.h, DLG_PROP_SET, prop={
             'cap': _('Edit menus'), 'w': self.W, 'h': self.H, 'border': DBORDER_DIALOG})
@@ -689,7 +693,7 @@ class ConfigDialog:
             hidden = bool(o and o.get('hide'))
         self._set('btn_tog', en=ex, cap=_('Show existing item') if hidden else _('Hide existing item'))
 
-    # --- actions
+    # --- actions ---
     def dispatch(self, info):
         if self.busy:
             return
@@ -868,7 +872,7 @@ class ConfigDialog:
             rebuild()
 
 
-# ---------------------------------------------------------------- plugin entry
+# --- plugin entry ---
 
 class Command:
     def config(self):
