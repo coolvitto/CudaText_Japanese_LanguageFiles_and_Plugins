@@ -1,3 +1,7 @@
+# 作者: coolvitto
+# バージョン: 1.0
+# 作成日時: 2026-11-03 16:21
+# URL: https://coolvitto.hateblo.jp
 msgid ""
 msgstr ""
 "Project-Id-Version: cuda_prefs_ja\n"
