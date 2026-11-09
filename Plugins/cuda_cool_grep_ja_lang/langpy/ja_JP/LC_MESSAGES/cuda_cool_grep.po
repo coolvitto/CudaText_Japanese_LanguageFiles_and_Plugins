@@ -5,6 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cuda_cool_grep\n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: coolvitto\n"
 "Language-Team: \n"
@@ -78,10 +79,10 @@ msgid "Confirm before saving"
 msgstr "保存の前に確認"
 
 msgid "Cool Grep: {n} files searched, {m} lines found (Esc to cancel)"
-msgstr "Cool Grep: {n} ファイルを検索, {m} 行が一致 (Esc で中断)"
+msgstr "Cool Grep : {n} ファイルを検索中... (Esc で中断) : {m} 行が一致"
 
 msgid "Cool Grep: {n} files searched, {m} places replaced (Esc to cancel)"
-msgstr "Cool Grep: {n} ファイルを検索, {m} か所を置換 (Esc で中断)"
+msgstr "Cool Grep : {n} ファイルを検索中... (Esc で中断) : {m} か所を置換"
 
 msgid "Create backup"
 msgstr "バックアップを作成"
@@ -168,7 +169,7 @@ msgid "Folder not found: {}"
 msgstr "フォルダーが見つかりません : {}"
 
 msgid "Folders: .git, node_modules"
-msgstr "フォルダー: .git, node_modules"
+msgstr "フォルダー : .git, node_modules"
 
 msgid "Fuzzy search"
 msgstr "あいまい検索"
