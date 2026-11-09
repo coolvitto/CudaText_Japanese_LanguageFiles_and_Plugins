@@ -1,6 +1,6 @@
 # 作者: coolvitto
-# バージョン: 1.0
-# 作成日時: 2026-11-05 15:20
+# バージョン: 1.1
+# 作成日時: 2026-11-10 15:20
 # URL: https://coolvitto.hateblo.jp
 msgid ""
 msgstr ""
