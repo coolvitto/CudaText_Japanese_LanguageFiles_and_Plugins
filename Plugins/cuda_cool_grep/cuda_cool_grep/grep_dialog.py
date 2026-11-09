@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Cuda Cool Grep - dialog (grep / grep and replace in one window, like Hidemaru)."""
 
 import os
@@ -32,7 +33,7 @@ def enc_label(i):
     }[i]
 
 
-# --- settings ---
+# ------------------------------------------------------------------ settings
 
 class Settings(object):
     def __init__(self):
@@ -87,7 +88,7 @@ class Settings(object):
             pass
 
 
-# --- helper dialogs ---
+# ------------------------------------------------------------------ helper dialogs
 
 def _simple_dialog(caption, w, h):
     hd = dlg_proc(0, DLG_CREATE)
@@ -211,7 +212,7 @@ def enc_order_dialog(order):
     return st['result']
 
 
-# --- main dialog ---
+# ------------------------------------------------------------------ main dialog
 
 class GrepDialog(object):
     def __init__(self):
@@ -228,8 +229,9 @@ class GrepDialog(object):
         self.enc_order = core.order_from_str(self.st.get('enc_order', ''))
         self.result = None      # Options when OK was pressed
         self.h = None
+        self.built = False      # callbacks fire while controls are being created
 
-    # --- control helpers ---
+    # ---- control helpers
     def add(self, typ, name, **props):
         return _add(self.h, typ, name, **props)
 
@@ -237,7 +239,8 @@ class GrepDialog(object):
         dlg_proc(self.h, DLG_CTL_PROP_SET, name=name, prop=props)
 
     def val(self, name):
-        return _val(self.h, name)
+        r = dlg_proc(self.h, DLG_CTL_PROP_GET, name=name)
+        return '' if r is None else r['val']
 
     def checked(self, name):
         return str(self.val(name)).strip().lower() in ('1', 'true')
@@ -251,7 +254,7 @@ class GrepDialog(object):
             menu_proc(hm, MENU_ADD, command=(lambda i=i: on_pick(i)), caption=label)
         menu_proc(hm, MENU_SHOW, command='%d,%d' % (nx, ny))
 
-    # --- build ---
+    # ---- build
     def build(self):
         st = self.st
         h = self.h = dlg_proc(0, DLG_CREATE)
@@ -326,6 +329,7 @@ class GrepDialog(object):
         self.add('button', 'help', x=BTN_X, y=76, w=BTN_W, h=26, cap=_('Help'), on_change=self.on_help)
         self.add('button', 'switch', x=BTN_X, y=112, w=BTN_W, h=26, cap='', on_change=self.on_switch)
 
+        self.built = True
         self.on_depth_state()
         self.layout()
 
@@ -338,7 +342,7 @@ class GrepDialog(object):
             pass
         return self.st.get('folder', '')
 
-    # --- layout (positions depend on the mode) ---
+    # ---- layout (positions depend on the mode)
     def layout(self):
         rep = self.replace_mode
         P = self.setp
@@ -399,6 +403,7 @@ class GrepDialog(object):
         P('dest', x=R, y=y1 + 86)
         height = y1 + 86 + 44
 
+        # buttons
         if rep:
             P('ok', cap=_('Replace'), w=BTN_W - 24)
             P('ok_menu', vis=True)
@@ -410,7 +415,7 @@ class GrepDialog(object):
             P('switch', cap=_('Re&place >>'))
             dlg_proc(self.h, DLG_PROP_SET, prop={'cap': _('Grep'), 'h': height})
 
-    # --- events ---
+    # ---- events
     def on_key(self, id_dlg, id_ctl, data='', info=''):
         if id_ctl == 27:   # Esc
             self.on_cancel()
@@ -425,12 +430,16 @@ class GrepDialog(object):
         self.layout()
 
     def on_depth_state(self, id_dlg=0, id_ctl=0, data='', info=''):
+        if not self.built:
+            return
         sub = self.checked('subdirs')
         on = self.checked('depth_on')
         self.setp('depth_on', en=sub)
         self.setp('depth', en=(sub and on))
 
     def on_extra_state(self, id_dlg=0, id_ctl=0, data='', info=''):
+        if not self.built:
+            return
         self.setp('extra_set', en=self.checked('extra'))
 
     def on_extra_set(self, id_dlg=0, id_ctl=0, data='', info=''):
@@ -522,7 +531,7 @@ class GrepDialog(object):
     def on_ok(self, id_dlg=0, id_ctl=0, data='', info=''):
         self.finish(preview=False)
 
-    # --- collect values ---
+    # ---- collect values
     def finish(self, preview=False):
         o = Options()
         o.mode = 'replace' if self.replace_mode else 'grep'
@@ -578,7 +587,7 @@ class GrepDialog(object):
         st.push_hist('folder', o.folder)
         st.save()
 
-    # --- show ---
+    # ---- show
     def show(self):
         self.build()
         self.setp('search', act=True)

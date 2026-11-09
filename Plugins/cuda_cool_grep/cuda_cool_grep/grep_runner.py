@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Cuda Cool Grep - runs grep / replace and shows results (uses CudaText API)."""
 
 import os
@@ -55,7 +56,7 @@ class Options(object):
         self.out_dest = 0           # 0 auto, 1 output panel, 2 new tab
 
 
-# --- helpers ---
+# ------------------------------------------------------------------ helpers
 
 def _walk_options(o):
     wo = core.WalkOptions()
@@ -84,7 +85,7 @@ def _walk_options(o):
     return wo
 
 
-_RX_CTRL = re.compile('[\\x00-\\x08\\x0a-\\x1f\\x7f\\ud800-\\udfff\\ufffd]')
+_RX_CTRL = re.compile(r'[\x00-\x08\x0a-\x1f\x7f-\x9f\ud800-\udfff\ue000-\uf8ff\ufdd0-\ufdef\ufff0-\uffff\U00010000-\U0010ffff]')
 
 
 def _clean(text, limit=2000):
@@ -133,21 +134,36 @@ def _open_editors():
 
 
 class _Progress(object):
+    """status bar message with a rotating mark, so that the user can see that the search is alive"""
+    FRAMES = '|/-*'
+
     def __init__(self):
         self.last = 0.0
+        self.i = 0
+        self.text = ''
         app_proc(PROC_SET_ESCAPE, '0')
 
-    def tick(self, text):
+    def tick(self, text=None):
+        if text is not None:
+            self.text = text
         now = time.time()
-        if now - self.last > 0.15:
+        if now - self.last > 0.12:
             self.last = now
-            msg_status(text, True)
+            self.i = (self.i + 1) % len(self.FRAMES)
+            # the mark is at the end: the width of the marks differs in a proportional font, and the text before it must not move
+            msg_status(self.text + '  ' + self.FRAMES[self.i], True)
 
     def cancelled(self):
         if app_proc(PROC_GET_ESCAPE, ''):
             app_proc(PROC_SET_ESCAPE, '0')
             return True
         return False
+
+    def poll(self):
+        """called from inside the long running searching functions"""
+        self.tick()
+        if self.cancelled():
+            raise core.Cancelled()
 
 
 class _Sink(object):
@@ -182,7 +198,15 @@ class _Sink(object):
             return
         file_open('')
         e = ed
-        e.set_text_all('\n'.join(self.lines) + '\n')
+        try:
+            # the tab is UTF-8 (just in case)
+            e.set_prop(PROP_ENC, 'UTF-8')
+        except Exception:
+            pass
+        # ed.insert() decodes the text as UTF-8 directly; set_text_all() falls back to the ANSI code page
+        # when it finds anything that looks invalid, which garbles the whole text
+        e.set_text_all('')
+        e.insert(0, 0, '\n'.join(self.lines) + '\n')
         e.set_prop(PROP_TAG, TAG_RESULT)
         try:
             e.set_prop(PROP_TAB_TITLE, 'Cool Grep')
@@ -222,7 +246,7 @@ def _check_common(o):
         return None
 
 
-# --- grep ---
+# ------------------------------------------------------------------ grep
 
 def run_grep(o):
     matcher = _check_common(o)
@@ -250,7 +274,8 @@ def run_grep(o):
         if prog.cancelled():
             cancelled = True
             break
-        prog.tick(_('Cool Grep: {n} files searched, {m} lines found (Esc to cancel)').format(n=searched, m=hit_lines))
+        prog.tick(_('Cool Grep: {n} files searched, {m} lines found - {f} (Esc to cancel)').format(
+            n=searched, m=hit_lines, f=os.path.basename(path)))
         ft = core.read_file(path, o.enc, o.enc_order, o.utf16, o.binary)
         if ft is None:
             continue
@@ -261,15 +286,18 @@ def run_grep(o):
                 if o.invert:
                     continue
                 ft_raw, ft.raw = ft.raw, None
-                for off, label, snippet, sp in core.grep_binary(ft_raw, matcher, o.utf16):
+                for off, label, snippet, sp in core.grep_binary(ft_raw, matcher, o.utf16, progress=prog.poll):
                     entries.append(('{}(0x{:08X} {}): '.format(path, off, label), _clean(snippet), sp, (path, 0, 0, 0)))
             else:
-                for y, line, spans in core.grep_text(ft, matcher, o.invert):
+                for y, line, spans in core.grep_text(ft, matcher, o.invert, progress=prog.poll):
                     a = spans[0][0] if spans else 0
                     ln = (spans[0][1] - spans[0][0]) if spans else 0
                     entries.append((_fmt_line(path, y, ''), _clean(line), spans, (path, y, a, ln)))
         except re.error:
             entries = []
+        except core.Cancelled:
+            cancelled = True
+            break
         if not entries:
             continue
         hit_files += 1
@@ -303,7 +331,7 @@ def run_grep(o):
     msg_status(footer)
 
 
-# --- replace ---
+# ------------------------------------------------------------------ replace
 
 def _confirm_text(path, plan):
     sample = []
@@ -420,7 +448,7 @@ def run_replace(o):
     msg_status(footer)
 
 
-# --- navigation from results ---
+# ------------------------------------------------------------------ navigation from results
 
 def lookup(line):
     info = RESULTS.get(line)

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Cuda Cool Grep - core logic (no CudaText API used here, so it can be unit-tested)."""
 
 import os
@@ -6,7 +7,7 @@ import fnmatch
 import unicodedata
 from datetime import datetime
 
-# --- encodings ---
+# ---------------------------------------------------------------- encodings
 
 ENC_IDS = ['auto', 'utf8', 'utf8bom', 'cp932', 'eucjp', 'utf16le', 'utf16be', 'iso2022jp']
 ENC_CODECS = {
@@ -31,6 +32,10 @@ BOMS = [
 
 MAX_FILE_SIZE = 300 * 1024 * 1024
 MAX_BINARY_SIZE = 128 * 1024 * 1024
+
+
+class Cancelled(Exception):
+    pass
 
 
 class FileText(object):
@@ -221,7 +226,7 @@ def write_file(path, ft, new_text, backup=False):
                 pass
 
 
-# --- text helpers ---
+# ---------------------------------------------------------------- text helpers
 
 _EOL = re.compile(r'(\r\n|\r|\n)')
 
@@ -385,13 +390,16 @@ class Matcher(object):
         return ''.join(out), cnt
 
 
-# --- grep / replace on text ---
 
-def grep_text(ft, matcher, invert=False, limit=0):
-    """returns list of (y, line, spans)"""
+# ---------------------------------------------------------------- grep / replace on text
+
+def grep_text(ft, matcher, invert=False, limit=0, progress=None):
+    """returns list of (y, line, spans). progress() is called now and then, it may raise Cancelled"""
     lines, seps = split_lines(ft.text)
     hits = []
     for y, line in enumerate(lines):
+        if progress and y % 20000 == 0:
+            progress()
         if invert and not line and seps and y == len(lines) - 1:
             continue
         if invert:
@@ -409,7 +417,7 @@ def grep_text(ft, matcher, invert=False, limit=0):
 _CHUNK = re.compile('[^\\x00-\\x08\\x0a-\\x1f\\x7f\\udc80-\\udcff\\ufffd]+')
 
 
-def grep_binary(raw, matcher, utf16=False, limit=200):
+def grep_binary(raw, matcher, utf16=False, limit=200, progress=None):
     """Search strings inside a binary file. The bytes are viewed as Latin-1 (ASCII),
     and, depending on the query, also as Shift_JIS, UTF-8 and (if utf16) UTF-16LE.
     returns list of (byte_offset, view_label, snippet, spans_in_snippet)"""
@@ -422,7 +430,10 @@ def grep_binary(raw, matcher, utf16=False, limit=200):
         views.append(('UTF-16LE', 'utf-16-le', 1))
     hits = []
     seen = set()
+    count = 0
     for label, codec, align in views:
+        if progress:
+            progress()
         if codec == 'utf-16-le':
             body = raw[align:]
             body = body[:len(body) - (len(body) % 2)]
@@ -432,6 +443,9 @@ def grep_binary(raw, matcher, utf16=False, limit=200):
         else:
             text = raw.decode(codec, 'surrogateescape')
         for m in _CHUNK.finditer(text):
+            count += 1
+            if progress and count % 2000 == 0:
+                progress()
             chunk = m.group()
             if not matcher.has_match(chunk):
                 continue
@@ -489,7 +503,7 @@ def plan_replace(ft, matcher, repl):
     return plan
 
 
-# --- file walking ---
+# ---------------------------------------------------------------- file walking
 
 def split_patterns(s):
     res = []

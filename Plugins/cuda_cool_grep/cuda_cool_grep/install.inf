@@ -3,7 +3,7 @@ title=Cuda Cool Grep
 desc=秀丸のような「Grep」および「Grep置換」ダイアログです。いくつかカスタマイズしてオプションを追加してます。
 type=cudatext-plugin
 subdir=cuda_cool_grep
-version=1.0
+version=1.1
 homepage=https://coolvitto.hateblo.jp
 api=1.0.302
 

@@ -1,8 +1,9 @@
-# åç§°:       Cuda Cool Grep (cuda_cool_grep)
-# ä½œè€…:       coolvitto
-# ãƒãƒ¼ã‚¸ãƒ§ãƒ³: 1.0
-# ä½œæˆæ—¥æ™‚:   2026-11-05 15:20
+# –¼Ì:       Cuda Cool Grep (cuda_cool_grep)
+# ìÒ:       coolvitto
+# ƒo[ƒWƒ‡ƒ“: 1.1
+# ì¬“ú:   2026-11-10
 # URL:        https://coolvitto.hateblo.jp
+# -*- coding: utf-8 -*-
 from cudatext import *
 from . import grep_runner as gr
 
