@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cuda_addon_man\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-10-02 16:19+0900\n"
+"PO-Revision-Date: 2026-11-11 00:32+0900\n"
 "Last-Translator: coolvitto\n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -177,7 +177,7 @@ msgstr ""
 "最新(オンライン): {}"
 
 msgid "Deselect all"
-msgstr "すべての選択を解除"
+msgstr "すべて選択解除"
 
 msgid "Done"
 msgstr "完了"
@@ -371,3 +371,18 @@ msgstr "HTTPS 証明書を検証する"
 
 msgid "Visit homepage"
 msgstr "ホームページを開く"
+
+msgid "Show updates only"
+msgstr "更新されたもののみ表示"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Folder"
+msgstr "フォルダー"
+
+msgid "Local"
+msgstr "ローカル"
+
+msgid "Available"
+msgstr "利用可能"
