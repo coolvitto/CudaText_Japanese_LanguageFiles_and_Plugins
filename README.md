@@ -10,6 +10,9 @@ PoEdit で開いて保存すれば .mo ファイルも出力されます。</BR>
 
 ### 更新履歴
 
+ - 2026-11-11
+   - cuda_addonman.po を更新
+   - CudaText_translation.ja_JP.zip を更新 (cuda_addonman.mo を更新) 
  - 2026-11-10
    - Cuda Cool Grep v1.1
    - cuda_cool_grep.po を更新 
