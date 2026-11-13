@@ -1,0 +1,5 @@
+[info]
+title=cuda_config_keys_ja
+desc=ホットキーの設定 の日本語言語ファイル v2.1.13。
+type=cudatext-data
+subdir=
